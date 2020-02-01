@@ -1,0 +1,43 @@
+baseURL = "/"
+title = "tbsmcd"
+theme ="hugo-xmin"
+languageCode = "ja-jp"
+googleAnalytics = "UA-XXXXXXXXX-X"
+enableEmoji = true 
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+
+hasCJKLanguage = true
+showFooterCredits = true
+
+[params]
+footer = "MOCHIDA Tsubasa @tbsmcd | [Github](https://github.com/tbsmcd) | [Twitter](https://twitter.com/tbsmcd)"
+
+useIcon = true
+useTwitterCard = true
+
+math = true
+
+[permalinks]
+    post = "/post/:year/:month/:day/:slug/"
+    note = "/note/:year/:month/:day/:slug/"
+
+[[menu.main]]
+    name = "Posts"
+    url = "/"
+    weight = 1
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+[[menu.main]]
+    name = "Categories"
+    url = "/categories/"
+    weight = 3
+[[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 4
+[[menu.main]]
+    name = "Subscribe"
+    url = "/index.xml"
+
