@@ -33,4 +33,4 @@ jobs:
         PUBLISH_DIR: ./public
 
     - name: CNAME
-        run: git checkout master && mkdir .public && echo 'tbsmcd.net' > .public/CNAME
+      run: git checkout master && mkdir .public && echo 'tbsmcd.net' > .public/CNAME
