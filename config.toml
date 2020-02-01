@@ -10,7 +10,7 @@ hasCJKLanguage = true
 showFooterCredits = true
 
 [params]
-footer = "[Posts](/) | [About](/about/) | [Tags](/tags/) | [Feed](/index.xml) | [Github](https://github.com/tbsmcd) | [Twitter](https://twitter.com/tbsmcd) | MOCHIDA Tsubasa"
+footer = "[Posts](/) | [About](/about/) | [Tags](/tags/) | [Feed](/index.xml) | MOCHIDA Tsubasa(@tbsmcd)"
 
 useIcon = true
 useTwitterCard = true
