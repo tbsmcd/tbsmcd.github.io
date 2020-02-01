@@ -7,7 +7,7 @@ draft: false
 ## Profile
 持田 翼(MOCHIDA Tsubasa)
 
-from 出雲 松江(Matsue, Izumo)
+from 出雲國松江(Matsue, Izumo)
 
 living in 福岡 博多(Hakata, Fukuoka)
 
