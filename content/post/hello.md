@@ -1,7 +1,8 @@
 ---
 title: "Hello"
 date: 2020-02-02T00:09:54+09:00
-tags = ["dialy"]
+tags:
+  - dialy
 draft: false
 ---
 # Blog を作り直した
