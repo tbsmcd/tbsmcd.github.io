@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>dialy on tbsmcd</title>
-    <link>/tags/dialy/</link>
+    <link>tbsmcd.net/tags/dialy/</link>
     <description>Recent content in dialy on tbsmcd</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 02 Feb 2020 00:09:54 +0900</lastBuildDate>
     
-	<atom:link href="/tags/dialy/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="tbsmcd.net/tags/dialy/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hello</title>
-      <link>/post/2020/02/02/hello/</link>
+      <link>tbsmcd.net/post/2020/02/02/hello/</link>
       <pubDate>Sun, 02 Feb 2020 00:09:54 +0900</pubDate>
       
-      <guid>/post/2020/02/02/hello/</guid>
+      <guid>tbsmcd.net/post/2020/02/02/hello/</guid>
       <description>Blog を作り直した 使用したもの hugo GitHub Actions による GitHub Pages への自動デプロイ hugo-xmin</description>
     </item>
     
