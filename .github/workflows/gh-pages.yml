@@ -23,7 +23,7 @@ jobs:
       run: git clone https://github.com/yihui/hugo-xmin.git themes/hugo-xmin
     
     - name: Build
-      run: hugo --debug && mkdir .public && cp CNAME .public/CNAME
+      run: hugo --debug
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v2
@@ -31,3 +31,6 @@ jobs:
         ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         PUBLISH_BRANCH: master
         PUBLISH_DIR: ./public
+
+    - CNAME
+        run: git checkout master && mkdir .public && echo 'tbsmcd.net' > .public/CNAME
