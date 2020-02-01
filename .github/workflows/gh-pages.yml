@@ -32,5 +32,5 @@ jobs:
         PUBLISH_BRANCH: master
         PUBLISH_DIR: ./public
 
-        #    - name: CNAME
-        #      run: git checkout master && mkdir .public && echo 'tbsmcd.net' > .public/CNAME
+    - name: CNAME
+      run: git checkout master && mkdir static && echo 'tbsmcd.net' > tatic/CNAME
