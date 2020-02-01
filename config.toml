@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "tbsmcd.net"
 title = "tbsmcd"
 theme ="hugo-xmin"
 languageCode = "ja"
