@@ -12,4 +12,4 @@ draft: true
 [xmin のサンプルサイト](https://xmin.yihui.org/)の `HUGO XMIN` から `usage of this theme.` の部分は `content/_index.markdown` に[書かれているようだ](exampleSite/content/_index.markdown)。とりあえず拡張子を `.md` に変更して自分でも追加してみた。
 
 ## 結果
-すごくどうでもいいことを書ける場所が出来た。いらないものはいらないが、欲しいものは欲しいので便利。
+すごくどうでもいいことを書ける場所が出来た。いらないものはいらないが、欲しいものは欲しいので便利。自前で新しいテーマ（github の markdown に適用される CSS でも使おうかと……）を作ろうとしていたが、その必要はなくなった。
