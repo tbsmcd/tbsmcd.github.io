@@ -9,7 +9,7 @@ draft: false
 - [GitHub Actions による GitHub Pages への自動デプロイ](https://qiita.com/peaceiris/items/d401f2e5724fdcb0759d)
 - [hugo-xmin](https://github.com/yihui/hugo-xmin)
     - [上記をフォークしたものに変更（2020-02-03）](https://github.com/tbsmcd/hugo-xmin)
-        - MIT ライセンスだから問題ないはず
+        - MIT ライセンスの賜物
 - [ムームードメイン](https://muumuu-domain.com/)
 
 
