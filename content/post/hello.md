@@ -1,8 +1,7 @@
 ---
 title: "ブログを作り直した"
 date: 2020-02-02T00:09:54+09:00
-tags:
-  - dialy
+tags: ["dialy", "hugo"]
 draft: false
 ---
 ## 使用したもの
