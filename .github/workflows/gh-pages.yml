@@ -22,6 +22,9 @@ jobs:
     - name: Install theme
       run: git clone https://github.com/yihui/hugo-xmin.git themes/hugo-xmin
     
+    - name: Edit theme
+      run: sed -i -e "s/class=\"article-meta\"//g" themes/hugo-xmin/layouts/_default/single.html
+    
     - name: Build
       run: |
         hugo --gc --minify --cleanDestinationDir
