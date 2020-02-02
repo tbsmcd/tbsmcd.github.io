@@ -1,11 +1,10 @@
 ---
-title: "Hello"
+title: "ブログを作り直した"
 date: 2020-02-02T00:09:54+09:00
 tags:
   - dialy
 draft: false
 ---
-# Blog を作り直した
 ## 使用したもの
 - [hugo](https://gohugo.io/)
 - [GitHub Actions による GitHub Pages への自動デプロイ](https://qiita.com/peaceiris/items/d401f2e5724fdcb0759d)
