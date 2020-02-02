@@ -12,6 +12,6 @@ draft: false
 
 
 ---
-tags
+Tags
 - [hugo](/tags/hugo)
 - [dialy](/tags/dialy)

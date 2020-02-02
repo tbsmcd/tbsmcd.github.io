@@ -7,5 +7,5 @@ draft: true
 
 
 ---
-tags
+Tags
 - [](/tags/)
