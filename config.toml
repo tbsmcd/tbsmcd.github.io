@@ -17,3 +17,5 @@ useTwitterCard = true
 
 math = true
 
+[taxonomies]
+archive = "archives"
