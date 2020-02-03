@@ -3,7 +3,7 @@ title: "Archives ページを導入した"
 date: 2020-02-03T23:26:22+09:00
 tags: ["hugo"]
 archives: ["2020-02"]
-draft: true
+draft: false
 ---
 ## 対応する Pull Request
 [アーカイブを追加 #4](https://github.com/tbsmcd/tbsmcd.github.io/pull/4/files)
