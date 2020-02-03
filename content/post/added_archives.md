@@ -16,7 +16,7 @@ draft: false
 - config.toml に `[taxonomies]` を追加
 - archetypes に `archives: ["{{ dateFormat "2020-02" .Date }}"]` を追加したが、このフォーマットに対応していないのか3030年とかになる
 	- `archives: ["2020-02"]` のように決め打ちしといても間違いはなさそう
-		- 追記
+		- 修正 && 追記
 			- `archives: ["{{ dateFormat "2006-01" .Date }}"]` としたら問題がなかった
 			- [ドキュメント](https://gohugo.io/functions/format/)で使用されている日付を採用すべきだった
 
