@@ -8,6 +8,8 @@ draft: false
 ## 対応する Pull Request
 [アーカイブを追加 #4](https://github.com/tbsmcd/tbsmcd.github.io/pull/4/files)
 
+ただし後述の通り、日付フォーマットには `2006-01` を使う。
+
 ## 変更点
 - footer は config.toml で定義しているので変更
 - すでにあるページには追記する必要があるので手動で変更
@@ -18,7 +20,7 @@ draft: false
 	- `archives: ["2020-02"]` のように決め打ちしといても間違いはなさそう
 		- 修正 && 追記
 			- `archives: ["{{ dateFormat "2006-01" .Date }}"]` としたら問題がなかった
-			- [ドキュメント](https://gohugo.io/functions/format/)で使用されている日付を採用すべきだった
+			- [ドキュメント](https://gohugo.io/functions/format/)で使用されている日付(2006/01/02)を採用すべきだった
 
 ---
 Tags
