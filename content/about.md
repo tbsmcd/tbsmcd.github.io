@@ -2,7 +2,6 @@
 title: "About"
 draft: false
 ---
-
 ## Profile
 持田 翼(MOCHIDA Tsubasa)
 
