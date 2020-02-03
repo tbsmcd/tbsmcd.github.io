@@ -1,6 +1,7 @@
 ---
 title: "About"
 date: 2020-01-01T00:00:00+09:00
+archives: ["2020-01"]
 draft: false
 ---
 
