@@ -2,6 +2,7 @@
 title: "xmin で `_index.md` を設定すると便利だった"
 date: 2020-02-02T22:45:35+09:00
 tags: ["hugo"]
+archives: ["2020-02"]
 draft: false
 ---
 
