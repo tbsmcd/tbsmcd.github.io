@@ -20,7 +20,7 @@ draft: false
 	- `archives: ["2020-02"]` のように決め打ちしといても間違いはなさそう
 		- 修正 && 追記
 			- `archives: ["{{ dateFormat "2006-01" .Date }}"]` としたら問題がなかった
-			- [ドキュメント](https://gohugo.io/functions/format/)で使用されている日付(2006/01/02)を採用すべきだった
+			- [ドキュメント](https://gohugo.io/functions/format/)で使用されている日付(2006/01/02)を採用したら問題は起きない
 
 ---
 Tags
