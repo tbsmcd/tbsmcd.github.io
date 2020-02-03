@@ -2,7 +2,7 @@
 title: ""
 date: {{ .Date }}
 tags: []
-archives: ["{{ dateFormat "2020-02" .Date }}"]
+archives: ["{{ dateFormat "2006-01" .Date }}"]
 draft: true
 ---
 
