@@ -10,10 +10,14 @@ hasCJKLanguage = true
 showFooterCredits = true
 
 [params]
-footer = "[Home](/) | [Tags](/tags/) | [Feed](/index.xml) | [tbsmcd](/about/)"
+footer = "[Home](/) | [Archives](/archives/) | [Tags](/tags/) | [Feed](/index.xml) | [tbsmcd](/about/)"
 
 useIcon = true
 useTwitterCard = true
 
 math = true
+
+[taxonomies]
+tag = "tags"
+archive = "archives"
 
