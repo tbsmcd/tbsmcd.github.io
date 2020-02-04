@@ -2,7 +2,7 @@
 title: Home
 ---
 
-# tbsmcd
+# Home
 
 ## 近況
 - 本を読むのが遅い気がする
