@@ -22,6 +22,3 @@ draft: false
 			- `archives: ["{{ dateFormat "2006-01" .Date }}"]` としたら問題がなかった
 			- [ドキュメント](https://gohugo.io/functions/format/)で使用されている日付(2006/01/02)を採用したら問題は起きない
 
----
-Tags
-- [hugo](/tags/hugo)

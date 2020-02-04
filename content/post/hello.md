@@ -13,8 +13,3 @@ draft: false
         - MIT ライセンスの賜物
 - [ムームードメイン](https://muumuu-domain.com/)
 
-
----
-Tags
-- [hugo](/tags/hugo)
-- [dialy](/tags/dialy)
