@@ -48,6 +48,12 @@ pygmentsUseClasses = true
 pygmentsCodefences = true
 ```
 
+ついでにシンタックスハイライト無しの pre の背景色も合わせた。
+
+```
+aaa
+あああ
+```
   
 ## 所感
 
