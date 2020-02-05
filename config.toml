@@ -15,7 +15,7 @@ pygmentsUseClasses = true
 pygmentsCodefences = true
 
 [params]
-footer = "[Home](/), [Archives](/archives/), [Tags](/tags/), [Feed](/index.xml), [About](/about/)"
+footer = "Menu: [Home](/) | [Archives](/archives/) | [Tags](/tags/) | [Feed](/index.xml) | [About](/about/)"
 
 useIcon = true
 useTwitterCard = true
