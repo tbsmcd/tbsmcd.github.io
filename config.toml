@@ -9,6 +9,11 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 hasCJKLanguage = true
 showFooterCredits = true
 
+# シンタックスハイライトを有効に
+pygmentsUseClasses = true
+# github 風に ``` で囲む
+pygmentsCodefences = true
+
 [params]
 footer = "[Home](/) | [Archives](/archives/) | [Tags](/tags/) | [Feed](/index.xml) | [About](/about/)"
 
