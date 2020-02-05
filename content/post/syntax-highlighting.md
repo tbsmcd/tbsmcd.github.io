@@ -3,7 +3,7 @@ title: "hugo にシンタックスハイライトを追加した"
 date: 2020-02-05T21:41:48+09:00
 tags: ["hugo"]
 archives: ["2020-02"]
-draft: true
+draft: false
 ---
 
 ```simple.php
