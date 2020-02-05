@@ -19,17 +19,16 @@ class SimpleClass
     }
 }
 ```
-[PHP: クラスの基礎 - Manual ](https://www.php.net/manual/ja/language.oop5.basic.php) より
+コードは [PHP: クラスの基礎 - Manual ](https://www.php.net/manual/ja/language.oop5.basic.php) より
 
 ## テーマの編集
 
-対応する Pull Request
+対応する Pull Request  
 [Add syntax highlighting #1](https://github.com/tbsmcd/hugo-xmin/pull/1)
-
 
 シンタックスハイライト用の CSS を生成する。https://gohugo.io/commands/hugo_gen_chromastyles/
 `style-name` は[ここ](https://xyproto.github.io/splash/docs/longer/index.html)から好きなものを選べば良い。今回は manni を選んだ。ついでにインラインコードの背景を manni と合わせた。
-```
+```bash
 $ hugo gen chromastyles --style [style-name] > code.css
 ```
 
@@ -39,20 +38,17 @@ $ hugo gen chromastyles --style [style-name] > code.css
 
 ## config.toml の編集
 
-対応する Pull Request
+対応する Pull Request  
 [シンタックスハイライト適用 #5](https://github.com/tbsmcd/tbsmcd.github.io/pull/5)
 
-```
+```toml
 # シンタックスハイライトを有効に
 pygmentsUseClasses = true
 # github 風に ``` で囲む
 pygmentsCodefences = true
 ```
 
-## ついでに
-
-style.css の pre から border と box-shadow もいらないので削除した。
-
+  
 ## 所感
 
 本筋とは関係ないが Github で管理すると機能追加した P/R をブログに載せれるので便利。
