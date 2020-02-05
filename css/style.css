@@ -28,10 +28,10 @@ hr {
 pre {
   padding: 1em;
   overflow-x: auto;
-  border: 1px solid #ddd;
+  background-color: #f0f3f3;
 }
 code { background: #f0f3f3; }
-pre code { background-color: #f0f3f3; }
+pre code { background-color: none; }
 
 /* misc elements */
 img, iframe, video { max-width: 100%; }
