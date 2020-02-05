@@ -1,4 +1,4 @@
-<!doctype html><html lang=ja><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>hugo にシンタックスハイライトを追加した | tbsmcd</title><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/code.css><link rel=stylesheet href=/css/fonts.css></head><body><header><p>tbsmcd / 2020-02-05</p></header><main><div><h1><span class=title>hugo にシンタックスハイライトを追加した</span></h1></div><div class=highlight><pre class=chroma><code class=language-simple.php data-lang=simple.php><span class=cp>&lt;?php</span>
+<!doctype html><html lang=ja><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>hugo にシンタックスハイライトを追加した | tbsmcd</title><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/code.css><link rel=stylesheet href=/css/fonts.css></head><body><header><p>tbsmcd / 2020-02-05</p></header><main><div><h1><span class=title>hugo にシンタックスハイライトを追加した</span></h1></div><h2 id=heading>こういう表示になった</h2><div class=highlight><pre class=chroma><code class=language-simple.php data-lang=simple.php><span class=cp>&lt;?php</span>
 <span class=k>class</span> <span class=nc>SimpleClass</span>
 <span class=p>{</span>
     <span class=c1>// プロパティの宣言
@@ -9,5 +9,13 @@
         <span class=k>echo</span> <span class=nv>$this</span><span class=o>-&gt;</span><span class=na>var</span><span class=p>;</span>
     <span class=p>}</span>
 <span class=p>}</span>
-</code></pre></div></main><p>Tags:
+</code></pre></div><p><a href=https://www.php.net/manual/ja/language.oop5.basic.php>PHP: クラスの基礎 - Manual</a> より</p><h2 id=heading-1>テーマの編集</h2><p>対応する Pull Request
+<a href=https://github.com/tbsmcd/hugo-xmin/pull/1>Add syntax highlighting #1</a></p><p>シンタックスハイライト用の CSS を生成する。https://gohugo.io/commands/hugo_gen_chromastyles/
+<code>style-name</code> は<a href=https://xyproto.github.io/splash/docs/longer/index.html>ここ</a>から好きなものを選べば良い。今回は manni を選んだ。ついでにインラインコードの背景を manni と合わせた。</p><pre><code>$ hugo gen chromastyles --style [style-name] &gt; code.css
+</code></pre><p>生成した CSS を <a href=https://github.com/tbsmcd/hugo-xmin/pull/1/files#diff-8b819c8434b56b4e51f882d264ee6fbe>static/css/ 以下に配置し</a>、html から読み込みために <a href=https://github.com/tbsmcd/hugo-xmin/pull/1/files#diff-8ab16b2cae0b26a574b75e8e5c19e378>header を編集</a>する。</p><p>ローカルでビルドする場合はブログのソースに CSS を追加すれば良いと思う。今回は Github Actions でビルドしているため、テーマの方に追加した。その場合でもテーマに追加せず、ビルドスクリプト上で配置することも出来ると思う。</p><h2 id=configtoml->config.toml の編集</h2><p>対応する Pull Request
+<a href=https://github.com/tbsmcd/tbsmcd.github.io/pull/5>シンタックスハイライト適用 #5</a></p><pre><code># シンタックスハイライトを有効に
+pygmentsUseClasses = true
+# github 風に ``` で囲む
+pygmentsCodefences = true
+</code></pre><h2 id=heading-2>ついでに</h2><p>style.css の pre から border と box-shadow もいらないので削除した。</p><h2 id=heading-3>所感</h2><p>本筋とは関係ないが Github で管理すると機能追加した P/R をブログに載せれるので便利。</p></main><p>Tags:
 <a href=/tags/hugo>hugo</a></p><footer><hr><a href=/>Home</a> | <a href=/archives/>Archives</a> | <a href=/tags/>Tags</a> | <a href=/index.xml>Feed</a> | <a href=/about/>About</a></footer></body></html>
