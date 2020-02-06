@@ -26,3 +26,5 @@ math = true
 tag = "tags"
 archive = "archives"
 
+[markup.goldmark.renderer]
+unsafe = true
