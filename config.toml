@@ -2,7 +2,7 @@ baseURL = "/"
 title = "tbsmcd"
 theme ="hugo-xmin"
 languageCode = "ja"
-googleAnalytics = "UA-XXXXXXXXX-X"
+googleAnalytics = "UA-158035573-1"
 enableEmoji = true 
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
