@@ -1,7 +1,7 @@
 ---
 title: "ブログを作り直した"
 date: 2020-02-02T00:09:54+09:00
-tags: ["dialy", "hugo"]
+tags: ["日記", "hugo"]
 archives: ["2020-02"]
 draft: false
 ---
