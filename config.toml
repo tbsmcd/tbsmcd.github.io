@@ -15,7 +15,8 @@ pygmentsUseClasses = true
 pygmentsCodefences = true
 
 [params]
-footer = "Menu: [Home](/) | [Archives](/archives/) | [Tags](/tags/) | [Feed](/index.xml) | [About](/about/) | [Contact](https://docs.google.com/forms/d/e/1FAIpQLScLrngN5Znk15zTy06N9qjO3Mi_ubIrXrX9cfYFid_2-mmbQQ/viewform)"
+header = "[Home](/) | [Archives](/archives/) | [Tags](/tags/) | [Feed](/index.xml) | [About](/about/) | [Contact](https://docs.google.com/forms/d/e/1FAIpQLScLrngN5Znk15zTy06N9qjO3Mi_ubIrXrX9cfYFid_2-mmbQQ/viewform)"
+footer = "@tbsmcd"
 
 useIcon = true
 useTwitterCard = true
