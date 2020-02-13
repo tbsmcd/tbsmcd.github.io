@@ -52,7 +52,6 @@ thead, tfoot, tr:nth-child(even) { background: #eee; }
 h1 {
   font-size: 2em;
   line-height: 1.5em;
-  margin-top: 0px;
 }
 h1.single {
   margin-bottom: 0px;
