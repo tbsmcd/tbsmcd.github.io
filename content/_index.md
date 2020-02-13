@@ -2,7 +2,7 @@
 title: Home
 ---
 
-# tbsmcd
+# Index
 
 ## Satus
 - 本を読むのが遅い気がする
