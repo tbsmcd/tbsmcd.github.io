@@ -15,7 +15,7 @@ pygmentsUseClasses = true
 pygmentsCodefences = true
 
 [params]
-header = "[tbsmcd](/) | [Archives](/archives/) | [Tags](/tags/) | [Feed](/index.xml) | [About](/about/) | [Contact](https://docs.google.com/forms/d/e/1FAIpQLScLrngN5Znk15zTy06N9qjO3Mi_ubIrXrX9cfYFid_2-mmbQQ/viewform)"
+header = "tbsmcd [/](/) [/archives/](/archives/) [/tags/](/tags/) [/about/](/about/) | [Contact](https://docs.google.com/forms/d/e/1FAIpQLScLrngN5Znk15zTy06N9qjO3Mi_ubIrXrX9cfYFid_2-mmbQQ/viewform) | [Feed](/index.xml)"
 footer = "Written by @tbsmcd"
 
 useIcon = true
