@@ -80,7 +80,8 @@ h6 {
   font-size: 0.83em
 }
 .page-list {
-  list-style: none;
+  list-style: none
+  padding-inline-start:23px;
 }
 .article-date {
   font-size: 0.83em;
