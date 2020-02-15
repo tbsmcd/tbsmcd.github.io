@@ -1,5 +1,5 @@
 ---
-title: "Scrapbox で読書カードを作ってみる"
+title: "Scrapbox で読書カードを作ってみる 補足"
 date: 2020-02-15T22:30:42+09:00
 tags: ["読書"]
 archives: ["2020-02"]
