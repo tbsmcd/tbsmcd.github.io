@@ -4,6 +4,7 @@ date: 2020-02-10T23:16:13+09:00
 tags: ["日記", "読書"]
 archives: ["2020-02"]
 draft: false
+image: "/images/reading_card.jpg"
 ---
 ![Scrapbox のスクリーンショット](/images/reading_card.jpg)
 
