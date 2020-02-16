@@ -3,6 +3,8 @@ title: "hugo に favicon を追加したメモ"
 date: 2020-02-16T21:14:13+09:00
 tags: ["hugo"]
 archives: ["2020-02"]
+image: "/images/icon_gen.jpg"
+description: hugo に favicon を設置する方法、利用したサービスなど。""
 draft: false
 ---
 
