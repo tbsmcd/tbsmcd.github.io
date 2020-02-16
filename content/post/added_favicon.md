@@ -8,6 +8,7 @@ draft: false
 
 ## 元画像の準備
 ![アイコン作成](/images/icon_mono.jpg)
+  
 Twitter などで使っているアイコンを白黒で作り直した。今回は [Piskel](https://www.piskelapp.com/) を利用した。
 
 ## favicon 化
