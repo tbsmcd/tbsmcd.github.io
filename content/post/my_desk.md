@@ -3,7 +3,6 @@ title: "テックブログに載らない作業環境"
 date: 2020-02-06T22:45:20+09:00
 tags: ["日記"]
 archives: ["2020-02"]
-image: "/images/desk.JPG"
 draft: false
 ---
 
