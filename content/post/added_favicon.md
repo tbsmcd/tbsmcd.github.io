@@ -1,8 +1,6 @@
 ---
 title: "hugo に favicon を追加したメモ"
 date: 2020-02-16T21:14:13+09:00
-image: "/images/icon_mono.jpg"
-description: "hugo で favicon を設置した際のメモ、利用したサービス、編集した layout など。"
 tags: ["hugo"]
 archives: ["2020-02"]
 draft: false
