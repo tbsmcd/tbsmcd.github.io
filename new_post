@@ -1,0 +1,3 @@
+#!/bin/bash
+
+hugo new post/${1}/_index.md && mkdir content/post/${1}/images

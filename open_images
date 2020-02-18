@@ -1,0 +1,3 @@
+#!/bin/bash
+
+open content/post/${1}/images
