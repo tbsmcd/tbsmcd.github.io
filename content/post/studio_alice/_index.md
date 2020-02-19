@@ -6,7 +6,7 @@ archives: ["2020-02"]
 draft: false
 ---
 
-![レシート](/images/studio.jpg)
+{{<img_800 src="studio.jpg" alt="レシート"> }}
 
 🤔
 
