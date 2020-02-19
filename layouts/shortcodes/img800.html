@@ -1,4 +1,4 @@
-{{ $original := .Page.Resource.GetMatch (.Get "name") }}
+{{ $original := .Page.Resource.GetMatch (.Get "src") }}
 {{ if $original }}
 	{{ $resized := $original.Fit "800x" }}
 	<img src="{{ $resized.RelPermalink }}" alt="{{ .Get "alt" }}">
