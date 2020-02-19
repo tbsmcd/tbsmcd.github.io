@@ -3,10 +3,13 @@ title: "スタジオアリスの撮影料（3000円）無料券をもらった�
 date: 2020-02-09T21:40:13+09:00
 tags: ["日記"]
 archives: ["2020-02"]
+resources:
+- name: studio
+  src: images/studio.jpg
 draft: false
 ---
 
-{{<img800 src="images/studio.jpg" alt="レシート">}}
+{{<img800 name="studio" alt="レシート">}}
 
 🤔
 
