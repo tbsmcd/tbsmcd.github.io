@@ -20,7 +20,7 @@ draft: false
 
 上の記事を簡単に説明すると、 Page Resource で扱える画像はリサイズできる。
 
-### Resource?
+### Resource とは
 従来
 
 ```
@@ -78,8 +78,7 @@ draft: false
 │   └── profile.md
 ```
 
-という感じでまずは画像を記事ごとに保持する。そうすると画像を Resource として扱えるようになる。それはどういうことかというと……
-
+という感じでまずは画像を記事ごとに保持する。そうすると画像を Resource として扱えるようになる。そうすると、Image Processing が使えるようになる。
 ## shortcode
 
 以下のような shortcode を用意する
@@ -96,12 +95,11 @@ draft: false
 {{ end }}
 ```
 
-このような shortcode を用意し、`*.md` の中でファイル名と同名で呼べば良い。
+`Resize "800x"` の部分で幅800を指定している。例えば幅400縦200の画像なら `Resize "400x200"` だし、縦300の画像なら `Resize "x300"` となる。`q90` というのは jpeg のクオリティ。このあたりは上記公式ドキュメントを読めば分かるだろう。
+
+……と、このような shortcode を用意し、`*.md` の中でファイル名と同名で呼べば良い。
 
 [例えばこんな感じで](https://github.com/tbsmcd/tbsmcd.github.io/blob/08924e10335127f7de076978aa49fed5ec3b2f8f/content/post/studio_alice/index.md)
 
 shortcode の解説は後日別記事で行う（かもしれない）（いま酒飲んでて後のことはよく分からない）（期待しないで）。
-
-## まとめ
-以上で画像の最適化（リサイズ）の方法は説明出来たと思う。不明点は上記公式ドキュメントで学べばよいだろう。
 
