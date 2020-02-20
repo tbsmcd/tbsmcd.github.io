@@ -98,7 +98,7 @@ draft: false
 
 このような shortcode を用意し、`*.md` の中でファイル名と同名で呼べば良い。
 
-[ex.](https://github.com/tbsmcd/tbsmcd.github.io/blob/08924e10335127f7de076978aa49fed5ec3b2f8f/content/post/studio_alice/index.md)
+[例えばこんな感じで](https://github.com/tbsmcd/tbsmcd.github.io/blob/08924e10335127f7de076978aa49fed5ec3b2f8f/content/post/studio_alice/index.md)
 
 shortcode の解説は後日別記事で行う（かもしれない）（いま酒飲んでて後のことはよく分からない）（期待しないで）。
 
