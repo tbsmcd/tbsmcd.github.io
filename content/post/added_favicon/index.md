@@ -9,7 +9,7 @@ draft: false
 ---
 
 ## 元画像の準備
-{{< img400x src="icon_mono.png" alt="アイコン作成" >}}
+{{< img400x src="icon_mono.jpg" alt="アイコン作成" >}}
   
 Twitter などで使っているアイコンを白黒で作り直した。今回は [Piskel](https://www.piskelapp.com/) を利用した。
 
