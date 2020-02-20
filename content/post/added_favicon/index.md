@@ -14,7 +14,7 @@ draft: false
 Twitter などで使っているアイコンを白黒で作り直した。今回は [Piskel](https://www.piskelapp.com/) を利用した。
 
 ## favicon 化
-{{< img src="icon_gen.jpg" alt="アイコン変換">}}
+{{< img800x src="icon_gen.jpg" alt="アイコン変換">}}
 [Favicon & App Icon Generator](https://www.favicon-generator.org/) を利用した。サイト名から分かるとおり、 favicon だけではなくスマートフォン用の App Icon も作成してくれるし、画像のように `<head>` 内のコードまで用意してくれるから頭を使わなくて良い。
 
 ## Head にコードを追加
