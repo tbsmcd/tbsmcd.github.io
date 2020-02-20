@@ -97,12 +97,10 @@ draft: false
 ```
 
 このような shortcode を用意し、`*.md` の中でファイル名と同名で呼べば良い。
-shortcode の解説は後日別記事で行う（かもしれない）（いま酒飲んでて後のことはよく分からない）。
 
-```html
-# shortcode はファイルと同名で呼び出す
-{{< img800x src="icon_gen.jpg" alt="アイコン変換">}} 
-```
+[ex.](https://github.com/tbsmcd/tbsmcd.github.io/blob/08924e10335127f7de076978aa49fed5ec3b2f8f/content/post/studio_alice/index.md)
+
+shortcode の解説は後日別記事で行う（かもしれない）（いま酒飲んでて後のことはよく分からない）（期待しないで）。
 
 ## まとめ
 以上で画像の最適化（リサイズ）の方法は説明出来たと思う。不明点は上記公式ドキュメントで学べばよいだろう。
