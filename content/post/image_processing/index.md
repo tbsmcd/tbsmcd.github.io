@@ -7,9 +7,11 @@ archives: ["2020-02"]
 draft: false
 ---
 
-ex.
-- [テックブログに載らない作業環境](https://tbsmcd.net/post/my_desk/)
-- [スタジオアリスの撮影料（3000円）無料券をもらったので行った](https://tbsmcd.net/post/studio_alice/)
+実際にこの作業をおこなった記事
+- [Befoer](https://github.com/tbsmcd/tbsmcd.github.io/blob/a265d287fc5912d76d3d86b8c4b278d228a4e439/content/post/studio_alice.md)
+- [After](https://github.com/tbsmcd/tbsmcd.github.io/blob/source/content/post/studio_alice/index.md)
+
+
 
 ## ブログを軽くしたい
 [林田ドットオンライン](https://hayashida.online/)というまあまあ狂ったブログがあり、これはペパボの同僚の手になるものだけど、とにかく異常に軽い。WordPress でこれだけ軽いのだから、 hugo ならもっと軽くなるはず。なのでこのブログも軽量路線で行こうという話。
@@ -22,9 +24,9 @@ ex.
 - [Image Processing | Hugo](https://gohugo.io/content-management/image-processing/)
 - [Page Resources | Hugo](https://gohugo.io/content-management/page-resources/)
 
-上の記事を簡単に説明すると、画像を Page Resource で扱うようにすると画像はリサイズできることがわかる。
+上の記事を読むと、画像を Page Resource として扱うようにすると画像はリサイズできることがわかる。
 
-### Resource とは
+### Resource として扱う？
 従来
 
 ```
@@ -87,7 +89,7 @@ ex.
 
 以下のような shortcode を用意する
 
-`/layouts/shortcodes/img800x.html`
+/layouts/shortcodes/img800x.html
 ```html
 {{ $src := .Get "src" }}
 {{ $original := .Page.Resources.GetMatch $src }}
