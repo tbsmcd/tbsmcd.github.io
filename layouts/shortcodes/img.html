@@ -1,5 +1,7 @@
 {{ $src := .Get "src" }}
 {{ $original := .Page.Resources.GetMatch $src }}
 {{ if $original }}
+	<a href="{{ $original.RelPermalink }}">
 	<img src="{{ $original.RelPermalink }}" alt="{{ .Get "alt" }}">
+	</a>
 {{ end }}
