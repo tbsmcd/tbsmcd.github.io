@@ -85,7 +85,7 @@ draft: false
 以下のような shortcode を用意する
 
 `/layouts/shortcodes/img800x.html`
-```html
+```
 {{ $src := .Get "src" }}
 {{ $original := .Page.Resources.GetMatch $src }}
 {{ if $original }}
@@ -97,8 +97,9 @@ draft: false
 ```
 
 このような shortcode を用意し、`*.md` の中でファイル名と同名で呼べば良い。
+shortcode の解説は後日別記事で行う（かもしれない）（いま酒飲んでて後のことはよく分からない）。
 
-```md
+```
 {{< img800x src="icon_gen.jpg" alt="アイコン変換">}} 
 ```
 
