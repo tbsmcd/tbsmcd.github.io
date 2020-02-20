@@ -1,7 +1,7 @@
 ---
 title: "hugo で画像を最適化して出力する"
 description: hugo で大きすぎる画像を最適化して表示する方法。shortcode の使い方など。"
-date: 2020-02-20T23:54:01+09:00
+date: 2020-02-21T00:54:01+09:00
 tags: ["hugo"]
 archives: ["2020-02"]
 draft: false
