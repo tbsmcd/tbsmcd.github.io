@@ -8,8 +8,8 @@ draft: false
 ---
 
 実際にこの作業をおこなった記事
-- [Befoer](https://github.com/tbsmcd/tbsmcd.github.io/blob/a265d287fc5912d76d3d86b8c4b278d228a4e439/content/post/studio_alice.md)
-- [After](https://github.com/tbsmcd/tbsmcd.github.io/blob/source/content/post/studio_alice/index.md)
+
+[Befoer](https://github.com/tbsmcd/tbsmcd.github.io/blob/a265d287fc5912d76d3d86b8c4b278d228a4e439/content/post/studio_alice.md) [After](https://github.com/tbsmcd/tbsmcd.github.io/blob/source/content/post/studio_alice/index.md)
 
 
 
