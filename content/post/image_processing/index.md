@@ -22,7 +22,7 @@ ex.
 - [Image Processing | Hugo](https://gohugo.io/content-management/image-processing/)
 - [Page Resources | Hugo](https://gohugo.io/content-management/page-resources/)
 
-上の記事を簡単に説明すると、 Page Resource で扱える画像はリサイズできる。
+上の記事を簡単に説明すると、画像を Page Resource で扱うようにすると画像はリサイズできることがわかる。
 
 ### Resource とは
 従来
@@ -82,7 +82,7 @@ ex.
 │   └── profile.md
 ```
 
-という感じでまずは画像を記事ごとに保持する。そうすると画像を Resource として扱えるようになる。そうすると、Image Processing が使えるようになる。
+という感じでまずは画像を記事ごとに保持する。そうすると画像を Resource として扱えるようになり、Image Processing が使えるようになる。
 ## shortcode
 
 以下のような shortcode を用意する
