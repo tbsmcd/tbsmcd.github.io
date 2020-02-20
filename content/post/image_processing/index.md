@@ -7,6 +7,10 @@ archives: ["2020-02"]
 draft: false
 ---
 
+ex.
+- [テックブログに載らない作業環境](https://tbsmcd.net/post/my_desk/)
+- [スタジオアリスの撮影料（3000円）無料券をもらったので行った](https://tbsmcd.net/post/studio_alice/)
+
 ## ブログを軽くしたい
 [林田ドットオンライン](https://hayashida.online/)というまあまあ狂ったブログがあり、これはペパボの同僚の手になるものだけど、とにかく異常に軽い。WordPress でこれだけ軽いのだから、 hugo ならもっと軽くなるはず。なのでこのブログも軽量路線で行こうという話。
 
