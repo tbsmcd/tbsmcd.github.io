@@ -7,7 +7,7 @@ image: "/images/desk.JPG"
 draft: false
 ---
 
-![My Desk](/images/desk.JPG)
+{{< img800x src="desk.JPG" alt="デスク">}}
 
 ## あまりきれいでもないし整理もされていない
 

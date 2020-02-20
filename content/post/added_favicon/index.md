@@ -9,12 +9,12 @@ draft: false
 ---
 
 ## 元画像の準備
-![アイコン作成](/images/icon_mono.jpg)
+{{< img400x src="icon_mono.png" alt="アイコン作成">}}
   
 Twitter などで使っているアイコンを白黒で作り直した。今回は [Piskel](https://www.piskelapp.com/) を利用した。
 
 ## favicon 化
-![アイコン変換](/images/icon_gen.jpg)
+{{< img src="icon_gen.jpg" alt="アイコン変換">}}
 [Favicon & App Icon Generator](https://www.favicon-generator.org/) を利用した。サイト名から分かるとおり、 favicon だけではなくスマートフォン用の App Icon も作成してくれるし、画像のように `<head>` 内のコードまで用意してくれるから頭を使わなくて良い。
 
 ## Head にコードを追加
