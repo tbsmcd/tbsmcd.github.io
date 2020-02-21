@@ -105,5 +105,5 @@ shortcode の解説は後日別記事で行う（かもしれない）（いま�
 
 ### 実際にこの作業をおこなった記事
 
-![これ](/post/studio_alice/)とか![これ](/post/added_favicon/)とか。  
+[これ](/post/studio_alice/)とか[これ](/post/added_favicon/)とか。  
 画像の再配置は全ページについて行った。
