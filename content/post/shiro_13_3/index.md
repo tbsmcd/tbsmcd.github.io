@@ -20,3 +20,7 @@ draft: false
 
   
 なお、小泉進次郎環境大臣の父君もこの言葉を[座右の銘としていたらしい](http://www.kantei.go.jp/jp//koizumiprofile/1_sinnen.html)。反省はしているが反省が反省と反省に……よく分からないので、父上に言葉の意味を訊いてきて欲しい。
+
+  
+  
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=tbsmcd-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=4003320212&linkId=7dd1950eafa70558110f4039a831d669"></iframe>
