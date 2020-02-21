@@ -6,13 +6,6 @@ tags: ["hugo"]
 archives: ["2020-02"]
 draft: false
 ---
-
-実際にこの作業をおこなった記事
-
-[Befoer](https://github.com/tbsmcd/tbsmcd.github.io/blob/a265d287fc5912d76d3d86b8c4b278d228a4e439/content/post/studio_alice.md) [After](https://github.com/tbsmcd/tbsmcd.github.io/blob/source/content/post/studio_alice/index.md)
-
-
-
 ## ブログを軽くしたい
 [林田ドットオンライン](https://hayashida.online/)というまあまあ狂ったブログがあり、これはペパボの同僚の手になるものだけど、とにかく異常に軽い。WordPress でこれだけ軽いのだから、 hugo ならもっと軽くなるはず。なのでこのブログも軽量路線で行こうという話。
 
@@ -109,3 +102,8 @@ draft: false
 
 shortcode の解説は後日別記事で行う（かもしれない）（いま酒飲んでて後のことはよく分からない）（期待しないで）。
 
+
+### 実際にこの作業をおこなった記事
+
+![これ](/post/studio_alice/)とか![これ](/post/added_favicon/)とか。  
+画像の再配置は全ページについて行った。
