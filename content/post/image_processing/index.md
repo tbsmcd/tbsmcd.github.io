@@ -37,6 +37,7 @@ draft: false
 │   │   └── syntax_highlighting.md
 │   └── profile.md
 （略）
+├── static
 │   ├── images
 │   │   ├── desk.JPG
 │   │   ├── icon_gen.jpg
@@ -107,3 +108,7 @@ shortcode の解説は後日別記事で行う（かもしれない）（いま�
 
 [これ](/post/studio_alice/)とか[これ](/post/added_favicon/)とか。  
 画像の再配置は全ページについて行った。
+
+## 補足
+
+OGP タグについては[こちら](/post/ogp_using_resource)
