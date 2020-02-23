@@ -1,3 +1,8 @@
 #!/bin/bash
 
-hugo new post/${1}/index.md && open content/post/${1}
+echo 'create index.md'
+hugo new post/${1}/index.md
+echo 'done.'
+echo 'open article dir'
+open content/post/${1}
+vim content/post/${1}/index.md
