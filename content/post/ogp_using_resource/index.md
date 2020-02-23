@@ -15,7 +15,7 @@ draft: false
 
 /layouts/partials/head_custom.html
 
-```head_custom.htmlのdiff.html
+```
 < <meta property="og:image" content="{{if .Params.image}}https://tbsmcd.net{{.Params.image}}{{else}}https://tbsmcd.net/images/icon_mono.jpg{{end}}" />
 ---
 > {{ if .Params.image }}
