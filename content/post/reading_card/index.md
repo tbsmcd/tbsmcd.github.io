@@ -3,6 +3,7 @@ title: "Scrapbox で読書カードを作ってみる"
 date: 2020-02-10T23:16:13+09:00
 tags: ["日記", "読書"]
 archives: ["2020-02"]
+image: "card.jpg"
 draft: false
 ---
 {{< img800x src="card.jpg" alt="Scrapbox のスクリーンショット" >}}

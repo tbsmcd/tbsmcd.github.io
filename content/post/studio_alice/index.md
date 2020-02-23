@@ -4,6 +4,7 @@ date: 2020-02-09T21:40:13+09:00
 tags: ["日記"]
 archives: ["2020-02"]
 draft: false
+image: "studio.jpg"
 ---
 
 {{< img800x src="studio.jpg" alt="レシート" >}}
