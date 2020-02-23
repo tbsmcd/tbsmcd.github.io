@@ -5,6 +5,7 @@ date: 2020-02-23T22:30:12+09:00
 tags: ["日記", "ワークアウト"]
 archives: ["2020-02"]
 draft: false
+image: "raspi.jpg"
 ---
 
 {{< img400x src="sensor.jpg" alt="センサー" >}}
