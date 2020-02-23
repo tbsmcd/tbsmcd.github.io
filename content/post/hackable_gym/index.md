@@ -8,8 +8,8 @@ draft: false
 image: "raspi.jpg"
 ---
 
-{{< img400x src="sensor.jpg" alt="センサー" >}}
+{{< img600x src="sensor.jpg" alt="センサー" >}}
   
-{{< img400x src="raspi.jpg" alt="ラズパイ" >}}
+{{< img600x src="raspi.jpg" alt="ラズパイ" >}}
 
 通っているジムが3月から24時間営業化になる。入退館管理には Raspberry Pi が使われるようだ。こういうシステムを導入する場合、ハードウェアごと借りるパケージになっていそうだけど、そうではないのかな？いずれにせよハックしてる感じがしてワクワクする。ジムの人が DIY しているとまでは思っていないけど。
