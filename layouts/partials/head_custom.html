@@ -24,7 +24,7 @@
 {{ if .Params.image }}
 {{ $src := .Params.image }}
 {{ $resource := .Page.Resources.GetMatch $src }}
-<meta property="og:image" content="https://tbsmcd.net{{ $resource.RelPermalink }}" />
+<meta property="og:image" content="https://tbsmcd.net{{ $resource.Permalink }}" />
 {{ else }}
 <meta property="og:image" content="https://tbsmcd.net/images/icon_mono.jpg" />
 {{ end }}
