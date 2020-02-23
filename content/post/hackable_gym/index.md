@@ -1,7 +1,6 @@
 ---
 title: "ハッカブル・ジム"
 description: "ジムの入退館管理に Raspberry Pi が使われてて良かった話"
-image: "raspi.jpg"
 date: 2020-02-23T22:30:12+09:00
 tags: ["日記", "ワークアウト"]
 archives: ["2020-02"]
