@@ -4,4 +4,4 @@
   {{- $.Scratch.Add "items" (dict "title" .Title "body" .Plain "url" .Permalink) -}}
 {{- end -}}
 
-{ "items": {{ $.Scratch.Get "items" | jsonify }} }
+{{ $.Scratch.Get "items" | jsonify }}
