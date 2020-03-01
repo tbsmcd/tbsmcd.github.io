@@ -31,4 +31,4 @@ archive = "archives"
 unsafe = true
 
 [outputs]
-home = ["html", "json"]
+home = ["html", "json", "rss"]
