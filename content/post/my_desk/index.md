@@ -35,6 +35,7 @@ BD 本体より絵コンテ集の方がデカい。絵コンテが本体。
 ### ヘッドセット
 ミーティングをオンラインで行うときにとても便利。ここでようやく仕事っぽい話題が出て終わる。
 
+（机に並んでる本）
 {{< raw >}}
 <a href="https://www.amazon.co.jp/%E7%B8%84%E6%96%87%E3%81%AE%E6%80%9D%E6%83%B3-%E8%AC%9B%E8%AB%87%E7%A4%BE%E7%8F%BE%E4%BB%A3%E6%96%B0%E6%9B%B8-%E7%80%AC%E5%B7%9D-%E6%8B%93%E9%83%8E/dp/4062884542/ref=as_li_ss_il?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&keywords=%E7%B8%84%E6%96%87%E3%81%AE%E6%80%9D%E6%83%B3&qid=1580998064&sr=8-1&linkCode=li2&tag=tbsmcd-22&linkId=346572a674bd90202bb63e814a05d495&language=ja_JP" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4062884542&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=tbsmcd-22&language=ja_JP" ></a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=tbsmcd-22&language=ja_JP&l=li2&o=9&a=4062884542" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
