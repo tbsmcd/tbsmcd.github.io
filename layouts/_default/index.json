@@ -1,0 +1,7 @@
+{{ $.Scratch.Add "items" slice }}
+
+{{- range where .Data.Pages "Section" "post" -}}
+  {{- $.Scratch.Add "items" (dict "title" .Title "contents" .Plain "url" .Permalink) -}}
+{{- end -}}
+
+{ "items": {{ $.Scratch.Get "items" | jsonify }} }
