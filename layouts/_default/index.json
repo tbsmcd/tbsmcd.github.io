@@ -1,7 +1,7 @@
 {{ $.Scratch.Add "items" slice }}
 
-{{- range where .Data.RegularPages -}}
-  {{- $.Scratch.Add "items" (dict "title" .Title "contents" .Plain "url" .Permalink) -}}
+{{- range .Site.RegularPages -}}
+  {{- $.Scratch.Add "items" (dict "title" .Title "body" .Plain "url" .Permalink) -}}
 {{- end -}}
 
 { "items": {{ $.Scratch.Get "items" | jsonify }} }
