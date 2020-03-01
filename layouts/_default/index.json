@@ -1,6 +1,6 @@
 {{ $.Scratch.Add "items" slice }}
 
-{{- range where .Data.Pages "Section" "post" -}}
+{{- range where .Data.RegularPages -}}
   {{- $.Scratch.Add "items" (dict "title" .Title "contents" .Plain "url" .Permalink) -}}
 {{- end -}}
 
