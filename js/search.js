@@ -28,7 +28,7 @@ new Vue({
     }
   },
   mounted(){
-    axios('https://tbsmcd.net/index.json)
+    axios('https://tbsmcd.net/index.json')
        .then(data => {
           this.original = data.data
           this.list = this.original
