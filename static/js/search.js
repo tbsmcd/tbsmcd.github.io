@@ -30,7 +30,7 @@ new Vue({
   mounted(){
     axios('https://tbsmcd.net/index.json')
        .then(data => {
-          this.original = data.data
+          this.original = data
           this.list = this.original
           this.buildIndex()
       })
