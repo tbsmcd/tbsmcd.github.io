@@ -6,6 +6,7 @@ draft: false
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.28/vue.min.js"></script>
 <script src="/js/lunr.js"></script>
 <script src="/js/lunr.stemmer.support.js"></script>
+<script src="/js/tinyseg.js"></script>
 <script src="/js/lunr.ja.js"></script>
 <script src="/js/lunr.multi.js"></script>
 <script src="/js/search.js"></script>
