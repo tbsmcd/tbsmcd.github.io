@@ -4,6 +4,7 @@ draft: false
 ---
 {{< raw >}}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.28/vue.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="/js/lunr.js"></script>
 <script src="/js/lunr.stemmer.support.js"></script>
 <script src="/js/tinyseg.js"></script>
