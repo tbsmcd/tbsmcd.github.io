@@ -27,10 +27,10 @@ new Vue({
        searchIndex:null
     }
   },
-  mounted(){
+  created(){
     axios.get('https://tbsmcd.net/index.json')
-       .then(data => {
-          this.original = data
+       .then(response => {
+          this.original = response.data
           this.list = this.original
           this.buildIndex()
       })
