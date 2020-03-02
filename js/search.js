@@ -28,7 +28,7 @@ new Vue({
     }
   },
   mounted(){
-    axios('https://jsonplaceholder.typicode.com/comments')
+    axios('https://tbsmcd.net.index.json)
        .then(data => {
           this.original = data.data
           this.list = this.original
