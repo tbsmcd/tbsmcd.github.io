@@ -1,7 +1,9 @@
 {{ $.Scratch.Add "items" slice }}
 
 {{- range .Site.RegularPages -}}
+  {{ if in .Permalink "/post/" }}
   {{- $.Scratch.Add "items" (dict "title" .Title "body" .Plain "url" .Permalink) -}}
+  {{ end }}
 {{- end -}}
 
 {{ $.Scratch.Get "items" | jsonify }}
