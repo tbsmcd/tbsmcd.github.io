@@ -9,8 +9,8 @@ draft: false
   <mylist :list="list"></mylist>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.28/vue.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.28/vue.min.js"></script>
 <script src="/js/lunr.js"></script>
 <script src="/js/lunr.stemmer.support.js"></script>
 <script src="/js/tinyseg.js"></script>
