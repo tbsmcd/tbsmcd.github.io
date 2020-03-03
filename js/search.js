@@ -1,9 +1,3 @@
-var lunr = require('./lunr.js');
-require('./lunr.stemmer.support.js')(lunr);
-require('./tinyseg.js')(lunr);
-require('./lunr.ja.js')(lunr);
-require('./lunr.multi.js')(lunr);
-
 Vue.component('mysearchbtn', {
 	template:`<div>
     <input type="text" placeholder="type to search"
@@ -57,8 +51,8 @@ new Vue({
 		buildIndex(){
 			var documents = this.original
 			this.searchIndex = lunr(function () {
-				this.use(lunr.multiLanguage('en', 'ja'))
-				this.ref('id')
+				this.use(lunr.ja)
+				this.ref('id'
 				this.field('body')
 				this.field('title')
 
