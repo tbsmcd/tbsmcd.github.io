@@ -52,7 +52,6 @@ new Vue({
 			var documents = this.original
 			this.searchIndex = lunr(function () {
 				this.use(lunr.ja)
-				this.use(lunr.en)
 				this.ref('id')
 				this.field('body')
 				this.field('title')
