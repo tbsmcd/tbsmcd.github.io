@@ -10,7 +10,7 @@ Vue.component('mysearchbtn', {
 
 Vue.component('mylist', {
 	template:`<ul>
-    <li v-for="item in list">{{item.title}}</li>
+    <li v-for="item in list"><a href="{{item.url}}">{{item.title}}</a></li>
 </ul>`,
 	props:['list']
 })
