@@ -17,7 +17,6 @@ draft: false
 <script src="/js/tinyseg.js"></script>
 <script src="/js/lunr.ja.js"></script>
 <script src="/js/lunr.multi.js"></script>
-
 -->
 <script src="/js/search.js"></script>
 
