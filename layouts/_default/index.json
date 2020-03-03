@@ -2,7 +2,7 @@
 
 {{- range .Site.RegularPages -}}
   {{ if in .Permalink "/post/" }}
-  {{- $.Scratch.Add "items" (dict "title" .Title "body" .Plain "url" .Permalink) -}}
+  {{- $.Scratch.Add "items" (dict "id" .Key "title" .Title "body" .Plain "url" .Permalink) -}}
   {{ end }}
 {{- end -}}
 
