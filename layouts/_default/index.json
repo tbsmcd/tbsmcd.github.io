@@ -1,8 +1,10 @@
 {{ $.Scratch.Add "items" slice }}
 
+{{ $counter := 0 }}
 {{- range .Site.RegularPages -}}
   {{ if in .Permalink "/post/" }}
-  {{- $.Scratch.Add "items" (dict "id" .Key "title" .Title "body" .Plain "url" .Permalink) -}}
+  {{ $counter = add $counter 1 }}
+  {{- $.Scratch.Add "items" (dict "id" $counter "title" .Title "body" .Plain "url" .Permalink) -}}
   {{ end }}
 {{- end -}}
 
