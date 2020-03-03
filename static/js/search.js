@@ -27,7 +27,7 @@ new Vue({
        searchIndex:null
     }
   },
-  created(){
+  mounted(){
     axios.get('https://tbsmcd.net/index.json')
        .then(response => {
           this.original = response.data
