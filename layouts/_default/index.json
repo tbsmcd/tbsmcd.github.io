@@ -4,7 +4,7 @@
 {{- range .Site.RegularPages -}}
   {{ if in .Permalink "/post/" }}
   {{ $counter = add $counter 1 }}
-  {{- $.Scratch.Add "items" (dict "id" $counter "title" .Title "body" .Plain "url" .Permalink) -}}
+  {{- $.Scratch.Add "items" (dict "id" $counter "title" .Title "body" .Plain "url" .Permalink "date" .Date.Format "2006-01-02") -}}
   {{ end }}
 {{- end -}}
 
