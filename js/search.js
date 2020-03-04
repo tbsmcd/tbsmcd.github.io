@@ -51,7 +51,7 @@ new Vue({
 		buildIndex(){
 			var documents = this.original
 			this.searchIndex = lunr(function () {
-				this.use(lunr.ja)
+				this.use(lunr.multiLanguage('en', 'jp'))
 				this.ref('id')
 				this.field('body')
 				this.field('title')

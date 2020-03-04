@@ -48,13 +48,9 @@
                     searchPipeline.push(lunr.stemmer);
                 } else {
                     wordCharacters += lunr[languages[i]].wordCharacters;
-                    if (lunr[languages[i]].stopWordFilter) {
-                        pipeline.unshift(lunr[languages[i]].stopWordFilter);
-                    }
-                    if (lunr[languages[i]].stemmer) {
-                        pipeline.push(lunr[languages[i]].stemmer);
-                        searchPipeline.push(lunr[languages[i]].stemmer);
-                    }
+                    pipeline.unshift(lunr[languages[i]].stopWordFilter);
+                    pipeline.push(lunr[languages[i]].stemmer);
+                    searchPipeline.push(lunr[languages[i]].stemmer);
                 }
             };
             var multiTrimmer = lunr.trimmerSupport.generateTrimmer(wordCharacters);
