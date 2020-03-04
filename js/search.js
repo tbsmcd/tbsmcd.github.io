@@ -36,7 +36,7 @@ new Vue({
 			})
 
 		this.$watch('search', () => {
-			this.resuls = this.searchIndex.search(this.search)
+			this.resuls = this.searchIndex.search(`*${this.search}*`)
 
 			this.list = []
 			this.resuls.forEach(d => {
@@ -51,7 +51,7 @@ new Vue({
 		buildIndex(){
 			var documents = this.original
 			this.searchIndex = lunr(function () {
-				this.use(lunr.multiLanguage('jp', 'en'))
+				this.use(lunr.ja)
 				this.ref('id')
 				this.field('body')
 				this.field('title')
