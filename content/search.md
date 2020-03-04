@@ -5,7 +5,7 @@ draft: false
 {{< raw >}}
 <div id="app">
   <mysearchbtn :search.sync="search"></mysearchbtn>
-  <p>Number of results: {{list.length}}</p>
+  <p>Results: {{list.length}}</p>
   <mylist :list="list"></mylist>
 </div>
 
