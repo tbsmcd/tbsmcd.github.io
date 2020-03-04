@@ -1,6 +1,6 @@
 Vue.component('mysearchbtn', {
 	template:`<div>
-    <input type="text" placeholder="type to search"
+    <input type="text" placeholder="Keyword"
       v-model="search"
       @input="$emit('update:search', $event.target.value)" />
 </div>`,
