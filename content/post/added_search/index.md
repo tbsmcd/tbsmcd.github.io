@@ -10,8 +10,8 @@ draft: true
 
 {{< img src="lrv.png" alt="月面バギーのイラストです" >}}
 
-## ページ内で JavaScript を使うための shortcode を作成
-hugo では Markdown で記事を書く。たとえば Github などでは Markdown 内で html を混在して書けるが、 hugo では事情が少し違う。たとえば Markdown 内に
+## ページ内で JavaScript を使うために生の html を書きたい
+hugo では Markdown で記事を書く。たとえば Github などでは Markdown 内に html を混在して書けるが、 hugo では事情が少し違う。たとえば Markdown 内に
 
 ```
 <a href="#"><img src="/img.jpg"></a>
@@ -25,5 +25,24 @@ hugo では Markdown で記事を書く。たとえば Github などでは Markd
 
 と出力され、たとえば Amazon のアフィリエイトなどを貼り付けると無駄な改行が入ってしまう。このままでは JavaScript でページを作る上で不都合があるので、生の html を出力するための shortcode を作成する。
 
+/layouts/shortcodes/raw.html でこんな風に書き、
 
+```
+{{ .Inner }}
+```
+
+あとは Markdown 中で
+
+```
+{{< raw >}}
+<a href="#"><img src="/img.jpg"></a>
+{{< /raw >}}
+```
+
+と html を囲えばそのままの html が出力されるようになる。
+
+
+## index.json を出力する
+
+JavaScript で全記事から全文検索をするので、全記事を検索するためのソースが必要だ。今回は index.json というファイルに出力するが、別に検索ページの `<script>` タグ内に出力しても良いだろう（記事が少なければ特に）。
 
