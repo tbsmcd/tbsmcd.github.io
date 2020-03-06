@@ -57,9 +57,9 @@ index.html
 {{ $items | jsonify }}
 ```
 
-単純に slice として定義した `$items` にページの内容を dict として追加していっている。`id` は今回のソースでは使用するというだけで、別に `url` を同じく用いてもよいだろうと思う（検証はしていないが）。ただ全ページを追加すると /profile/ や /search/ 自身まで対象となるので、リンクに `/post/` が含まれるページだけという条件をつけている。ループで組み立てた slice を `jsonfy` で json 化して出力している。
+単純に slice として定義した `$items` にページの内容を dict として追加していっている。`id` は今回のソースでは使用するというだけで、別に `url` を同じく用いてもよいだろうと思う（検証はしていないが）。何も考えず全ページを追加すると /profile/ や /search/ 自身まで対象となるので、リンクに `/post/` が含まれるページだけという条件をつけている（`if in .Permalink "/post/"`）。最終行ではループで組み立てた $items を `jsonfy` で json 化して出力している。
 
-同じようなことを解説しているページで .Scratch を使っているパターンがあるのだけど、このように単一ページで用いるだけの変数には必要のないものだと思われる。物事は単純に書いたほうがよいだろう。[ドキュメント](https://gohugo.io/functions/scratch/)には `allow for writable page- or shortcode-scoped variables.` とあるが、今回はスコープを超えるようなものでもない。
+同じようなことを解説しているページで .Scratch を使っているパターンがあるが、このように単一ページで用いるだけの変数には必要のないと思う。[ドキュメント](https://gohugo.io/functions/scratch/)には `allow for writable page- or shortcode-scoped variables.` とある。スコープをまたぐときに使うように読めるが、今回は関係ない。物事はシンプルに記述したほうが良いだろう。
 
 また config.toml にはこのように。
 
