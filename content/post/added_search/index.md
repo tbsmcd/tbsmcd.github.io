@@ -39,7 +39,7 @@ index.html
 
 ## index.json を出力する
 
-今回は [How to make a client-side search engine with Vue.js and Lunr.js - Fabio Franchino](https://fabiofranchino.com/blog/how-to-make-a-client-side-search-engine-with-vue-and-lunr/) の方法を~~パク~~踏襲して、まずは動かしてみる。リンク先のコードにおいて `axios` で読み込む json に相当する情報を hugo で出力する必要があるので、それを index.json とする。 /layouts/_default/index.json に layout を、config.toml に設定を追加すれば index.xml(RSS) のように出力することが出来る。
+今回は [How to make a client-side search engine with Vue.js and Lunr.js - Fabio Franchino](https://fabiofranchino.com/blog/how-to-make-a-client-side-search-engine-with-vue-and-lunr/) の方法を~~パク~~踏襲して、まずは動かしてみる。リンク先のコードにおいて `axios` で読み込む json に相当する情報を hugo で出力する必要があるので、それを index.json とする。 /layouts/_default/index.json に layout を、config.toml に設定を追加すれば index.xml (RSS)のように出力することが出来る。
 
 /layouts/_default/index.json
 ```
