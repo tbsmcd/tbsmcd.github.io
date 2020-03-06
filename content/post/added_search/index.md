@@ -34,10 +34,10 @@ index.html
 ```
 
 これを使えば Markdown 中で
-```hhml
-{{< raw >}}
+```html
+"{{< raw >}}
 <a href="#"><img src="/img.jpg"></a>
-{{< /raw >}}
+{{< /raw >}}"
 ```
 と書けば、そのままの html が出力される。
 
