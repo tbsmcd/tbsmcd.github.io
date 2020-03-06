@@ -3,7 +3,7 @@ gtag('js',new Date());gtag('config','UA-158035573-1');</script><meta charset=utf
 </code></pre></div><p>↓
 index.html</p><div class=highlight><pre class=chroma><code class=language-html data-lang=html><span class=p>&lt;</span><span class=nt>p</span><span class=p></span><span class=p>&gt;</span><span class=p>&lt;</span><span class=nt>a</span> <span class=na>href</span><span class=o>=</span><span class=s>&#34;#&#34;</span><span class=p></span><span class=p>&gt;</span><span class=p>&lt;</span><span class=nt>img</span> <span class=na>src</span><span class=o>=</span><span class=s>&#34;/img.jpg&#34;</span><span class=p></span><span class=p>&gt;</span><span class=p>&lt;</span><span class=p>/</span><span class=nt>a</span><span class=p>&gt;</span><span class=p>&lt;</span><span class=p>/</span><span class=nt>p</span><span class=p>&gt;</span>
 </code></pre></div><p>このように p タグで囲われた状態で出力されるため、たとえば Amazon のアフィリエイトを貼り付けると無駄な改行が入ってしまう。このままでは JavaScript でページを作る上で多少の不都合がある（表現が自由ではない）ので、生の html を出力する shortcode を作成する。</p><p>/layouts/shortcodes/raw.html</p><pre><code>{{ .Inner }}
-</code></pre><p>これを使えば Markdown 中で</p><pre><code>
+</code></pre><p>これを使えば Markdown 中で</p><pre><code class=language-hhml data-lang=hhml>
 <a href=#><img src=/img.jpg></a>
 
 
