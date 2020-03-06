@@ -10,39 +10,54 @@ draft: true
 
 {{< img src="lrv.png" alt="月面バギーのイラストです" >}}
 
-## ページ内で JavaScript を使うために生の html を書きたい
-hugo では Markdown で記事を書く。たとえば Github などでは Markdown 内に html を混在して書けるが、 hugo では事情が少し違う。たとえば Markdown 内に
+## 生の html を書きたい
+hugo では Markdown を使う。たとえば Github Markdown などでは html を混在して書けるが、 hugo では以下のようになる。
 
+index.md
 ```
 <a href="#"><img src="/img.jpg"></a>
 ```
 
-と書くと、
-
+index.html
 ```
 <p><a href="#"><img src="/img.jpg"></a></p>
 ```
 
-と出力され、たとえば Amazon のアフィリエイトなどを貼り付けると無駄な改行が入ってしまう。このままでは JavaScript でページを作る上で不都合があるので、生の html を出力するための shortcode を作成する。
+このように、p タグで囲われた状態で出力されるため Amazon のアフィリエイトなどを貼り付けると無駄な改行が入ってしまう。このままでは JavaScript でページを作る上で多少の不都合があるので、生の html を出力する shortcode を作成する。
 
-/layouts/shortcodes/raw.html でこんな風に書き、
-
+/layouts/shortcodes/raw.html
 ```
 {{ .Inner }}
 ```
 
-あとは Markdown 中で
-
+Markdown 中で
 ```
 {{< raw >}}
 <a href="#"><img src="/img.jpg"></a>
 {{< /raw >}}
 ```
 
-と html を囲えばそのままの html が出力されるようになる。
+と html を囲えばよい。
 
 
 ## index.json を出力する
 
-JavaScript で全記事から全文検索をするので、全記事を検索するためのソースが必要だ。今回は index.json というファイルに出力するが、別に検索ページの `<script>` タグ内に出力しても良いだろう（記事が少なければ特に）。
+今回は [How to make a client-side search engine with Vue.js and Lunr.js - Fabio Franchino](https://fabiofranchino.com/blog/how-to-make-a-client-side-search-engine-with-vue-and-lunr/) の方法を~~パク~~踏襲して、まずは動かしてみる。リンク先のコードにおいて `axios` で読み込む json に相当する情報を hugo で出力する必要があるので、それを index.json とする。 /layouts/_default/index.json に layout を、config.toml に設定を追加すれば index.xml(RSS) のように出力することが出来る。
 
+/layouts/_default/index.json
+```
+{{ $.Scratch.Add "items" slice }}
+
+{{ $counter := 0 }}
+{{- range .Site.RegularPages -}}
+  {{ if in .Permalink "/post/" }}
+  {{ $counter = add $counter 1 }}
+  {{ $date := .Date.Format "2006-01-02" }}
+  {{- $.Scratch.Add "items" (dict "id" $counter "title" .Title "body" .Plain "url" .Permalink "date" $date) -}}
+  {{ end }}
+{{- end -}}
+
+{{ $.Scratch.Get "items" | jsonify }}
+```
+
+`$.Scratch` は

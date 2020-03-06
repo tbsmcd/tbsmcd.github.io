@@ -1,12 +1,12 @@
-{{ $.Scratch.Add "items" slice }}
+{{ $items := slice }}
 
 {{ $counter := 0 }}
-{{- range .Site.RegularPages -}}
+{{ range .Site.RegularPages }}
   {{ if in .Permalink "/post/" }}
   {{ $counter = add $counter 1 }}
   {{ $date := .Date.Format "2006-01-02" }}
-  {{- $.Scratch.Add "items" (dict "id" $counter "title" .Title "body" .Plain "url" .Permalink "date" $date) -}}
+  {{ $items = $items | append (dict "id" $counter "title" .Title "body" .Plain "url" .Permalink "date" $date) }}
   {{ end }}
-{{- end -}}
+{{ end }}
 
-{{ $.Scratch.Get "items" | jsonify }}
+{{ $items | jsonify }}
