@@ -33,14 +33,9 @@ index.html
 {{ .Inner }}
 ```
 
-これを使えば Markdown 中で
-```html
-"{{< raw >}}
-<a href="#"><img src="/img.jpg"></a>
-{{< /raw >}}"
-```
-と書けば、そのままの html が出力される。
+[このように](https://raw.githubusercontent.com/tbsmcd/tbsmcd.github.io/d1fec30baee1b995c80a18ab6ae5baabd0f27425/content/post/my_desk/index.md)使える。
 
+参照: [Simple Shortcode to Insert Raw HTML in Hugo &middot; Ana Ulin](https://anaulin.org/blog/hugo-raw-html-shortcode/)
 
 ## index.json を出力する
 
