@@ -34,7 +34,7 @@ index.html
 ```
 
 これを使えば Markdown 中で
-```
+```hhml
 {{< raw >}}
 <a href="#"><img src="/img.jpg"></a>
 {{< /raw >}}
