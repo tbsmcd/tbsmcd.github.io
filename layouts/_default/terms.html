@@ -2,10 +2,9 @@
 <h1>{{ .Title }}</h1>
 
 <ul class="terms">
+{{ $terms := .Data.Terms }}
 {{ if eq .Title "Archives" }}
-  {{ $terms := .Data.Terms.Reverse }}
-{{ else }}
-  {{ $terms := .Data.Terms }}
+  {{ $terms = .Data.Terms.Reverse }}
 {{ end }}
   {{ range $terms }}
   <li>
