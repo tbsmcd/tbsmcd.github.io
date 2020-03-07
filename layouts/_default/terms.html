@@ -3,10 +3,11 @@
 
 <ul class="terms">
 {{ if eq .Title "Archives" }}
-  {{ range .Data.Terms.Reverse }}
+  {{ $terms := .Data.Terms.Reverse }}
 {{ else }}
-  {{ range .Data.Terms }}
+  {{ $terms := .Data.Terms }}
 {{ end }}
+  {{ range $terms }}
   <li>
     <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> ({{ .Count }})
   </li>
