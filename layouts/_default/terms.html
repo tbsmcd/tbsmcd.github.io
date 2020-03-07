@@ -2,19 +2,11 @@
 <h1>{{ .Title }}</h1>
 
 <ul class="terms">
-{{ if eq .Title "Archives" }}
-  {{ range .Data.Terms.Reverse }}
+  {{ range .Data.Terms.Alphabetical.Reverse }}
   <li>
     <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> ({{ .Count }})
   </li>
   {{ end }}
 </ul>
-{{ else }}
-  {{ range .Data.Terms }}
-  <li>
-    <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> ({{ .Count }})
-  </li>
-  {{ end }}
-</ul>
-{{ end }}
+
 {{ partial "footer.html" . }}
