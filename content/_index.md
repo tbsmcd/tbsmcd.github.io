@@ -4,7 +4,7 @@ title: Index
 
 # Index
 
-## Satus
+## Status
 - [『じゃりン子チエ』Kindle 版1-10巻無料](https://amzn.to/38z3twX)
 	- 新訂版なので、単行本だと11巻か12巻までか？
 	- 同志識者曰く、10巻までにエッセンスの85%が詰まっている
