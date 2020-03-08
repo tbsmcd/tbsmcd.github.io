@@ -10,7 +10,7 @@ draft: false
 
 ## Terms の昇順/降順
 
-hugo の Terms ……このブログに於いては [/tags/](/tags/) と [/archives/](/archives/) について、通常のページでは辞書的に昇順で表示したいが、/archives/ については新しい順になるよう降順で表示したい。そこで [/layouts/_default/terms.html](https://github.com/tbsmcd/tbsmcd.github.io/blob/2be3271d4e1153febfa49c4af5a82736f9354a97/layouts/_default/terms.html) を設定したのだけど、もっとスマートな書き方があるのではないかと迷っている。
+hugo の Terms ……このブログに於いては [/tags/](/tags/) と [/archives/](/archives/) について、通常のページでは辞書的に昇順で表示したいが、/archives/ については新しい順になるよう降順で表示したい。そこで [/layouts/_default/terms.html](https://github.com/tbsmcd/tbsmcd.github.io/blob/2be3271d4e1153febfa49c4af5a82736f9354a97/layouts/_default/terms.html) を設定したのだけど、もっとスマートな書き方があるのではないかと迷っている。特に `{{ if }} 〜 {{ else }}` で重複して html を書いてるのどうかと思うんだよなあ……
 
 ```html
 {{ partial "header.html" . }}
