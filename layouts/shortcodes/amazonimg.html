@@ -1,1 +1,1 @@
-{{ .Inner | replaceRE "<[^<>]+https://ir-jp.amazon-adsystem.com[^<>]+>" ""  }}
+{{ .Inner | replaceRE "<[^<>]+https://ir-jp.amazon-adsystem.com[^<>]+>" "" | htmlUnescape }}
