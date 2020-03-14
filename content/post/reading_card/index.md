@@ -12,9 +12,7 @@ draft: false
 学生の頃に読んだ呉智英『読書家の新技術』をいま思い出した。本書技術編には読書カードの作り方が書かれている。読書カードとはその本の全体像を書き、あとで読み返すときに参考にするもの。読書カードが溜まったら項目カードを作る。項目カードはいわば個人的な索引で、その項目のカードを見れば言及している本を探せるようになる。
 これが読書カードの概要であるが、かつて読んだ『読書家の新技術』文庫は手元になく北大恵迪寮のどこかに埋もれているはずで、この記述の正確性は担保できない（いまから中古を注文する→注文した！）。
 
-{{< amazonimg >}}
 <a href="https://www.amazon.co.jp/%E8%AA%AD%E6%9B%B8%E5%AE%B6%E3%81%AE%E6%96%B0%E6%8A%80%E8%A1%93-%E6%9C%9D%E6%97%A5%E6%96%87%E5%BA%AB-%E5%91%89-%E6%99%BA%E8%8B%B1/dp/4022604697/ref=as_li_ss_il?ie=UTF8&linkCode=li2&tag=tbsmcd-22&linkId=1d4d1c2174d7d72c07fdd32d115e25c6&language=ja_JP" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4022604697&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=tbsmcd-22&language=ja_JP" ></a>
-{{< /amazonimg >}}
 
 
 ## 自分なりの応用法
