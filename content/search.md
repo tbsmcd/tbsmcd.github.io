@@ -3,7 +3,7 @@ title: "Search"
 draft: false
 ---
 {{< raw >}}
-<div id="app">
+<div id="app" v-cloak>
   <mysearchbtn :search.sync="search"></mysearchbtn>
   <p>Results: {{list.length}}</p>
   <mylist :list="list"></mylist>
