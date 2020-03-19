@@ -37,7 +37,7 @@ USB 接続のキーボード、マウスなどは家に転がっているもの�
 
 ## OS(Raspbian) ダウンロード
 
-[Download Raspbian for Raspberry Pi](https://www.raspberrypi.org/downloads/raspbian/) に3種類あり、大（デスクトップ環境に LibreOffice などいろいろ入ってる）中（デスクトップ環境がある）小（CUI）という感じ。今回は中（Raspbian Buster with desktop）を選んだ。ただしここから直接ダウンロードすると数時間かかるようだったので、国内のミラーからダウンロードした。
+[Download Raspbian for Raspberry Pi](https://www.raspberrypi.org/downloads/raspbian/) に3種類あり、大（デスクトップ環境に LibreOffice や多くの開発環境などいろいろ入ってる）中（デスクトップの環境……ブラウザや多少の開発環境がある）小（CUI）という感じ。今回は中（Raspbian Buster with desktop）を選んだ。ただしここから直接ダウンロードすると数時間かかるようだったので、国内のミラーからダウンロードした。
 
 [RaspbianMirrors - Raspbian](https://www.raspbian.org/RaspbianMirrors)
 
