@@ -37,7 +37,7 @@ Finished erase on disk2
 Unmount of all volumes on disk2 was successful
 </code></pre><p>ダウンロードしたイメージを書き込む（path は個々人の環境による）。</p><pre><code>➤ sudo dd bs=1m if=/path/to/2020-02-13-raspbian-buster.img of=/dev/rdisk2 conv=sync
 </code></pre><p><code>of=/dev/disk2</code> とした場合はバッファを通して書き込むのに対し、<code>/dev/disk2</code> とした場合はバッファを通さないので早い（はず）。</p><p>eject はデスクトップから行った。</p><h2 id=heading-6>本体を起動</h2><p>イメージを書き込んだ microSD を Raspberry Pi に挿入し、電源用の Micro USB を挿せば起動する。ディスプレイ・キーボード・マウスも接続しておく。いまどきの Raspbian は設定ウィザードが充実しているので、求められる通りに設定していけば Wi-Fi の設定まで完了する。楽すぎる……</p><h2 id=ssh->SSH 接続</h2><h3 id=ssh--1>SSH 有効化</h3><p>キーボードは接続したものの、ふだんから慣れているデバイスで操作したいというのが人類の性。なので SSH 接続できるようにする。
-といっても、メニュー > 設定 > Raspberry Pi の設定 から</p><a href=/post/raspberry_pi_setup/ssh.png><img src=/post/raspberry_pi_setup/ssh_hu657eb6a1bae2f67d55ea7de026341cc3_2637457_800x0_resize_q90_box_2.png alt="ssh 設定"></a><p>とすれば有効になる。簡単。</p><h3 id=heading-7>ホスト名で接続</h3><p>ついでにホスト名で接続したいので、まずはファイル編集用に Vim をインストール。Raspberry Pi のターミナルで</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>$ sudo apt-get update
+といっても、メニュー > 設定 > Raspberry Pi の設定 から</p><a href=/post/raspberry_pi_setup/ssh.png><img src=/post/raspberry_pi_setup/ssh_hu657eb6a1bae2f67d55ea7de026341cc3_2637457_600x0_resize_q90_box_2.png alt="ssh 設定"></a><p>とすれば有効になる。簡単。</p><h3 id=heading-7>ホスト名で接続</h3><p>ついでにホスト名で接続したいので、まずはファイル編集用に Vim をインストール。Raspberry Pi のターミナルで</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>$ sudo apt-get update
 $ sudo apt-get install vim
 </code></pre></div><p><code>/etc/hostname</code> の編集</p><pre><code>$ sudo vim /etc/hostname
 </code></pre><pre><code>rp0.local
@@ -46,5 +46,5 @@ $ sudo apt-get install vim
 </code></pre><p>を追加で書き込む(rp0は以下略)。</p><p>一旦再起動したら、 mac のターミナルから</p><pre><code>➤ ssh pi@rp0.local
 </code></pre><p>とすればログインできる（rp0は）。</p><h2 id=heading-8>リモートデスクトップの設定</h2><h3 id=raspberry-pi--vnc->Raspberry Pi に VNC サーバをインストール</h3><pre><code>$ sudo apt-get install tightvncserver
 </code></pre><p>でインストールできるので、完了したら</p><pre><code>$ tightvncserver
-</code></pre><p>で起動できる。初回は VNC 用にパスワードを設定するよう要求されるので適切なものを設定する。</p><h3 id=mac->mac から接続</h3><p>Finder のメニューから 移動 > サーバへ接続 を選択し、</p><a href=/post/raspberry_pi_setup/vnc.png><img src=/post/raspberry_pi_setup/vnc_huea02d24b2d9e2ccf2e60647b0cec08fb_229248_800x0_resize_q90_box_2.png alt="ssh 設定"></a><p>（rp0はホスト名なので以下略）</p><p>以上でひとまずの動作環境は出来た。</p></main><p>Tags:
+</code></pre><p>で起動できる。初回は VNC 用にパスワードを設定するよう要求されるので適切なものを設定する。</p><h3 id=mac->mac から接続</h3><p>Finder のメニューから 移動 > サーバへ接続 を選択し、</p><a href=/post/raspberry_pi_setup/vnc.png><img src=/post/raspberry_pi_setup/vnc_huea02d24b2d9e2ccf2e60647b0cec08fb_229248_400x0_resize_q90_box_2.png alt="ssh 設定"></a><p>（rp0はホスト名なので以下略）</p><p>以上でひとまずの動作環境は出来た。</p></main><p>Tags:
 <a href=/tags/raspberry-pi>Raspberry Pi</a></p><footer><hr>Written by @tbsmcd. <a href=https://docs.google.com/forms/d/e/1FAIpQLScLrngN5Znk15zTy06N9qjO3Mi_ubIrXrX9cfYFid_2-mmbQQ/viewform>Contact</a> <a href=/index.xml>Feed</a></footer></body></html>
