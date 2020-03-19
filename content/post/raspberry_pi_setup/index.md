@@ -9,7 +9,7 @@ draft: falsee
 ---
 ## 前提
 
-作業環境は macOS Mojave
+作業環境は macOS Mojave  
 本体は Raspberry Pi 3 model B
 
 ## 買ったもの
