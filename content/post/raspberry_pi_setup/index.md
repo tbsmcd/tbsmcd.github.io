@@ -119,7 +119,7 @@ eject はデスクトップから行った。
 キーボードは接続したものの、ふだんから慣れているデバイスで操作したいというのが人類の性。なので SSH 接続できるようにする。
 といっても、メニュー > 設定 > Raspberry Pi の設定 から
 
-{{< img800x src="ssh.png" alt="ssh 設定">}}
+{{< img600x src="ssh.png" alt="ssh 設定">}}
 
 とすれば有効になる。簡単。
 
@@ -183,7 +183,7 @@ $ tightvncserver
 
 Finder のメニューから 移動 > サーバへ接続 を選択し、
 
-{{< img800x src="vnc.png" alt="ssh 設定">}}
+{{< img400x src="vnc.png" alt="ssh 設定">}}
 
 （rp0はホスト名なので以下略）
 
