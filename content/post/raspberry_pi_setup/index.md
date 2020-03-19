@@ -2,7 +2,7 @@
 title: "Raspberry Pi セットアップ 2020 春 ~ SSH + VNC 接続まで"
 description: "Raspberry Pi をセットアップ。2020年春の記録。SSH, VNC"
 image: "ssh.png"
-date: 2020-03-19T23:01:34+09:00
+date: 2020-03-20T00:34:00+09:00
 tags: ["Raspberry Pi"]
 archives: ["2020-03"]
 draft: falsee
