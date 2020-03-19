@@ -38,7 +38,7 @@ USB 接続のキーボード、マウスなどは家に転がっているもの�
 
 [Download Raspbian for Raspberry Pi](https://www.raspberrypi.org/downloads/raspbian/) に3種類あり、大（デスクトップ環境に LibreOffice などいろいろ入ってる）中（デスクトップ環境がある）小（CUI）という感じ。今回は中（Raspbian Buster with desktop）を選んだ。ただしここから直接ダウンロードすると数時間かかるようだったので、国内のミラーからダウンロードした。
 
-- [RaspbianMirrors - Raspbian](https://www.raspbian.org/RaspbianMirrors)
+[RaspbianMirrors - Raspbian](https://www.raspbian.org/RaspbianMirrors)
 
 今回は JAIST を選択。
 
