@@ -10,7 +10,9 @@ draft: falsee
 ## 前提
 
 作業環境は macOS Mojave  
-本体は Raspberry Pi 3 model B
+本体は Raspberry Pi 3 model B  
+  
+`➤` で始まるのは mac のターミナル、 `$` で始めるのは Raspberry Pi のターミナル
 
 ## 買ったもの
 ### 本体とストレージ
