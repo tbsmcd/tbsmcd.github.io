@@ -170,7 +170,8 @@ $ sudo vim /etc/hosts
 ## リモートデスクトップの設定
 ### Raspberry Pi に VNC サーバをインストール
 
-**ここから追記 2020-03-20**
+**ここから追記 2020-03-20**  
+  
 [公式ドキュメント](https://www.raspberrypi.org/documentation/remote-access/vnc/README.md) には RealVNC での接続方法が掲載されている。  
 
 realvnc-vnc-server のインストール
