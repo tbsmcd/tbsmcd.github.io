@@ -170,6 +170,27 @@ $ sudo vim /etc/hosts
 ## リモートデスクトップの設定
 ### Raspberry Pi に VNC サーバをインストール
 
+**ここから追記 2020-03-20**
+[公式ドキュメント](https://www.raspberrypi.org/documentation/remote-access/vnc/README.md) には RealVNC での接続方法が掲載されている。  
+
+realvnc-vnc-server のインストール
+```bash
+$ sudo apt install realvnc-vnc-server
+```
+
+インストールが完了すると、デスクトップのメニュー > 設定 > Raspberry Pi の設定 で VNC を有効にできる。未インストール状態ではラジオボタンが選択不可になる。
+
+{{< img600x src="vnc_enable.png" alt="vnc 設定">}}
+
+macOS 側では [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/macos/) をインストールする必要がある。インストール後起動し、 IP アドレスかホスト名を入力すれば接続出来る。初回は Raspberry Pi 側のユーザ名（デフォルトは pi）とパスワード（セットアップ時に設定したもの）を求められる。
+
+{{< img600x src="realvnc.png" alt="mac 側の VNC クライアント">}}
+
+こちらの方法が公式に案内・提供されているので、下記 tightvncserver を使う方法よりよいと思う。
+
+**ここまで追記 2020-03-20**
+
+
 ```
 $ sudo apt-get install tightvncserver
 ```
