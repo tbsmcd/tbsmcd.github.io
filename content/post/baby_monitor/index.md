@@ -34,6 +34,7 @@ $ sudo apt-get -y cmake libv4l-dev libjpeg-dev imagemagick
 $ git clone https://github.com/jacksonliam/mjpg-streamer.git mjpg-streamer
 $ cd mjpg-streamer/mjpg-streamer-experimental
 $ make
+```
 
 ## mjpg-streamer の起動
 
@@ -42,7 +43,7 @@ $ cd ~/mjpg-streamer/mjpg-streamer-experimental
 $ $ ./mjpg_streamer -o "./output_http.so -w ./www" -i "./input_raspicam.so -x 640 -y 480 -fps 30 -q 10"
 ```
 
-`Raspberry Pi を起動するたびにこのコマンドを打っていても仕方ないので、`/etc/rc.local` の最終行 `exit 0` の前に雑なコマンドを書いて起動時に実行されるようにしている。
+Raspberry Pi を起動するたびにこのコマンドを打っていても仕方ないので、`/etc/rc.local` の最終行 `exit 0` の前に雑なコマンドを書いて起動時に実行されるようにしている。
 
 ```bash
 cd /home/pi/mjpg-streamer/mjpg-streamer-experimental/ && ./mjpg_streamer -o "./output_http.so -w ./www" -i "./input_raspicam.so -x 640 -y 480 -fps 30 -q 10"
@@ -52,6 +53,9 @@ cd /home/pi/mjpg-streamer/mjpg-streamer-experimental/ && ./mjpg_streamer -o "./o
 現代家庭生活であり余る資材とは段ボールのことだ。なのでこうなる。
 
 {{< img600x src="case.jpg" alt="段ボールケース">}}
+
+## 光源
+赤外線カメラなので赤外線を照射する必要がある。Amazon で適当に買った。強い赤外線を見つめ続けると白内障になる恐れがあるようで、たぶん神経質になるほどのものではないが、いちおう部屋の天井に向かって照射し、部屋全体に拡散するようにしている。
 
 ## ブラウザからアクセス
 http://[ホスト名]:8080/?action=stream  
