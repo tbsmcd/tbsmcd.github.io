@@ -17,7 +17,7 @@ WebIOPi はラズパイ上の [GPIO](https://ja.wikipedia.org/wiki/GPIO) 、セ�
 {{< img400x src="webiopi.png" alt="WebIOPi とは？" >}}  
 [The Raspberry Pi Internet of Things Toolkit - Now in two flavors](http://webiopi.trouch.com/) より  
   
-今回は GPIO を用いないが、 Python のスクリプトを実行できる手軽な環境ということで使うことにした。『[カラー図解 最新 Raspberry Pi で学ぶ電子工作 作って動かしてしくみがわかる（ブルーバックス）](https://amzn.to/2xxiCBU)』で採用されているのも大きい。なお最終バージョンは2015年なので、現在の Raspbian で動かすにはパッチを当てる必要がある。
+今回は GPIO を用いないが、 Python のスクリプトを実行できる手軽な環境ということで使うことにした。『[カラー図解 最新 Raspberry Pi で学ぶ電子工作 作って動かしてしくみがわかる（ブルーバックス）](https://amzn.to/2xxiCBU)』でも使い方が書かれているし、デファクト・スタンダードなのだろう。しかし最終バージョンが2015年なので現在の Raspbian で動かすにはパッチを当てる必要がある。
   
 ```bash
 # ダウンロード
@@ -155,4 +155,6 @@ $ sudo apt install sox
 
 ref. [反町「POISON」赤ちゃん泣き止む説　ＴＶ特集され反応「すごい」「POISONマジかよ」](https://www.daily.co.jp/gossip/2020/03/05/0013167858.shtml)
 
-いや、我が娘は泣いてる時に POISON 聴かせるとマジで泣き止むし、寝るからな。敬意を込めて「タカシ」と呼ぶことにしてる。」
+いや、我が娘は泣いてる時に POISON 聴かせるとマジで泣き止むし、寝るからな。敬意を込めて「タカシ」と呼ぶことにしてる。  
+
+閑話休題、 Web で UI を作るのは慣れたことだし Python が動けば割合なんでも出来るので、ラズパイを使う上で自由度は上がると思う。
