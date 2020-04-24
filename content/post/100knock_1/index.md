@@ -10,6 +10,8 @@ draft: false
 
 {{< img400x src="ss.png" alt="Jupyter notebook" >}}
 
+[言語処理100本ノック 2020 - NLP100 2020](https://nlp100.github.io/ja/)
+
 ## なぜ？
 最近 Python を書いてないこともあり、思うところもあり。
 
