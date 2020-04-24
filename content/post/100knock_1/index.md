@@ -23,13 +23,16 @@ Python3 + [Anaconda](https://www.python.jp/install/anaconda/macos/install.html) 
 ## code
 以下ネタバレ
   
-  
-  
-  
-  
-  
-  
-  
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
 まず第1章から
 
 ```python
