@@ -8,8 +8,7 @@ title: Index
 - [言語処理100本ノック 2020](https://nlp100.github.io/ja/)を始めた
 	- tag: [言語処理100本ノック](/tags/言語処理100本ノック/)
 - [検索機能](/search/)を追加した
-- フロントエンドを勉強する気になった
-	- Web に発表する「文書」という意味でこんなデザインだが、謎に今っぽさを……
+-  Web に発表する「文書」という意味でこんなデザインにしている
 
 ## Notes
 - ソースは [Github](https://github.com/tbsmcd/tbsmcd.github.io/tree/source) にある
