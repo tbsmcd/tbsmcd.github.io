@@ -11,7 +11,12 @@ draft: false
 {{< img400x src="ss.png" alt="Jupyter notebook" >}}
 
 ## なぜ？
-最近 Python を書いてないこともあり。
+最近 Python を書いてないこともあり、思うところもあり。
+
+## 環境
+Python3 + [Anaconda](https://www.python.jp/install/anaconda/macos/install.html) + [Jupyter Notebook](https://jupyter.org/)
+
+インストール等については気が向いた時に。
 
 ## code
 
