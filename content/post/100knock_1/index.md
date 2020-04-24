@@ -22,7 +22,7 @@ Python3 + [Anaconda](https://www.python.jp/install/anaconda/macos/install.html) 
 
 まず第1章から
 
-```pyhton
+```python
 # 000
 st = 'stressed'
 ans = ''
