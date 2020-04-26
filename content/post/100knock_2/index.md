@@ -182,7 +182,4 @@ sorted(names_dic.items(), key=lambda x: x[1], reverse=True)
 ```
 
 items() を使えばタプルとして取得できるのをよく忘れる。
-```python
-
-```
 
