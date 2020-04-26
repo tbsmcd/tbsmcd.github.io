@@ -23,6 +23,7 @@ draft: false
 .  
   
 ```python
+# 準備
 target_dir = '/users/tbsmcd/Documents/'
 file_path = target_dir + 'popular-names.txt'
 
@@ -127,7 +128,7 @@ import math
 
 parser = argparse.ArgumentParser(description='末尾からN行を出力する')
 parser.add_argument('split', help='分割したい個数')
-args = parser.parse_args(args=['5']) # Jupyter なので擬似的に渡す 
+args = parser.parse_args(args=['5'])
 
 step = int(args.split)
 
@@ -181,5 +182,5 @@ sorted(names_dic.items(), key=lambda x: x[1], reverse=True)
 # cut -f 1 popular-names.txt | sort | uniq -c | sort -brn -k 1
 ```
 
-items() を使えばタプルとして取得できるのをよく忘れる。
+items() を使えばタプルとして取得できる（`x[1]`）のをよく忘れる。
 
