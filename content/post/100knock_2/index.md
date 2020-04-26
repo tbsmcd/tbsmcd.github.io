@@ -12,8 +12,8 @@ draft: false
   
 [言語処理100本ノック 2020 - NLP100 2020](https://nlp100.github.io/ja/)
   
-[前回](https://tbsmcd.net/post/100knock_1/)
-  
+[tag: 言語処理100本ノック](/tags/言語処理100本ノック/)
+ 
 ## code
 .  
 .  
