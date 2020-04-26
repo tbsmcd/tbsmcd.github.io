@@ -85,7 +85,7 @@ with open(target_dir + 'col1+2.txt', mode='w') as f:
 # paste col1.txt col2.txt
 ```
 
-paste コマンド超便利
+paste コマンド超便利  
 
 ```python
 # 014
@@ -102,7 +102,7 @@ print('\n'.join(text.split('\n')[0:int(args.lines)]))
 # head -n 5 popular-names.txt
 ```
 
-Jupyter を使っているため `parser.parse_args()` にはあらかじめ引数を与えておく。実際にコマンドとして使う際には空にする。
+Jupyter を使っているため `parser.parse_args()` にはあらかじめ引数を与えておく。実際にコマンドとして使う際には空にする。  
 
 ```python
 # 015
@@ -119,7 +119,7 @@ print('\n'.join(text.split('\n')[-int(args.lines):]))
 # tail -n 5 popular-names.txt
 ```
 
-`strip()` が無いと最終行のあとの改行文字でも分割され、空の要素が生まれる。
+`strip()` が無いと最終行のあとの改行文字でも分割され、空の要素が生まれる。  
 
 ```python
 # 016
@@ -143,7 +143,7 @@ splited = [rows[i:i + row_num] for i in range(0, row_num, step)]
 # mac だと使えないオプションが違う
 ```
 
-`range()` の第3引数の step 個飛ばしでループさせているだけ。split コマンドの -n は mac のデフォルトだと使えない。
+`range()` の第3引数の step 個飛ばしでループさせているだけ。split コマンドの -n は mac のデフォルトだと使えない。  
 
 ```python
 # 017
@@ -154,7 +154,7 @@ set([r.split('\t')[0] for r in rows])
 # cut -f 1 popular-names.txt | sort | uniq
 ```
 
-Python 側もだいぶ短いコードで実現できる。
+Python 側もだいぶ短いコードで実現できる。  
 
 ```python
 # 018
@@ -166,7 +166,7 @@ sorted(rows, key=lambda x: int(x.split('\t')[2])*-1)
 # sort -brn -k 3 popular-names.txt
 ```
 
-文字列連結部分は繰り返しなので省略している。
+文字列連結部分は繰り返しなので省略している。  
 
 ```python
 # 019
@@ -182,5 +182,5 @@ sorted(names_dic.items(), key=lambda x: x[1], reverse=True)
 # cut -f 1 popular-names.txt | sort | uniq -c | sort -brn -k 1
 ```
 
-items() を使えばタプルとして取得できる（`x[1]`）のをよく忘れる。
+items() を使えばタプルとして取得できる（`x[1]`）のをよく忘れる。  
 
