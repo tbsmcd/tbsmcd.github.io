@@ -107,7 +107,7 @@ pattern = re.compile(r'''
 ^\{\{基礎情報.*?$
 .*?
 ^\}\}$
-''', re.MULTILINE+re.DOTALL) # re.DOTALL
+''', re.MULTILINE+re.DOTALL) 
 data = '\n'.join(pattern.findall(uk))
 
 pattern = re.compile(r'^\|(.+?)\s*=\s*(.+?)$', re.MULTILINE)
@@ -134,7 +134,7 @@ pattern = re.compile(r'''
 ^\{\{基礎情報.*?$
 .*?
 ^\}\}$
-''', re.MULTILINE+re.DOTALL) # re.DOTALL
+''', re.MULTILINE+re.DOTALL) 
 data = '\n'.join(pattern.findall(uk))
 
 pattern = re.compile(r'^\|(.+?)\s*=\s*(.+?)$', re.MULTILINE)
@@ -164,7 +164,7 @@ pattern = re.compile(r'''
 ^\{\{基礎情報.*?$
 .*?
 ^\}\}$
-''', re.MULTILINE+re.DOTALL) # re.DOTALL
+''', re.MULTILINE+re.DOTALL) 
 data = '\n'.join(pattern.findall(uk))
 
 pattern = re.compile(r'^\|(.+?)\s*=\s*(.+?)$', re.MULTILINE)
@@ -185,7 +185,7 @@ pattern = re.compile(r'''
 ^\{\{基礎情報.*?$
 .*?
 ^\}\}$
-''', re.MULTILINE+re.DOTALL) # re.DOTALL
+''', re.MULTILINE+re.DOTALL) 
 data = '\n'.join(pattern.findall(uk))
 
 pattern = re.compile(r'^\|(.+?)\s*=\s*(.+?)$', re.MULTILINE)
