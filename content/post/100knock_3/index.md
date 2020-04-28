@@ -84,14 +84,16 @@ pattern = re.compile(r'''
 ^\{\{基礎情報.*?$
 .*?
 ^\}\}$
-''', re.MULTILINE+re.DOTALL) # re.DOTALL
+''', re.MULTILINE+re.DOTALL)
 data = '\n'.join(pattern.findall(uk))
 
 pattern = re.compile(r'^\|(.+?)\s*=\s*(.+?)$', re.MULTILINE)
 res = {}
 for t in pattern.findall(data):
     res[t[0]] = t[1].replace("\n", '')
-```
+``` 
+
+memo: `re.DOTALL`
 
 ```python
 # 026
