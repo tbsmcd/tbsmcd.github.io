@@ -64,11 +64,13 @@ for line in res:
 # セクション？
 # ref. https://ja.wikipedia.org/wiki/Help:%E3%82%BB%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3#%E3%82%BB%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E4%BD%9C%E6%88%90%E3%81%A8%E7%95%AA%E5%8F%B7%E4%BB%98%E3%81%91
 
-pattern = re.compile(r'=(=+)(.+?)=', re.MULTILINE) # 非貪欲マッチの ? 
+pattern = re.compile(r'=(=+)(.+?)=', re.MULTILINE) 
 res = pattern.findall(uk)
 for line in res:
     print(line[1], len(line[0]))
 ```
+
+貪欲マッチの `?` とかすぐに出てこなくて焦る
 
 ```python
 # 024
