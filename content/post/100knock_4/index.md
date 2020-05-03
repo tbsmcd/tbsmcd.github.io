@@ -154,7 +154,6 @@ fig.savefig('037.png')
 ```python
 # 038
 fig = plt.figure()
-# 100程度に絞らないと可視化出来ない
 plt.hist([x[1] for x in most_common_list], bins=20, range=(1, 100))
 fig.savefig('038.png')
 ```
