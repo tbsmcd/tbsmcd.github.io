@@ -14,7 +14,7 @@ draft: false
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【速報】首相官邸ホームページで三権分立を改竄、国民の上に行政を主権者としてしまう<a href="https://t.co/TUIlnoBs9W">https://t.co/TUIlnoBs9W</a> <a href="https://t.co/nZyoXalOOk">pic.twitter.com/nZyoXalOOk</a></p>&mdash; 𓉤箱コネマン𓁷 (@HAKOCONNEMAN) <a href="https://twitter.com/HAKOCONNEMAN/status/1259114641059266560?ref_src=twsrc%5Etfw">May 9, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 {{< /raw >}}
 
-これは異常な図だ。[Google で画像検索をすれば](https://www.google.co.jp/search?q=%E4%B8%89%E6%A8%A9%E5%88%86%E7%AB%8B&source=lnms&tbm=isch)分かる。
+この異常性は[Google で画像検索をすれば](https://www.google.co.jp/search?q=%E4%B8%89%E6%A8%A9%E5%88%86%E7%AB%8B&source=lnms&tbm=isch)分かる。
 
 ## これは安倍内閣のせいなの？
 
