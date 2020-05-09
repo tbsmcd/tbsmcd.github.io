@@ -18,7 +18,7 @@ draft: false
 
 ## これは安倍内閣のせいなの？
 
-[web archives](web.archives.org) で見ると1997年からこの矢印が描かれた図を使っているらしい。
+[web archives](https://web.archives.org) で見ると1997年からこの矢印が描かれた図を使っているらしい。
 
 [https://web.archive.org/web/19971126084116/https://www.kantei.go.jp/jp/rekidai/images/120c.gif](https://web.archive.org/web/19971126084116/https://www.kantei.go.jp/jp/rekidai/images/120c.gif)
 
