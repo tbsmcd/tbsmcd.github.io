@@ -7,9 +7,10 @@ draft: false
 - Living in 福岡博多(Hakata, Fukuoka)
 - Web engineer, working at GMO Pepabo, Inc.
 
-## Medias
-- [twitter](https://twitter.com/tbsmcd)
+## Liks
+- [Twitter](https://twitter.com/tbsmcd)
 - [Github](https://github.com/tbsmcd)
+- [kaggle](https://www.kaggle.com/tbsmcd)
 - [Scrapbox 様々のメモ](https://scrapbox.io/tbsmcd-memo/)
 - [Scrapbox 読書カード](https://scrapbox.io/tbsmcd-reading/)
 
