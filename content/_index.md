@@ -4,7 +4,7 @@ title: Home
 
 # Home
 
-## Notes
+## Memo Pads
 - [言語処理100本ノック 2020](https://nlp100.github.io/ja/)を始めた
 	- tag: [言語処理100本ノック](/tags/言語処理100本ノック/)
 	- 一時休止中
