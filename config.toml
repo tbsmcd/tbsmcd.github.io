@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "tbsmcd"
+title = "tbsmcd.net"
 theme ="hugo-xmin"
 languageCode = "ja"
 googleAnalytics = "UA-158035573-1"
