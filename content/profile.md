@@ -2,7 +2,8 @@
 title: "Profile"
 draft: false
 ---
-## 持田 翼(MOCHIDA Tsubasa)
+## About me
+- 持田 翼, Mochida Tsubasa
 - From 出雲國松江(Matsue, Izumo)
 - Living in 福岡博多(Hakata, Fukuoka)
 - Web engineer, working at GMO Pepabo, Inc.
