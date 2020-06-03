@@ -1,6 +1,6 @@
 ---
-title: "Jupyter Notebook on ダークモード IDE で matplotlib.pyplot を使ってグラフを表示する"
-description: "ダークモードの IDE で Jupyter Notebook を使ってグラフを表示する際には Style を指定したら良い"
+title: "ダークモード環境で Jupyter Notebook を使ってグラフを表示する場合の style 設定"
+description: "ダークモードの IDE/エディタで Jupyter Notebook を使ってグラフを表示する際には Style を指定したら良い"
 image: ""
 date: 2020-06-01T00:00:01+09:00
 tags: ["Python"]
@@ -12,12 +12,12 @@ draft: false
 
 ## ダークモードを使いたいんだ！
 
-わざわざ Jupyter を IDE から使う理由の一つに「ふだん使いのカラースキームを使いたいから」というのがある。しかしダークモードで Jupyter を使った場合に、 `import matplotlib.pyplot as plt` してグラフを表示したときに嬉しくないことが起きる。
+わざわざ Jupyter を IntelliJ IDEA/PyCharm や VS Code から使う理由の1つに「ふだん使いのカラースキームを使いたいから」というのがある。しかしダークモードで Jupyter を使いグラフを表示すると嬉しくないことが起きる。
 
 {{< img400x src="normal.png" alt="初期状態の表示" >}}
 
-画像のように透過になっている部分があるため黒い文字が見えにくくなる。  
-この問題について困っているひとはそれなりにいるらしい（[Google](https://www.google.com/search?q=pycharm+dark+theme+jupyter)）。 IDE 側の色設定で何とかしようとしている人もいるが、この場合 `plt.style.use()` でグラフのスタイルを変更したほうがはやい。
+このように透過になる部分があり、黒い文字が見えにくくなる。  
+同じように困っている人はそれなりにいるらしい（例: [Google の検索結果](https://www.google.com/search?q=pycharm+dark+theme+jupyter)）。 IDE 側の色設定で何とかしようとしている人もいるが、この場合 `plt.style.use()` でグラフのスタイルを変更したほうがはやい。
 
 {{< img400x src="dark.png" alt="ダークモード用背景" >}}
 
