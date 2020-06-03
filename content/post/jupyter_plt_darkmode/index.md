@@ -21,5 +21,5 @@ draft: false
 
 {{< img400x src="dark.png" alt="ダークモード用背景" >}}
 
-画像では `plt.style.use(['dark_background'])` している。ほかにも `default` などがあり（ default がデフォルトじゃなくて謎）、ダークモードの IDE と Jupyter Notebook の標準的なカラースキームと共存できたりする。詳しくは公式ドキュメント （[リンク1](https://matplotlib.org/3.2.1/gallery/style_sheets/style_sheets_reference.html)  [リンク2](https://matplotlib.org/3.1.0/tutorials/introductory/customizing.html)）参照。
+画像では `plt.style.use(['dark_background'])` している。ほかにも `default` などがあり（ default がデフォルトじゃなくて謎）、適切に選択すればダークモードの IDE と Jupyter Notebook の標準的なカラースキームとで違和感なく共存できる。詳しくは公式ドキュメント （[リンク1](https://matplotlib.org/3.2.1/gallery/style_sheets/style_sheets_reference.html)  [リンク2](https://matplotlib.org/3.1.0/tutorials/introductory/customizing.html)）参照。
 
