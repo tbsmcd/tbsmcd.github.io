@@ -12,7 +12,7 @@ draft: false
 
 ## 子供を見守るには移動をしやすい机が必要
 
-一般的にスタンディングデスクとは座りっぱなしを防ぐためのものだ。しかし人によっては他の機能も求めることがある。例えば子の動きを見張るためにリビングでも使いたいとか。まさにそのためにポータブルなスタンディングデスクを探していたのだけど、実質的には机ではなく司会台なのでは？という物品がテーブルとして売られていたので購入した。
+一般的にスタンディングデスクとは座りっぱなしを防ぐためのものだ。しかし人によっては他の機能を求めることもある。例えば子の動きを見張るためにリビングでも使いたいとか。まさにそのためにポータブルなスタンディングデスクを探していたのだけど、実質的には机ではなく司会台なのでは？という物品がテーブルとして売られていたので購入した。
 
 {{< raw >}}
 <a href="https://www.amazon.co.jp/%E3%80%90%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC%E7%9B%B4%E9%80%81%E3%80%91TRUSCO-%E3%83%9F%E3%83%8B%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB%E7%AB%8B%E3%81%A1%E4%BD%9C%E6%A5%AD%E7%94%A8%E3%83%8F%E3%82%A4%E3%82%BF%E3%82%A4%E3%83%97-500X350X740%EF%BD%9E1040-MT500H-8000-%E3%80%905054541%E3%80%91/dp/B002A5OCE8/ref=as_li_ss_il?ie=UTF8&linkCode=li2&tag=tbsmcd-22&linkId=5ab3e8c89401c7e80882d978bd6a5fa9&language=ja_JP" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B002A5OCE8&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=tbsmcd-22&language=ja_JP" ></a>
@@ -22,13 +22,15 @@ draft: false
 
 ## 本を置くのには狭いから拡張しよう
 
-これはディスプレイのようにアームを付けるしかないだろう。面積の大きな机はポータビリティという面で劣るので採用したくはない。しかしアーム付きの書見台は多くはない……が、無くはない。
+これはディスプレイのようにアームを付けるしかないだろう。面積の大きな机はポータビリティという面で劣るので採用したくはない。しかしアーム付きの書見台は多くはない……が、無くはない。  
+
 {{< raw >}}
 
 <a href="https://www.amazon.co.jp/gp/product/B013JXU3PG/ref=as_li_ss_il?ie=UTF8&psc=1&linkCode=li2&tag=tbsmcd-22&linkId=b9245af7e9f77a9afa424a0daa20be1f&language=ja_JP" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B013JXU3PG&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=tbsmcd-22&language=ja_JP" ></a>
 
 {{< /raw >}}
-
+  
+  
 こちらの書見台は同メーカーのものをすでに使っていたこともあり、信頼ができたので購入した。
 
 ## 完成図
