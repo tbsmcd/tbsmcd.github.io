@@ -3,9 +3,9 @@ title: "Profile"
 draft: false
 ---
 ## About me
-- 持田 翼(Mochida Tsubasa, tbsmcd)
-- From 出雲國松江(Matsue, Izumo)
-- Living in 福岡博多(Hakata, Fukuoka)
+- 持田 翼/Mochida Tsubasa, tbsmcd
+- From 出雲國松江/Matsue, Izumo
+- Living in 筑前國博多（福岡）/Hakata(Fukuoka), Chikuzen
 - Web engineer, working at GMO Pepabo, Inc.
 
 ## Liks
