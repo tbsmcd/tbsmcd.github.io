@@ -1,9 +1,9 @@
 ---
-title: "[memo]sklearn.linear_model.Perceptron のパラメータから n_iter が削除されてた"
+title: "sklearn.linear_model.Perceptron のパラメータから n_iter が削除されてた件のメモ"
 description: "sklearn.linear_model.Perceptron のパラメータから n_iter が削除されてた件のメモ"
 image: "ai.png"
 date: 2020-06-13T22:32:52+09:00
-tags: ["Python", "機械学習", "メモ"]
+tags: ["Python", "機械学習"]
 archives: ["2020-06"]
 draft: false
 ---
@@ -19,7 +19,7 @@ draft: false
 ```python
 from sklearn.linear_model import Perceptron
 ppn = Perceptron(n_iter=40, eta0=0.1, random_state=1)
-（以下略）
+# 以下略
 ```
 
 というコードがあるが、このまま書いても
