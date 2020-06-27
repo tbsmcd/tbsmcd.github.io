@@ -43,7 +43,7 @@ tags: ["トレーニングノート", "ワークアウト", "プリズナート�
 archives: ["{1}"]
 draft: false
 ---
-""".format(args.date, start_date.strftime('%Y-%m'), dt_now.strftime('%Y-%m-%dT%H:%M:%S+09:00'))
+""".format(args.date, dt_now.strftime('%Y-%m'), dt_now.strftime('%Y-%m-%dT%H:%M:%S+09:00'))
 
 # 記録パートをつくる
 log_part = """
@@ -57,9 +57,11 @@ for i in range(7):
     print('Trying get url ' + url)
     r = requests.get(url)
     if r.status_code == 200:
-        log_part = log_part + '1. [{0}]({1})\n'.format(target_date.strftime('%Y-%m-%d %a'), url)
+        print('Exists.')
+        log_part = log_part + '1. [{0}]({1})\n'.format(target_date.strftime('%Y-%m-%d'), url)
     else:
-        log_part = log_part + '1. {0}\n'.format(target_date.strftime('%Y-%m-%d %a'))
+        print('Not exists.')
+        log_part = log_part + '1. {0}\n'.format(target_date.strftime('%Y-%m-%d'))
 log_part = log_part + '  \n\n'
 # print(log_part)
 

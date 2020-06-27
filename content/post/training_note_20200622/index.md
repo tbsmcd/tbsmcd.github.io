@@ -3,7 +3,7 @@
 title: "2020-06-22 の週のトレーニングノート"
 description: "2020-06-22 の週のトレーニングノート"
 image: ""
-date: 2020-06-28T00:17:41+09:00
+date: 2020-06-28T00:24:56+09:00
 tags: ["トレーニングノート", "ワークアウト", "プリズナートレーニング"]
 archives: ["2020-06"]
 draft: false
@@ -11,13 +11,13 @@ draft: false
 
 ## 記録
 
-1. [2020-06-22 Mon](https://scrapbox.io/tbsmcd-memo/2020-06-22)
-1. 2020-06-23 Tue
-1. [2020-06-24 Wed](https://scrapbox.io/tbsmcd-memo/2020-06-24)
-1. 2020-06-25 Thu
-1. [2020-06-26 Fri](https://scrapbox.io/tbsmcd-memo/2020-06-26)
-1. 2020-06-27 Sat
-1. 2020-06-28 Sun
+1. [2020-06-22](https://scrapbox.io/tbsmcd-memo/2020-06-22)
+1. 2020-06-23
+1. [2020-06-24](https://scrapbox.io/tbsmcd-memo/2020-06-24)
+1. 2020-06-25
+1. [2020-06-26](https://scrapbox.io/tbsmcd-memo/2020-06-26)
+1. 2020-06-27
+1. 2020-06-28
   
 
 ## 所感
