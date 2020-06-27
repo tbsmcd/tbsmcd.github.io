@@ -49,7 +49,8 @@ log_part = """
 ## 記録
 
 """
-# 1週刊分の記事を取得する
+# 1週分の記事を取得する
+week = ['月', '火', '水', '木', '金', '土', '日']
 for i in range(7):
     target_date = start_date + datetime.timedelta(days=i)
     url = 'https://scrapbox.io/tbsmcd-memo/' + target_date.strftime('%Y-%m-%d')
@@ -57,10 +58,11 @@ for i in range(7):
     r = requests.get(url)
     if r.status_code == 200:
         print('Exists.')
-        log_part = log_part + '1. [{0}]({1})\n'.format(target_date.strftime('%Y-%m-%d'), url)
+        log_part = log_part + '1. [{0}: {1}]({2})\n'\
+            .format(week[target_date.weekday()], target_date.strftime('%Y-%m-%d'), url)
     else:
         print('Not exists.')
-        log_part = log_part + '1. {0}\n'.format(target_date.strftime('%Y-%m-%d'))
+        log_part = log_part + '1. {0}: {1}\n'.format(week[target_date.weekday()], target_date.strftime('%Y-%m-%d'))
 
 log_part = log_part + '  \n\n'
 
@@ -74,10 +76,8 @@ run([EDITOR, tmp.name])
 with open(tmp.name) as file:
     message_part = file.read()
 
-
-source = header + log_part + message_part
-
 os.makedirs(dir_name, exist_ok=True)
+source = header + log_part + message_part
 with open(dir_name + '/index.md', mode='w') as f:
     f.write(source)
 
