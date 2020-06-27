@@ -3,7 +3,6 @@
 import argparse
 import re
 import datetime
-import sys
 from subprocess import run
 import os
 import tempfile
@@ -62,9 +61,10 @@ for i in range(7):
     else:
         print('Not exists.')
         log_part = log_part + '1. {0}\n'.format(target_date.strftime('%Y-%m-%d'))
-log_part = log_part + '  \n\n'
-# print(log_part)
 
+log_part = log_part + '  \n\n'
+
+# 所感を編集する
 tmp = tempfile.NamedTemporaryFile(suffix=".tmp", mode='w+t')
 tmp.write('## 所感\n')
 tmp.flush()
