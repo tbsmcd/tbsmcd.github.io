@@ -58,11 +58,11 @@ for i in range(7):
     r = requests.get(url)
     if r.status_code == 200:
         print('Exists.')
-        log_part = log_part + '1. [{0}: {1}]({2})\n'\
-            .format(week[target_date.weekday()], target_date.strftime('%Y-%m-%d'), url)
+        log_part = log_part + '1. [{0}]({1})\n'\
+            .format(week[target_date.weekday()], url)
     else:
         print('Not exists.')
-        log_part = log_part + '1. {0}: {1}\n'.format(week[target_date.weekday()], target_date.strftime('%Y-%m-%d'))
+        log_part = log_part + '1. {0}\n'.format(week[target_date.weekday()])
 
 log_part = log_part + '  \n\n'
 
