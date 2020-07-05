@@ -12,8 +12,8 @@ draft: false
 - [Twitter](https://twitter.com/tbsmcd)
 - [Github](https://github.com/tbsmcd)
 - [kaggle](https://www.kaggle.com/tbsmcd)
-- [Scrapbox メモ(Various notes)](https://scrapbox.io/tbsmcd-memo/)
-- [Scrapbox 読書カード(Book reports)](https://scrapbox.io/tbsmcd-reading/)
+- [Scrapbox メモ/Various notes](https://scrapbox.io/tbsmcd-memo/)
+- [Scrapbox 読書カード/Reports of reading](https://scrapbox.io/tbsmcd-reading/)
 
 ## Projects
 - [Roundcube select_pagesize plugin](https://github.com/tbsmcd/select_pagesize)
