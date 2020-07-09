@@ -72,19 +72,22 @@ draft: true
     <span class=c1># 規定のエディタを取得して編集</span>
     <span class=n>EDITOR</span> <span class=o>=</span> <span class=n>os</span><span class=o>.</span><span class=n>environ</span><span class=o>.</span><span class=n>get</span><span class=p>(</span><span class=sa></span><span class=s1>&#39;</span><span class=s1>EDITOR</span><span class=s1>&#39;</span><span class=p>,</span> <span class=sa></span><span class=s1>&#39;</span><span class=s1>vim</span><span class=s1>&#39;</span><span class=p>)</span>
     <span class=n>run</span><span class=p>(</span><span class=p>[</span><span class=n>EDITOR</span><span class=p>,</span> <span class=n>dir_path</span> <span class=o>+</span> <span class=sa></span><span class=s1>&#39;</span><span class=s1>/index.md</span><span class=s1>&#39;</span><span class=p>]</span><span class=p>)</span>
-    <span class=n>run</span><span class=p>(</span><span class=p>[</span><span class=sa></span><span class=s1>&#39;</span><span class=s1>open</span><span class=s1>&#39;</span><span class=p>,</span> <span class=n>dir_path</span><span class=p>]</span><span class=p>)</span>
+    <span class=n>open_finder</span> <span class=o>=</span> <span class=nb>input</span><span class=p>(</span><span class=sa></span><span class=s1>&#39;</span><span class=s1>Open in Finder?(Y/n): </span><span class=s1>&#39;</span><span class=p>)</span>
+    <span class=k>if</span> <span class=n>open_finder</span> <span class=o>==</span> <span class=sa></span><span class=s1>&#39;</span><span class=s1>y</span><span class=s1>&#39;</span> <span class=ow>or</span> <span class=n>open_finder</span> <span class=o>==</span> <span class=sa></span><span class=s1>&#39;</span><span class=s1>Y</span><span class=s1>&#39;</span><span class=p>:</span>
+        <span class=n>run</span><span class=p>(</span><span class=p>[</span><span class=sa></span><span class=s1>&#39;</span><span class=s1>open</span><span class=s1>&#39;</span><span class=p>,</span> <span class=n>dir_path</span><span class=p>]</span><span class=p>)</span>
     <span class=k>print</span><span class=p>(</span><span class=sa></span><span class=s1>&#39;</span><span class=s1>Finished.</span><span class=s1>&#39;</span><span class=p>)</span>
 <span class=k>except</span> <span class=ne>KeyboardInterrupt</span><span class=p>:</span>
     <span class=k>print</span><span class=p>(</span><span class=sa></span><span class=s1>&#39;</span><span class=se>\n</span><span class=s1>Stopped(Keyboard Interrupt).</span><span class=s1>&#39;</span><span class=p>)</span>
-</code></pre></div><p><a href=https://github.com/tbsmcd/tbsmcd.github.io/blob/e4be2b4a8f72f87e9ca66c4727452002e77908eb/create.py>リンク</a></p><p>これをコマンドラインで実行することにより、</p><pre><code>➤ ./create.py
+
+</code></pre></div><p><a href=https://github.com/tbsmcd/tbsmcd.github.io/blob/e4be2b4a8f72f87e9ca66c4727452002e77908eb/create.py>リンク</a></p><p>これをコマンドラインで実行すると、以下のように対話的にメタ情報を求められ、結果は index.md に反映される。あとはエディタが index.md を開いてくれるので編集するだけ。おまけとして画像を配置するための <code>open</code> コマンドも <code>Open in Finder?(Y/n):</code> として対話的に実行しているので、ストレスフリーが実現する（最高だね）。</p><pre><code>➤ ./create.py
 Directory name: tired-from-hugo-new
 tired-from-hugo-new
 Create new page.
-Title: hugo new で記事を新規作成するのは少しダルい
+Title: hugo new で記事を新規作成するのは少しダルいから自作スクリプトで編集する
 Description: hugo new で記事を新規作成するのは少しダルいので Pyhton で対話的に記事を作成できるスクリプトを書いて使用している。
 OGP image: program.png
 Tags(comma separated): hugo, Python
 Draft(Y/n): n
-</code></pre><p>というように対話的にメタ情報を埋めたら index.md に反映される。あとはエディタが index.md を開いてくれるので編集するだけ。おまけとして画像を配置するための <code>open</code> コマンドも実行しているのでストレスフリーが実現する（最高だね）。</p><h2 id=heading>まとめ</h2><p>hugo はよく出来ている。しかしよく出来ているソフトウェアも、自分に合わない部分がある。それならば適当なスクリプトで修正していけば良い。もしくは Pull Request を送ろう。幸い hugo は markdown という比較的単純なテキストファイルをベースに記事を作成する。テキストファイルを介して hugo と自作スクリプト間をやり取りするのは、 UNIX 的ともいえるのではないか。そういう気持ちで各自やっていけばアウトプットが楽になるのではないかと思う。</p></main><p>Tags:
+</code></pre><h2 id=heading>まとめ</h2><p>hugo はよく出来ている。しかしよく出来ているソフトウェアも、自分に合わない部分がある。それならば適当なスクリプトで修正していけば良い。もしくは Pull Request を送ろう。幸い hugo は markdown という比較的単純なテキストファイルをベースに記事を作成する。テキストファイルを介して hugo と自作スクリプト間をやり取りするのは、 UNIX 的ともいえるのではないか。そういう気持ちで各自やっていけばアウトプットが楽になるのではないかと思う。</p></main><p>Tags:
 <a href=/tags/hugo>hugo</a>
 <a href=/tags/python>Python</a></p><footer><hr>Written by Mochida Tsubasa(@tbsmcd). <a href=https://docs.google.com/forms/d/e/1FAIpQLScLrngN5Znk15zTy06N9qjO3Mi_ubIrXrX9cfYFid_2-mmbQQ/viewform>Contact</a> <a href=/index.xml>Feed</a></footer></body></html>
