@@ -62,7 +62,9 @@ draft: {6}
     # 規定のエディタを取得して編集
     EDITOR = os.environ.get('EDITOR', 'vim')
     run([EDITOR, dir_path + '/index.md'])
-    run(['open', dir_path])
+    open_finder = input('Open in Finder?(Y/n): ')
+    if open_finder == 'y' or open_finder == 'Y':
+        run(['open', dir_path])
     print('Finished.')
 except KeyboardInterrupt:
     print('\nStopped(Keyboard Interrupt).')

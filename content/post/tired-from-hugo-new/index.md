@@ -108,15 +108,18 @@ draft: {6}
     # 規定のエディタを取得して編集
     EDITOR = os.environ.get('EDITOR', 'vim')
     run([EDITOR, dir_path + '/index.md'])
-    run(['open', dir_path])
+    open_finder = input('Open in Finder?(Y/n): ')
+    if open_finder == 'y' or open_finder == 'Y':
+        run(['open', dir_path])
     print('Finished.')
 except KeyboardInterrupt:
     print('\nStopped(Keyboard Interrupt).')
+
 ```
 
 [リンク](https://github.com/tbsmcd/tbsmcd.github.io/blob/e4be2b4a8f72f87e9ca66c4727452002e77908eb/create.py)  
   
-これをコマンドラインで実行すると、以下のように対話的にメタ情報を求められ、結果は index.md に反映される。あとはエディタが index.md を開いてくれるので編集するだけ。おまけとして画像を配置するための `open` コマンドも実行しているのでストレスフリーが実現する（最高だね）。
+これをコマンドラインで実行すると、以下のように対話的にメタ情報を求められ、結果は index.md に反映される。あとはエディタが index.md を開いてくれるので編集するだけ。おまけとして画像を配置するための `open` コマンドも `Open in Finder?(Y/n): ` として対話的に実行しているので、ストレスフリーが実現する（最高だね）。
   
 ```
 ➤ ./create.py
