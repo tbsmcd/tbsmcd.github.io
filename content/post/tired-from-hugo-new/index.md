@@ -116,21 +116,20 @@ except KeyboardInterrupt:
 
 [リンク](https://github.com/tbsmcd/tbsmcd.github.io/blob/e4be2b4a8f72f87e9ca66c4727452002e77908eb/create.py)  
   
-これをコマンドラインで実行することにより、  
+これをコマンドラインで実行すると、以下のように対話的にメタ情報を求められ、結果は index.md に反映される。あとはエディタが index.md を開いてくれるので編集するだけ。おまけとして画像を配置するための `open` コマンドも実行しているのでストレスフリーが実現する（最高だね）。
   
 ```
 ➤ ./create.py
 Directory name: tired-from-hugo-new
 tired-from-hugo-new
 Create new page.
-Title: hugo new で記事を新規作成するのは少しダルい
+Title: hugo new で記事を新規作成するのは少しダルいから自作スクリプトで編集する
 Description: hugo new で記事を新規作成するのは少しダルいので Pyhton で対話的に記事を作成できるスクリプトを書いて使用している。
 OGP image: program.png
 Tags(comma separated): hugo, Python
 Draft(Y/n): n
 ```
 
-というように対話的にメタ情報を埋めたら index.md に反映される。あとはエディタが index.md を開いてくれるので編集するだけ。おまけとして画像を配置するための `open` コマンドも実行しているのでストレスフリーが実現する（最高だね）。
 
 ## まとめ
 
