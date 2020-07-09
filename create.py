@@ -5,7 +5,8 @@ from subprocess import run
 
 
 def input_dir_name():
-    name = input('Directory name: ')
+    name = input('Directory name: ').replace('_', '-')
+    print(name)
     path = os.path.dirname(__file__) + '/content/post/{0}'.format(name)
     if os.path.exists(path):
         edit = input('This dir_name exists. Edit this page?(Y/n) : ')
