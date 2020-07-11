@@ -86,4 +86,6 @@ print(requests.post(url, data=item_data).content.decode())
 <script type="text/javascript" src="https://reading-assist.com/js/jquery.mobile-1.4.5.js"></script>
 ```
 
-実際にこの記事に使った Markdown ファイルは [Github](https://github.com/tbsmcd/tbsmcd.github.io/blob/source/content/post/dnp-reading-asist/index.md) にあるので見てほしい。
+また、 html を Markdown に埋め込むにあたり [raw shortcodes](https://github.com/tbsmcd/tbsmcd.github.io/blob/b6e9104cf7eb44e002c8fb5eb75c2e6b50052c79/layouts/shortcodes/raw.html) を使った。
+
+この記事の実際の Markdown ファイルは [Github](https://github.com/tbsmcd/tbsmcd.github.io/blob/source/content/post/dnp-reading-asist/index.md) にあるので見てほしい。
