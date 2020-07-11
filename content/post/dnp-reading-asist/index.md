@@ -42,7 +42,7 @@ draft: false
 
 ---
 
-という感じで、 hugo でも使えることが分かった。
+というふうに hugo でも使えることが分かった。ページ全体のレイアウトが崩れるが、これはご愛嬌ということで。
 
 　今回は Pyhton で以下のようなスクリプトを書いて html を得た。
 
@@ -73,7 +73,7 @@ item_data = {
 print(requests.post(url, data=item_data).content.decode())
 ```
 
-しかしこれで得られる html で読み込む CSS/JavaScript は https://reading-assist.com からの相対パスになっているので多少の編集が必要だし、hugo で使用する場合は html ファイル中で CSS を読み込むことになるので遅延読み込みをしたら良いだろう。以下のようにすれば良い。
+しかしこれで得られる html は html タグまで含むから必要な div を抜き出さなければならない。また CSS/JavaScript は https://reading-assist.com からの相対パスになっているので多少の編集が必要だし、 CSS は body 中で読み込むことになるので遅延読み込みをしたら良いだろう。以下のようにすれば良い。
 
 ```html
 <link rel="preload" as="style" href="https://reading-assist.com/css/jquery.mobile-1.4.5.min2.css" onload="this.rel='stylesheet'">
@@ -84,4 +84,4 @@ print(requests.post(url, data=item_data).content.decode())
 <script type="text/javascript" src="https://reading-assist.com/js/jquery.mobile-1.4.5.js"></script>
 ```
 
-ファイルの全体は [Github](https://github.com/tbsmcd/tbsmcd.github.io/blob/source/content/post/dnp-reading-asist/index.md) で見ることができる。
+実際にこの記事に使った Markdown ファイルは [Github](https://github.com/tbsmcd/tbsmcd.github.io/blob/source/content/post/dnp-reading-asist/index.md) にあるので見てほしい。
