@@ -8,6 +8,8 @@ archives: ["2020-07"]
 draft: false
 ---
 
+（このページを見たあとにサイト内の別ページを見ると余計な CSS が適用されている場合があるので、遷移後いったんリロードしてください。）
+
 {{< raw >}}
 <div class="textblock">
 <span class="textline linetop"><span class="bgcolor">DNP&nbsp;の</span></span><span class="textline"><span class="bgcolor">開発した</span></span><span class="textline"><span class="bgcolor">「読書アシスト」を&nbsp;</span></span><span class="textline"><span class="bgcolor">hugo&nbsp;で</span></span><span class="textline"><span class="bgcolor">利用する</span></span><span class="textline"><span class="bgcolor">実験を</span></span><span class="textline"><span class="bgcolor">しているので、</span></span><span class="textline"><span class="bgcolor">これは</span></span><span class="textline"><span class="bgcolor">あえて</span></span><span class="textline"><span class="bgcolor">分かりにくい</span></span><span class="textline"><span class="bgcolor">文章に</span></span><span class="textline"><span class="bgcolor">するつもりだったが、</span></span><span class="textline"><span class="bgcolor"></span></span>
