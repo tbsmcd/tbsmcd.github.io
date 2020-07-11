@@ -8,7 +8,7 @@ archives: ["2020-07"]
 draft: false
 ---
 
-{{ raw }}
+{{< raw >}}
 <div class="textblock">
 <span class="textline linetop"><span class="bgcolor">DNP&nbsp;の</span></span><span class="textline"><span class="bgcolor">開発した</span></span><span class="textline"><span class="bgcolor">「読書アシスト」を&nbsp;</span></span><span class="textline"><span class="bgcolor">hugo&nbsp;で</span></span><span class="textline"><span class="bgcolor">利用する</span></span><span class="textline"><span class="bgcolor">実験を</span></span><span class="textline"><span class="bgcolor">しているので、</span></span><span class="textline"><span class="bgcolor">これは</span></span><span class="textline"><span class="bgcolor">あえて</span></span><span class="textline"><span class="bgcolor">分かりにくい</span></span><span class="textline"><span class="bgcolor">文章に</span></span><span class="textline"><span class="bgcolor">するつもりだったが、</span></span><span class="textline"><span class="bgcolor"></span></span>
 </div>
@@ -38,4 +38,50 @@ draft: false
 <script type="text/javascript" src="https://reading-assist.com/js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="https://reading-assist.com/js/steps_convert.js"></script>
 <script type="text/javascript" src="https://reading-assist.com/js/jquery.mobile-1.4.5.js"></script>
-{{ /raw }}
+{{< /raw >}}
+
+---
+
+という感じで、 hugo でも使えることが分かった。
+
+　今回は Pyhton で以下のようなスクリプトを書いて html を得た。
+
+```python
+#!/usr/bin/env python3
+
+import requests
+from pprint import pprint
+
+text = """
+DNP の開発した「読書アシスト」を hugo で利用する実験をしているので、これはあえて分かりにくい文章にするつもりだったが、
+実際のところ酔っ払っているのでこのまま勢いに任せてタイピングしていけば訳のわからない文章になることはうけあいだ。
+きょうは博多駅のヨドバシカメラに行ってオーブンレンジを買った。子供が生まれると金がかかりますね。先週はトヨタのディーラーに行ったので……
+まあ福岡に住んでいて車を持っていないというのも不便な話なので良い機会だったと思っている。オーブンレンジも、まあ買ってよかったものになるんじゃないかな。
+こんな感じにグダグダの文章を書いてみてよいのだろうか？
+"""
+
+url = 'https://reading-assist.com/api/assistapi.php'
+headers = {
+    'Content-Type': 'application/x-www-form-urlencoded'
+}
+item_data = {
+    'action': 'conv_htmltext',
+    'title': 'かいもの',
+    'htmlText': text
+}
+
+print(requests.post(url, data=item_data).content.decode())
+```
+
+しかしこれで得られる html で読み込む CSS/JavaScript は https://reading-assist.com からの相対パスになっているので多少の編集が必要だし、hugo で使用する場合は html ファイル中で CSS を読み込むことになるので遅延読み込みをしたら良いだろう。以下のようにすれば良い。
+
+```html
+<link rel="preload" as="style" href="https://reading-assist.com/css/jquery.mobile-1.4.5.min2.css" onload="this.rel='stylesheet'">
+<link rel="preload" as="style" href="https://reading-assist.com/css/style.css" onload="this.rel='stylesheet'">
+
+<script type="text/javascript" src="https://reading-assist.com/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="https://reading-assist.com/js/steps_convert.js"></script>
+<script type="text/javascript" src="https://reading-assist.com/js/jquery.mobile-1.4.5.js"></script>
+```
+
+ファイルの全体は [Github](https://github.com/tbsmcd/tbsmcd.github.io/blob/source/content/post/dnp-reading-asist/index.md) で見ることができる。
