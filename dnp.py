@@ -12,9 +12,6 @@ DNP の開発した「読書アシスト」を hugo で利用する実験をし�
 """
 
 url = 'https://reading-assist.com/api/assistapi.php'
-headers = {
-    'Content-Type': 'application/x-www-form-urlencoded'
-}
 item_data = {
     'action': 'conv_htmltext',
     'title': 'かいもの',
