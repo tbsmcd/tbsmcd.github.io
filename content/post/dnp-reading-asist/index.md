@@ -8,6 +8,8 @@ archives: ["2020-07"]
 draft: false
 ---
 
+他のページに遷移した場合にスタイルが崩れます。遷移後リロードしてください。
+
 ## 読書アシストを適用してみた
 
 {{< raw >}}
@@ -18,6 +20,7 @@ draft: false
 <div class="br">&nbsp;</div>
 <div class="br">&nbsp;</div>
 <div class="br">&nbsp;</div>
+<link rel="preload" as="style" href="https://reading-assist.com/css/jquery.mobile-1.4.5.min2.css" onload="this.rel='stylesheet'">
 <link rel="preload" as="style" href="https://reading-assist.com/css/style.css" onload="this.rel='stylesheet'">
 <script type="text/javascript" src="https://reading-assist.com/js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="https://reading-assist.com/js/steps_convert.js"></script>
@@ -59,15 +62,6 @@ item_data = {
 print(requests.post(url, data=item_data).content.decode())
 ```
 
-このスクリプトを実行したら1ページ分の html を取得できる。今回はページ内のコンテンツとして使いたいので `<div class="textblock">` を抜き出した。 CSS は以下のようにプリロードにして、 jquery-mobile は不要なので削除した。ただしそのためにレイアウトが崩れるので `max-width` を指定してある。
+　このスクリプトを実行したら1ページ分の html を取得できる。今回はページ内のコンテンツとして使いたいので `<div class="textblock">` を抜き出した。 CSS は以下のようにプリロードにした。jquery-mobile もそのままにしてある。ただしそのためにスタイルが崩れるので別のページに遷移した場合はリロードしてほしい。また、 html を Markdown に埋め込むにあたり [raw shortcodes](https://github.com/tbsmcd/tbsmcd.github.io/blob/b6e9104cf7eb44e002c8fb5eb75c2e6b50052c79/layouts/shortcodes/raw.html) を使った。
 
-```html
-<link rel="preload" as="style" href="https://reading-assist.com/css/style.css" onload="this.rel='stylesheet'">
-<script type="text/javascript" src="https://reading-assist.com/js/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="https://reading-assist.com/js/steps_convert.js"></script>
-<script type="text/javascript" src="https://reading-assist.com/js/jquery.mobile-1.4.5.js"></script>
-```
-
-また、 html を Markdown に埋め込むにあたり [raw shortcodes](https://github.com/tbsmcd/tbsmcd.github.io/blob/b6e9104cf7eb44e002c8fb5eb75c2e6b50052c79/layouts/shortcodes/raw.html) を使った。
-
-実際の Markdown ファイルは [Github](https://github.com/tbsmcd/tbsmcd.github.io/blob/source/content/post/dnp-reading-asist/index.md) にあるので見てほしい。
+　実際の Markdown ファイルは [Github](https://github.com/tbsmcd/tbsmcd.github.io/blob/source/content/post/dnp-reading-asist/index.md) にあるので見てほしい。
