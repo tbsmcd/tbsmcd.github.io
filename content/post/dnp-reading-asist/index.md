@@ -20,8 +20,8 @@ draft: false
 <div class="br">&nbsp;</div>
 <div class="br">&nbsp;</div>
 <div class="br">&nbsp;</div>
-<link rel="preload" as="style" href="https://reading-assist.com/css/jquery.mobile-1.4.5.min2.css" onload="this.rel='stylesheet'">
-<link rel="preload" as="style" href="https://reading-assist.com/css/style.css" onload="this.rel='stylesheet'">
+<link rel="preload" href="https://reading-assist.com/css/jquery.mobile-1.4.5.min2.css">
+<link rel="preload" href="https://reading-assist.com/css/style.css">
 <script type="text/javascript" src="https://reading-assist.com/js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="https://reading-assist.com/js/steps_convert.js"></script>
 <script type="text/javascript" src="https://reading-assist.com/js/jquery.mobile-1.4.5.js"></script>
