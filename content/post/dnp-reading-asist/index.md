@@ -60,7 +60,7 @@ item_data = {
 print(requests.post(url, data=item_data).content.decode())
 ```
 
-しかしこれで得られる html は html タグまで含むから必要な div を抜き出さなければならない。また CSS/JavaScript は https://reading-assist.com からの相対パスになっているので多少の編集が必要だし、 CSS は body 中で読み込むことになるので遅延読み込みをしたら良いだろう。以下のようにすれば良い。
+しかしこれで得られる html は html タグまで含むから必要な div を抜き出さなければならない。また CSS/JavaScript は https://reading-assist.com からの相対パスになっているので多少の編集が必要だし、 CSS は body 中で読み込むことになるのでプリロードをしたら良いだろう。以下のようにすれば良い。
 
 ```html
 <link rel="preload" as="style" href="https://reading-assist.com/css/jquery.mobile-1.4.5.min2.css" onload="this.rel='stylesheet'">
