@@ -8,7 +8,9 @@ archives: ["2020-07"]
 draft: false
 ---
 
-（このページを見たあとにサイト内の別ページを見ると余計な CSS が適用されている場合があるので、遷移後いったんリロードしてください。）
+このページは PC 向けになっています
+
+## 読書アシストを適用してみた
 
 {{< raw >}}
 <div class="textblock">
@@ -18,7 +20,6 @@ draft: false
 <div class="br">&nbsp;</div>
 <div class="br">&nbsp;</div>
 <div class="br">&nbsp;</div>
-<link rel="preload" as="style" href="https://reading-assist.com/css/jquery.mobile-1.4.5.min2.css" onload="this.rel='stylesheet'">
 <link rel="preload" as="style" href="https://reading-assist.com/css/style.css" onload="this.rel='stylesheet'">
 <script type="text/javascript" src="https://reading-assist.com/js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="https://reading-assist.com/js/steps_convert.js"></script>
@@ -29,9 +30,9 @@ draft: false
 
 [読書アシスト](https://read-assist-dxn.web.app/)  
 
-……というふうに hugo でも使えることが分かった。ページ全体のレイアウトが崩れるが、これはご愛嬌ということで。
+## ソースの取得
 
-　今回は Pyhton で以下のようなスクリプトを書いて html を得た。
+　今回は Pyhton で以下のようなスクリプトを書いた。
 
 ```python
 #!/usr/bin/env python3
@@ -60,12 +61,10 @@ item_data = {
 print(requests.post(url, data=item_data).content.decode())
 ```
 
-しかしこれで得られる html は html タグまで含むから必要な div を抜き出さなければならない。また CSS/JavaScript は https://reading-assist.com からの相対パスになっているので多少の編集が必要だし、 CSS は body 中で読み込むことになるのでプリロードをしたら良いだろう。以下のようにすれば良い。
+このスクリプトを実行したら1ページ分の html を取得できる。今回はページ内のコンテンツとして使いたいので `<div class="textblock">` を抜き出した。 CSS は以下のようにプリロードにして、 jquery-mobile は不要なので削除した。
 
 ```html
-<link rel="preload" as="style" href="https://reading-assist.com/css/jquery.mobile-1.4.5.min2.css" onload="this.rel='stylesheet'">
 <link rel="preload" as="style" href="https://reading-assist.com/css/style.css" onload="this.rel='stylesheet'">
-
 <script type="text/javascript" src="https://reading-assist.com/js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="https://reading-assist.com/js/steps_convert.js"></script>
 <script type="text/javascript" src="https://reading-assist.com/js/jquery.mobile-1.4.5.js"></script>
@@ -73,4 +72,4 @@ print(requests.post(url, data=item_data).content.decode())
 
 また、 html を Markdown に埋め込むにあたり [raw shortcodes](https://github.com/tbsmcd/tbsmcd.github.io/blob/b6e9104cf7eb44e002c8fb5eb75c2e6b50052c79/layouts/shortcodes/raw.html) を使った。
 
-この記事の実際の Markdown ファイルは [Github](https://github.com/tbsmcd/tbsmcd.github.io/blob/source/content/post/dnp-reading-asist/index.md) にあるので見てほしい。
+実際の Markdown ファイルは [Github](https://github.com/tbsmcd/tbsmcd.github.io/blob/source/content/post/dnp-reading-asist/index.md) にあるので見てほしい。
