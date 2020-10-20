@@ -1,0 +1,25 @@
+<!doctype html><html lang=ja><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-158035573-1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','UA-158035573-1');</script><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>hugo でシリーズ記事一覧を表示するための Shortcode と設定 | tbsmcd.net</title><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/code.css><link rel=stylesheet href=/css/fonts.css><link rel=apple-touch-icon sizes=57x57 href=/apple-icon-57x57.png><link rel=apple-touch-icon sizes=60x60 href=/apple-icon-60x60.png><link rel=apple-touch-icon sizes=72x72 href=/apple-icon-72x72.png><link rel=apple-touch-icon sizes=76x76 href=/apple-icon-76x76.png><link rel=apple-touch-icon sizes=114x114 href=/apple-icon-114x114.png><link rel=apple-touch-icon sizes=120x120 href=/apple-icon-120x120.png><link rel=apple-touch-icon sizes=144x144 href=/apple-icon-144x144.png><link rel=apple-touch-icon sizes=152x152 href=/apple-icon-152x152.png><link rel=apple-touch-icon sizes=180x180 href=/apple-icon-180x180.png><link rel=icon type=image/png sizes=192x192 href=/android-icon-192x192.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=96x96 href=/favicon-96x96.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/manifest.json><meta name=msapplication-TileColor content="#ffffff"><meta name=msapplication-TileImage content="/ms-icon-144x144.png"><meta name=theme-color content="#ffffff"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content="@tbsmcd"><meta name=twitter:creator content="@tbsmcd"><meta property="og:url" content="https://tbsmcd.net/post/series-list/"><meta property="og:title" content="hugo でシリーズ記事一覧を表示するための Shortcode と設定 | tbsmcd"><meta property="og:description" content="hugo でシリーズ記事を書く際に必要であろう、記事一覧を表示する設定と作成した shortcode について。"><meta property="og:image" content="https://tbsmcd.net/post/added_favicon/icon_mono.jpg"></head><body><header>tbsmcd.net : <a href=/>Home</a> | <a href=/archives/>Archives</a> | <a href=/tags/>Tags</a> | <a href=/search/>Search</a> | <a href=/profile/>Profile</a></header><main><h1 class=single>hugo でシリーズ記事一覧を表示するための Shortcode と設定</h1><p class=article-date>2020-10-20</p><h2 id=heading>シリーズ記事を書く機運</h2><p>　しばらく放ったらかしだったこのブログにも書くネタはあるのでシリーズ記事を書いてみたい。それに先立ち、記事内に埋め込む「同一シリーズの記事一覧」機能を1自作した。</p><h2 id=shortcode>Shortcode</h2><p>code: <code>series.html</code></p><div class=highlight><pre class=chroma><code class=language-html data-lang=html>{{ $name := .Get &#34;name&#34; }}
+<span class=p>&lt;</span><span class=nt>h3</span><span class=p></span><span class=p>&gt;</span>Series: {{ $name }}<span class=p>&lt;</span><span class=p>/</span><span class=nt>h3</span><span class=p>&gt;</span>
+<span class=p>&lt;</span><span class=nt>ul</span><span class=p></span><span class=p>&gt;</span>
+{{ range $key, $series := site.Taxonomies.series }}
+    {{ if eq $key $name }}
+        {{ range $series.Pages }}
+    <span class=p>&lt;</span><span class=nt>li</span><span class=p></span><span class=p>&gt;</span><span class=p>&lt;</span><span class=nt>a</span> <span class=na>href</span><span class=o>=</span><span class=s>&#34;{{ .URL }}&#34;</span><span class=p></span><span class=p>&gt;</span>{{ .Title }}<span class=p>&lt;</span><span class=p>/</span><span class=nt>a</span><span class=p>&gt;</span><span class=p>&lt;</span><span class=p>/</span><span class=nt>li</span><span class=p>&gt;</span>
+        {{ end }}
+    {{ end }}
+{{ end }}
+<span class=p>&lt;</span><span class=p>/</span><span class=nt>ul</span><span class=p>&gt;</span>
+</code></pre></div><p>usage</p><div class=highlight><pre class=chroma><code class=language-html data-lang=html>
+<h3>Series: シリーズ名</h3>
+<ul>
+
+    
+
+</ul>
+</code></pre></div><h2 id=settings>Settings</h2><p><code>config.toml</code></p><pre><code>[taxonomies]
+tag = &quot;tags&quot;
+archive = &quot;archives&quot;
+series = &quot;series&quot;
+</code></pre><h2 id=heading-1>実際の表示↓</h2><h3>Series: シリーズを追加</h3><ul><li><a href=/post/series-list/>hugo でシリーズ記事一覧を表示するための Shortcode と設定</a></li><li><a href=/post/test-series/>Taxonomy「シリーズ」を追加するテスト</a></li></ul><h2 id=heading-2>ポイント</h2><p><code>{{ range $key, $series := site.Taxonomies.series }}</code> で <code>foreach (series as key => value)</code> のような動きをすることぐらい。</p></main><p>Tags:
+<a href=/tags/hugo>hugo</a></p><footer><hr>Written by Mochida Tsubasa(@tbsmcd). <a href=https://docs.google.com/forms/d/e/1FAIpQLScLrngN5Znk15zTy06N9qjO3Mi_ubIrXrX9cfYFid_2-mmbQQ/viewform>Contact</a> <a href=/index.xml>Feed</a></footer></body></html>
