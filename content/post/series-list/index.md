@@ -20,7 +20,7 @@ series.html
 ```html
 {{ $name := .Get "name" }}
 <h3>Series: {{ $name }}</h3>
-<ul>
+<ul class="page-list">
 {{ range $key, $series := site.Taxonomies.series }}
     {{ if eq $key $name }}
         {{ range $series.Pages }}
