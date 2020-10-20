@@ -1,4 +1,4 @@
-{{ $name := .Get "series" }}
+{{ $name := .Get "name" }}
 <h3>Series: {{ $name }}</h3>
 <ul>
 {{ range $key, $series := site.Taxonomies.series }}
