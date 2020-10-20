@@ -27,12 +27,16 @@ try:
         desc = input('Description: ')
         img = input('OGP image: ')
         tags = input('Tags(comma separated): ')
+        series = input('Series(comma separated): ')
         draft = input('Draft(Y/n): ')
         print('Creating page: {0}/index.md'.format(dir_path))
 
         # タグを整理する
         tags_list = ['"{0}"'.format(x.strip()) for x in tags.split(',')]
         tags_str = ', '.join(tags_list)
+        # シリーズを整理する
+        series_list = ['"{0}"'.format(x.strip()) for x in series.split(',')]
+        series_str = ', '.join(series_list)
 
         # is draft
         if draft == 'y' or draft == 'Y':
@@ -47,11 +51,12 @@ description: "{1}"
 image: "{2}"
 date: {3}
 tags: [{4}]
+series: [{7}]
 archives: ["{5}"]
 draft: {6}
 ---
         """.format(title, desc, img, dt_now.strftime('%Y-%m-%dT%H:%M:%S+09:00'),
-                   tags_str, dt_now.strftime('%Y-%m'), is_draft)
+                   tags_str, dt_now.strftime('%Y-%m'), is_draft, series_str)
 
         # ファイル作成
         os.makedirs(dir_path, exist_ok=True)

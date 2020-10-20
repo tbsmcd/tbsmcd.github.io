@@ -26,6 +26,7 @@ math = true
 [taxonomies]
 tag = "tags"
 archive = "archives"
+series = "series"
 
 [markup.goldmark.renderer]
 unsafe = true
