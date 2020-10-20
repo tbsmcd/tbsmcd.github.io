@@ -26,6 +26,7 @@ series.html
         {{ range $series.Pages }}
     <li>
         <span class="list-date">{{ .Date.Format "2006/01/02" }}</span>
+        <br>
         <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
     </li>
         {{ end }}
