@@ -55,7 +55,9 @@ series: ["シリーズを追加"]
 
 ## 利用法
 
-[https://github.com/tbsmcd/tbsmcd.github.io/blob/b84e2829c021b40eb128440685259d9654b69086/content/post/series-list/index.md#L58](https://github.com/tbsmcd/tbsmcd.github.io/blob/b84e2829c021b40eb128440685259d9654b69086/content/post/series-list/index.md#L58)
+[https://github.com/tbsmcd/tbsmcd.github.io/blob/b84e2829c021b40eb128440685259d9654b69086/content/post/series-list/index.md](https://github.com/tbsmcd/tbsmcd.github.io/blob/b84e2829c021b40eb128440685259d9654b69086/content/post/series-list/index.md)
+
+「実際の表示」参照
 
 ## 実際の表示↓
 
