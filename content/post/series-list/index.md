@@ -43,7 +43,15 @@ archive = "archives"
 series = "series"
 ```
 
-taxonomies に series を追加する。これでデフォルトで用意されている tag のように使えるようになる。
+　taxonomies に series を追加する。これでデフォルトで用意されている tag のように使えるようになる。
+
+## 記事のメタ情報
+
+ tag のようにページヘッダに記述。
+
+```
+series: ["シリーズを追加"]
+```
 
 ## 実際の表示↓
 
