@@ -15,7 +15,7 @@ draft: false
 
 ## Shortcode
 
-code: series.html
+series.html
 
 ```html
 {{ $name := .Get "name" }}
@@ -34,7 +34,7 @@ code: series.html
 
 ## 設定
 
-`config.toml`
+config.toml
 
 ```
 [taxonomies]
@@ -59,4 +59,4 @@ series: ["シリーズを追加"]
 
 ## ポイント
 
-`{{ range $key, $series := site.Taxonomies.series }}` で `foreach (series as key => value)` のような動きができること。
+　`{{ range $key, $series := site.Taxonomies.series }}` で `foreach (series as key => value)` のような動きができること。
