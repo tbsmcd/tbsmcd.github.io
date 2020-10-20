@@ -11,11 +11,11 @@ draft: false
 
 ## シリーズ記事を書く機運
 
-　しばらく放ったらかしだったこのブログにも書くネタはあるのでシリーズ記事を書いてみたい。それに先立ち、記事内に埋め込む「同一シリーズの記事一覧」機能を1自作した。
+　しばらく放ったらかしだったこのブログにも書くネタはあるのでシリーズ記事を書いてみたい。それに先立ち、記事内に埋め込む「同一シリーズの記事一覧」機能を自作した。
 
 ## Shortcode
 
-code: `series.html`
+code: series.html
 
 ```html
 {{ $name := .Get "name" }}
@@ -31,13 +31,8 @@ code: `series.html`
 </ul>
 ```
 
-usage
 
-```html
-{{< series name="シリーズ名" >}}
-```
-
-## Settings
+## 設定
 
 `config.toml`
 
@@ -48,10 +43,12 @@ archive = "archives"
 series = "series"
 ```
 
+taxonomies に series を追加する。これでデフォルトで用意されている tag のように使えるようになる。
+
 ## 実際の表示↓
 
 {{< series name="シリーズを追加" >}}
 
 ## ポイント
 
-`{{ range $key, $series := site.Taxonomies.series }}` で `foreach (series as key => value)` のような動きをすることぐらい。
+`{{ range $key, $series := site.Taxonomies.series }}` で `foreach (series as key => value)` のような動きができること。
