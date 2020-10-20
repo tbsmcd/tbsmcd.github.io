@@ -24,7 +24,10 @@ series.html
 {{ range $key, $series := site.Taxonomies.series }}
     {{ if eq $key $name }}
         {{ range $series.Pages }}
-    <li><a href="{{ .URL }}">{{ .Title }}</a></li>
+    <li>
+        <span class="date">{{ .Date.Format "2006/01/02" }}</span>
+        <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
+    </li>
         {{ end }}
     {{ end }}
 {{ end }}
