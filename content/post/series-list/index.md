@@ -25,7 +25,7 @@ series.html
     {{ if eq $key $name }}
         {{ range $series.Pages }}
     <li>
-        <span class="date">{{ .Date.Format "2006/01/02" }}</span>
+        <span class="list-date">{{ .Date.Format "2006/01/02" }}</span>
         <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
     </li>
         {{ end }}
