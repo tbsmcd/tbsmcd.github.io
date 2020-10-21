@@ -1,0 +1,14 @@
+body {
+	font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+code {
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 85%;
+}
+.in-article-list {
+    padding: 13px;
+    background-color: #f0f3f3;
+}
+.in-article-list-p {
+    margin: 0px;
+}
