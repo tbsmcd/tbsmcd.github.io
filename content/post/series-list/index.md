@@ -19,7 +19,8 @@ series.html
 
 ```html
 {{ $name := .Get "name" }}
-<h3>Series: {{ $name }}</h3>
+<div class="chroma">
+<p>Series: {{ $name }}</p>
 <ul class="page-list">
 {{ range $key, $series := site.Taxonomies.series }}
     {{ if eq $key $name }}
@@ -33,6 +34,7 @@ series.html
     {{ end }}
 {{ end }}
 </ul>
+</div>
 ```
 
 
