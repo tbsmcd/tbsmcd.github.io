@@ -32,12 +32,16 @@ gtag('js',new Date());gtag('config','UA-158035573-1');</script><meta charset=utf
 </span><span class=w>          </span>tags<span class=p>:</span><span class=w> </span><span class=sd>|
 </span><span class=sd>           </span><span class=sd> </span><span class=sd>tbsmcd/nlp_pytorch:latest</span><span class=w>
 </span><span class=w>            </span>tbsmcd/nlp_pytorch<span class=p>:</span>${{steps.tag_number.outputs.dh_tag}}<span class=w>
-</span></code></pre></div><p>　docker/setup-buildx-action, docker/login-action, docker/build-push-action あたりの使い方は各リポジトリを見たらわかると思う。タグについては</p><pre><code>      - name: Get version number
-        id: tag_number
-        run: |
-          CURRENT_TAG=$(git tag --sort=-creatordate | sed -n 1p)
-          DOCKERHUB_TAG=&quot;${CURRENT_TAG//v/}&quot;
-          echo &quot;::set-output name=dh_tag::${DOCKERHUB_TAG}&quot;
-</code></pre><p>の箇所で</p><ul><li>GitHub に push された最新のタグを取得</li><li>タグから v を削除</li><li>それを Docker Hub タグ用の変数に代入</li></ul><p>ということをしている。これは簡単なシェルスクリプトなので様々な応用が効くと思う。</p><h2 id=heading-1>使ってみて</h2><p>　速い。 Docker Hub にも GitHub と連携してビルドする機能があるので比べてみた。</p><h3 id=docker-hub>Docker Hub</h3><p>25分</p><a href=/post/github-docker-build-and-push/dh.png><img src=/post/github-docker-build-and-push/dh_hu97caff3ed0ee0506c5edd5f6a032f0a9_38280_800x0_resize_q90_box_2.png alt="Docker Hub では25分"></a><h3 id=github-actions>GitHub Actions</h3><p>10分</p><a href=/post/github-docker-build-and-push/gh.png><img src=/post/github-docker-build-and-push/gh_hube044bda5c48a46e2413496686798688_103960_800x0_resize_q90_box_2.png alt="GHA では10分"></a><p>　これは時間帯による影響などもあるかもしれないが、実際に動かした結果は圧倒的に速かった。また、 GHA でビルド・プッシュをするならば Docker Hub 以外（GitHub Packages など）にも展開することができて便利だと思う。</p><h2 id=heading-2>参考資料</h2><ul><li><a href=https://docs.github.com/ja/free-pro-team@latest/actions/guides/publishing-docker-images>Dockerイメージの公開 - GitHub Docs</a>　</li></ul></main><p>Tags:
+</span></code></pre></div><p>　docker/setup-buildx-action, docker/login-action, docker/build-push-action あたりの使い方は各リポジトリを見たらわかると思う。</p><div class=highlight><pre class=chroma><code class=language-yml data-lang=yml>on<span class=p>:</span><span class=w>
+</span><span class=w>  </span>push<span class=p>:</span><span class=w>
+</span><span class=w>    </span>tags<span class=p>:</span><span class=w>
+</span><span class=w>      </span>-<span class=w> </span><span class=s1>&#39;v*.*.*&#39;</span><span class=w>
+</span></code></pre></div><p>の箇所では <code>v*.*.*</code> に当てはまるタグを付けた場合に動くようにしている。</p><div class=highlight><pre class=chroma><code class=language-yml data-lang=yml><span class=w>      </span>-<span class=w> </span>name<span class=p>:</span><span class=w> </span>Get<span class=w> </span>version<span class=w> </span>number<span class=w>
+</span><span class=w>        </span>id<span class=p>:</span><span class=w> </span>tag_number<span class=w>
+</span><span class=w>        </span>run<span class=p>:</span><span class=w> </span><span class=sd>|
+</span><span class=sd>         </span><span class=sd> </span><span class=sd>CURRENT_TAG=$(git tag --sort=-creatordate | sed -n 1p)</span><span class=w>
+</span><span class=w>          </span>DOCKERHUB_TAG=<span class=s2>&#34;${CURRENT_TAG//v/}&#34;</span><span class=w>
+</span><span class=w>          </span>echo<span class=w> </span><span class=s2>&#34;::set-output name=dh_tag::${DOCKERHUB_TAG}&#34;</span><span class=w>
+</span></code></pre></div><p>の箇所で</p><ul><li>GitHub に push された最新のタグを取得</li><li>タグから v を削除</li><li>それを Docker Hub タグ用の変数に代入</li></ul><p>ということをしている。これは簡単なシェルスクリプトなので様々な応用が効くと思う。</p><h2 id=heading-1>使ってみて</h2><p>　速い。 Docker Hub にも GitHub と連携してビルドする機能があるので比べてみた。</p><h3 id=docker-hub>Docker Hub</h3><p>25分</p><a href=/post/github-docker-build-and-push/dh.png><img src=/post/github-docker-build-and-push/dh_hu97caff3ed0ee0506c5edd5f6a032f0a9_38280_800x0_resize_q90_box_2.png alt="Docker Hub では25分"></a><h3 id=github-actions>GitHub Actions</h3><p>10分</p><a href=/post/github-docker-build-and-push/gh.png><img src=/post/github-docker-build-and-push/gh_hube044bda5c48a46e2413496686798688_103960_800x0_resize_q90_box_2.png alt="GHA では10分"></a><p>　これは時間帯による影響などもあるかもしれないが、実際に動かした結果は圧倒的に速かった。また、 GHA でビルド・プッシュをするならば Docker Hub 以外（GitHub Packages など）にも展開することができて便利だと思う。</p><h2 id=heading-2>参考資料</h2><ul><li><a href=https://docs.github.com/ja/free-pro-team@latest/actions/guides/publishing-docker-images>Dockerイメージの公開 - GitHub Docs</a>　</li></ul></main><p>Tags:
 <a href=/tags/docker>Docker</a>
 <a href=/tags/github-actions>GitHub Actions</a></p><footer><hr>Written by Mochida Tsubasa(@tbsmcd). <a href=https://docs.google.com/forms/d/e/1FAIpQLScLrngN5Znk15zTy06N9qjO3Mi_ubIrXrX9cfYFid_2-mmbQQ/viewform>Contact</a> <a href=/index.xml>Feed</a></footer></body></html>
