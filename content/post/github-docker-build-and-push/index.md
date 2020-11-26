@@ -58,9 +58,18 @@ jobs:
             tbsmcd/nlp_pytorch:${{steps.tag_number.outputs.dh_tag}}
 ```
 
-　docker/setup-buildx-action, docker/login-action, docker/build-push-action あたりの使い方は各リポジトリを見たらわかると思う。タグについては
+　docker/setup-buildx-action, docker/login-action, docker/build-push-action あたりの使い方は各リポジトリを見たらわかると思う。
 
+```yml
+on:
+  push:
+    tags:
+      - 'v*.*.*'
 ```
+
+の箇所では `v*.*.*` に当てはまるタグを付けた場合に動くようにしている。
+
+```yml
       - name: Get version number
         id: tag_number
         run: |
