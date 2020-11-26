@@ -1,6 +1,6 @@
 ---
 title: "GitHub Actions を使って docker build し、 Docker Hub に push する"
-description: "GitHub Actions を使って Docker イメージをビルドし、 Docker Hub に push すると速くて便利だった。"
+description: "GitHub Actions を使って Docker イメージをビルドし Docker Hub に push すると速くて便利だった。"
 image: "car_straddle_carrier.png"
 date: 2020-11-26T23:00:06+09:00
 tags: ["Docker", "GitHub Actions"]
@@ -9,9 +9,11 @@ archives: ["2020-11"]
 draft: false
 ---
 
+{{< img800x src="car_straddle_carrier.png" alt="コンテナを配置する様" >}}
+
 ## GitHub Actions は便利
 
-　2019年11月に GitHub Actions （以下 GHA）が正式に公開されて以来、おもに CI/CD を GHA に乗り換える事が増えていると思う。その後 GitHub Enterprise でも GHA が使用可能になり、弊社（GMO ペパボ）でもその動きが活発化している。じぶんはふだん Web アプリケーションのデプロイの一環として GHA を捉えているのだけど、 GHA でできるのはそれだけにとどまらない。
+　2019年11月に GitHub Actions （以下 GHA）が正式に公開されて以来、おもに CI/CD を GHA に乗り換える事が増えていると思う。その後 GitHub Enterprise でも GHA が使用可能になり、弊社（GMO ペパボ）でもその動きが活発化している。じぶんはふだん Web アプリケーションのデプロイの一環として GHA を捉えているのだけど、 GHA でできるのはそれだけにとどまらない。  
 　さいきん自然言語処理の練習用に Dockerfile を書いた。個人用のローカルマシンでビルドして使っているのだけど、業務でも使いたいという野望もあり、それならば2箇所でビルドするよりイメージを共有できたら良い。だったら GHA でビルドできるのでは？と考え調べると簡単にできるらしいことがわかった。
 
 ## やりたいこと
