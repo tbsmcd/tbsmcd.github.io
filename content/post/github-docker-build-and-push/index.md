@@ -1,15 +1,13 @@
 ---
 title: "GitHub Actions を使って docker build し、 Docker Hub に push する"
 description: "GitHub Actions を使って Docker イメージをビルドし Docker Hub に push すると速くて便利だった。"
-image: "car_straddle_carrier.png"
+image: "gh.png"
 date: 2020-11-26T23:00:06+09:00
 tags: ["Docker", "GitHub Actions"]
 series: [""]
 archives: ["2020-11"]
 draft: false
 ---
-
-{{< img800x src="car_straddle_carrier.png" alt="コンテナを配置する様" >}}
 
 ## GitHub Actions は便利
 
