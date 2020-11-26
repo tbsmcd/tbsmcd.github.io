@@ -1,5 +1,5 @@
 ---
-title: "GitHub Actions を使って docker build し、 Docker Hub に push する"
+title: "GitHub Actions を使って docker build し Docker Hub に push すると、速くて良い"
 description: "GitHub Actions を使って Docker イメージをビルドし Docker Hub に push すると速くて便利だった。"
 image: "gh.png"
 date: 2020-11-26T23:00:06+09:00
