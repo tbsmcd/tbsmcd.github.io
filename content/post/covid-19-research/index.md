@@ -13,7 +13,7 @@ draft: false
 
 {{< img400x src="saiketsu.jpg" alt="採血される様子" >}}
 
-{{< img400x src="intervew.jpg" alt="インタビューされる様子" >}}
+{{< img400x src="interview.jpg" alt="インタビューされる様子" >}}
 
 [Youtube](https://www.youtube.com/watch?v=lNzPb85YRmQ)
 
