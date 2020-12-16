@@ -3,8 +3,7 @@ title: "新型コロナウイルス感染症の抗体保有率調査に参加し
 description: "新型コロナウイルス感染症の抗体保有率調査に参加して FBS の取材に答えた"
 image: "saiketsu.jpg"
 date: 2020-12-17T01:40:20+09:00
-tags: ["COVID-19"]
-series: [""]
+tags: ["新型コロナウイルス（COVID-19）"]
 archives: ["2020-12"]
 draft: false
 ---
