@@ -17,4 +17,4 @@ draft: false
 
 [Youtube](https://www.youtube.com/watch?v=lNzPb85YRmQ)
 
-　「めんたいワイド」で放送されたのだけど、娘（1歳2ヶ月）は機嫌が悪くて観てくれなかった。
+　「めんたいワイド」で放送されたのだけど、娘（1歳2ugo ヶ月）は機嫌が悪くて観てくれなかった。
