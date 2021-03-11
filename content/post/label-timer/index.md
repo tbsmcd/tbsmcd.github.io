@@ -9,6 +9,8 @@ archives: ["2021-03"]
 draft: false
 ---
 
+{{< series name="Label timer をリリースした" >}}
+
 リンク
 
 - [Label timer · Actions · GitHub Marketplace](https://github.com/marketplace/actions/label-timer)
