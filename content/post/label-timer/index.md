@@ -1,5 +1,5 @@
 ---
-title: "Issue, Pull Request のリードタイムを計測できる GitHub Action "Label timer" をリリースした"
+title: "Issue, Pull Request のリードタイムを計測できる GitHub Action「Label timer」をリリースした"
 description: "Issue, Pull Request のリードタイムを計測できる GitHub Action "Label timer" をリリースした。ラベルの付いていた時間を計測でき、結果を後続の steps, jobs にパイプすることができるので、 DB やスプレッドシートに保存できる。Dev Ops の改善に使えると思う。"
 image: "header.png"
 date: 2021-03-11T23:52:21+09:00
