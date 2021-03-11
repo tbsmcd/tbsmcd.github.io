@@ -4,12 +4,12 @@ description: "Issue, Pull Request のリードタイムを計測できる GitHub
 image: "header.png"
 date: 2021-03-11T23:52:21+09:00
 tags: ["GitHub Actions", "Python", "OSS"]
-series: ["Label timer をリリースした"]
+series: ["label_timer"]
 archives: ["2021-03"]
 draft: false
 ---
 
-{{< series name="Label timer をリリースした" >}}
+{{< series name="label_timer" >}}
 
 リンク
 
