@@ -39,5 +39,5 @@ url = events['pull_request']['_links']['html']['href']
 api_url = events['pull_request']['_links']['comments']['href']
 ```
 
-で契機となった Pull Request の URL や Pull Request のコメントを操作する API エンドポイントを取得できる。。
+で契機となった Pull Request の URL や Pull Request のコメントを操作する API エンドポイントを取得できる。
 
