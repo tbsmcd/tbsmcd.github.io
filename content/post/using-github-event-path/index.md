@@ -13,8 +13,8 @@ draft: false
 
 この記事は [Label timer](https://github.com/marketplace/actions/label-timer) を開発したことで得られた知見。
 
-## 先に本題を
-### GitHub Enterprise と github.com では API のエンドポイントが違うから
+先に本題を
+## GitHub Enterprise と github.com では API のエンドポイントが違うから
 
 　GitHub Enterprise は利用する人たちがそれぞれホストしているものだから、URL はバラバラなはず。GitHub Actions で GitHub API を叩く記事を Qiita やブログで探すと、ドメインを api.github.com 固定で書いているものがいくつかあった。これは GitHub Enterprise では使えない。しかし `${{ github.event }}` や `GITHUB_EVENT_PATH` から API エンドポイントを取得したらその差異を考えなくても動く。できることならドメイン決め打ちではなく、`${{ github.event }}` や `GITHUB_EVENT_PATH` を使って書いてもらえると色々な環境で使えて便利なのではないかと思う。
 
