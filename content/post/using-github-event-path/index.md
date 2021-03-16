@@ -13,11 +13,12 @@ draft: false
 
 この記事は [Label timer](https://github.com/marketplace/actions/label-timer) を開発したことで得られた知見。
 
-## 先に本題を: GitHub Enterprise と github.com では API のエンドポイントが違う
+## 先に本題を
+### GitHub Enterprise と github.com では API のエンドポイントが違うから
 
 　GitHub Enterprise は利用する人たちがそれぞれホストしているものだから、URL はバラバラなはず。GitHub Actions で GitHub API を叩く記事を Qiita やブログで探すと、ドメインを api.github.com 固定で書いているものがいくつかあった。これは GitHub Enterprise では使えない。しかし `${{ github.event }}` や `GITHUB_EVENT_PATH` から API エンドポイントを取得したらその差異を考えなくても動く。できることならドメイン決め打ちではなく、`${{ github.event }}` や `GITHUB_EVENT_PATH` を使って書いてもらえると色々な環境で使えて便利なのではないかと思う。
 
-## events について説明
+## 以下 events について簡単に説明
 
 [ワークフローをトリガーするイベント - GitHub Docs](https://docs.github.com/ja/actions/reference/events-that-trigger-workflows)
 
@@ -25,16 +26,18 @@ draft: false
 
 ```python
 with open(environ.get('GITHUB_EVENT_PATH')) as f:
-    events = json.load(f)
+	events = json.load(f)
+	action = events['action']
 ```
 
-のように。
+のように。Pull Request にラベルが付いたことを契機とするものであれば、 `action` には `labeled` が代入される。
 
-　この `events` には API エンドポイントや Pull Request/Issue の URL が含まれている。Pull Request 契機であれば
+　この `events` には API エンドポイントや各種 URL も含まれている。例として Pull Request 契機であれば
 
 ```python
 url = events['pull_request']['_links']['html']['href']
+api_url = events['pull_request']['_links']['comments']['href']
 ```
 
-で契機となった Pull Request の URL を取得できる。
+で契機となった Pull Request の URL や Pull Request のコメントを操作する API エンドポイントを取得できる。。
 
