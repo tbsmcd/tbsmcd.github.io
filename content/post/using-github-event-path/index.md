@@ -1,5 +1,5 @@
 ---
-title: "GitHub Actions を github.com/GitHub Enterprise で共通化するためにも ${{ github.event }}/GITHUB_EVENT_PATH は有効"
+title: "GitHub Actions を github.com/GitHub Enterprise で共通化するために `${{ github.event }}/GITHUB_EVENT_PATH` を使ってほしい"
 description: "GitHub Actions を github.com/GitHub Enterprise で共通化するためには ${{ github.event }}/GITHUB_EVENT_PATH が有効的。特に API を叩く時には便利。"
 image: "header.png"
 date: 2021-03-17T01:12:39+09:00
@@ -11,7 +11,13 @@ draft: false
 
 {{< series name="label_timer" >}}
 
-## events
+この記事は [Label timer](https://github.com/marketplace/actions/label-timer) を開発したことで得られた知見。
+
+## 先に本題を: GitHub Enterprise と github.com では API のエンドポイントが違う
+
+　GitHub Enterprise は利用する人たちがそれぞれホストしているものだから、URL はバラバラなはず。GitHub Actions で GitHub API を叩く記事を Qiita やブログで探すと、ドメインを api.github.com 固定で書いているものがいくつかあった。これは GitHub Enterprise では使えない。しかし `${{ github.event }}` や `GITHUB_EVENT_PATH` から API エンドポイントを取得したらその差異を考えなくても動く。できることならドメイン決め打ちではなく、`${{ github.event }}` や `GITHUB_EVENT_PATH` を使って書いてもらえると色々な環境で使えて便利なのではないかと思う。
+
+## events について説明
 
 [ワークフローをトリガーするイベント - GitHub Docs](https://docs.github.com/ja/actions/reference/events-that-trigger-workflows)
 
@@ -32,6 +38,3 @@ url = events['pull_request']['_links']['html']['href']
 
 で契機となった Pull Request の URL を取得できる。
 
-## 本題: GitHub Enterprise の場合
-
-　GitHub Enterprise は利用する人たちがそれぞれホストしているものだから、URL はバラバラなはず。GitHub Actions で GitHub API を叩く記事を Qiita やブログで探すと、ドメインを api.github.com 固定で書いているものがいくつかあった。これは GitHub Enterprise では使えない。しかし ${{ github.event }} や GITHUB_EVENT_PATH から API エンドポイントを取得したらその差異を考えなくても動く。できることならドメイン決め打ちではなく、${{ github.event }} や GITHUB_EVENT_PATH を使って書いてもらえると色々な環境で使えて便利なのではないかと思う。
