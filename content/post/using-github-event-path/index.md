@@ -20,7 +20,7 @@ draft: false
 
 ## 共通化させる方法
 
-　おそらくいろいろなやり方があると思う。パッと思いついたものとしては、エンドポイントを workflows/*.yml の中で記す方法などが考えられる。action.yml と workflows/*.yml の記述は以下のように。
+　おそらくいろいろなやり方があると思う。パッと思いついたものとしては、エンドポイントを .github/workflows/foo.yml の中で記す方法などが考えられる。action.yml と .github/workflows/foo.yml の記述は以下のように。
 
 ```yml:action.yml
 inputs:
@@ -30,7 +30,7 @@ inputs:
     default: https://api.github.com/
 ```
 
-```yml:workflows/foo.yml
+```yml:foo.yml
 jobs:
   foo::
     runs-on: ubuntu-latest
