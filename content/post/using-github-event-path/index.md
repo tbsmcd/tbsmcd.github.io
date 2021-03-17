@@ -42,7 +42,7 @@ jobs:
           api_endpoint: https://[your_domain]/api/v3/
 ```
 
-　さて、今回 Issue_timer を作るにあたっては `GITHUB_EVENT_PATH` を用いてワークフローをトリガするイベントを取得し、その中に記載のある API エンドポイントにアクセスする方法を採用した。この方法だと workflows/*.yml でエントリーポイントを指定する必要もない。
+　さて、今回 Issue_timer を作るにあたっては `GITHUB_EVENT_PATH` を用いてワークフローをトリガするイベントを取得し、その中に記載のある API エンドポイントにアクセスする方法を採用した。この方法だと workflows/foo.yml でエントリーポイントを指定する必要もない。
 
 [ワークフローをトリガーするイベント - GitHub Docs](https://docs.github.com/ja/actions/reference/events-that-trigger-workflows)
 
