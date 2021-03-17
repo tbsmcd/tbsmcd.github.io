@@ -1,5 +1,5 @@
 ---
-title: "GitHub Actions を github.com/GitHub Enterprise で共通化するために `${{ github.event }}/GITHUB_EVENT_PATH` を使ってほしい"
+title: "内部で GitHub API を用いる GitHub Actions を、 github.com と GitHub Enterprise の両方に対応させる"
 description: "GitHub Actions を github.com/GitHub Enterprise で共通化するためには ${{ github.event }}/GITHUB_EVENT_PATH が有効的。特に API を叩く時には便利。"
 image: "header.png"
 date: 2021-03-17T01:12:39+09:00
@@ -13,17 +13,19 @@ draft: false
 
 この記事は [Label timer](https://github.com/marketplace/actions/label-timer) を開発したことで得られた知見。
 
-## GitHub Enterprise と github.com では API のエンドポイントが違うから
-　
-先に本題を。
+## GitHub Enterprise と github.com で異なる API エンドポイント
 
-　GitHub Enterprise は利用する人たちがそれぞれホストしているものだから、URL はバラバラなはず。GitHub Actions で GitHub API を叩く記事を Qiita やブログで探すと、ドメインを api.github.com 固定で書いているものがいくつかあった。これは GitHub Enterprise では使えない。しかし `${{ github.event }}` や `GITHUB_EVENT_PATH` から API エンドポイントを取得したらその差異を考えなくても動く。できることならドメイン決め打ちではなく、`${{ github.event }}` や `GITHUB_EVENT_PATH` を使って書いてもらえると色々な環境で使えて便利なのではないかと思う。
+　例えば GitHub API の https://api.github.com/foo に相当するものが GitHub Enterprise では https://[独自ドメイン]/api/v3/foo となるので、同一の Action を両者間で使いまわそうと思うと多少の工夫が必要だ。個人や社内で使う目的ならエンドポイントを固定してしまうのも良いだろうが、Marketplace に公開した場合などには両方でで使えたほうが嬉しいだろう。
 
-## 以下 events について簡単に説明
+
+## 共通化させる方法
+
+　おそらくいろいろなやり方があると思う。パッと思いついたものとしては、エンドポイントが api.github.com でない場合は workflows/*.yml の中で inputs として渡すなど可能だろう。
+　今回 Issue_timer を作るにあたっては `GITHUB_EVENT_PATH` を用いてワークフローをトリガするイベントを取得し、その中に記載のある API エンドポイントにアクセスする方法を採用した。
 
 [ワークフローをトリガーするイベント - GitHub Docs](https://docs.github.com/ja/actions/reference/events-that-trigger-workflows)
 
-　上記ドキュメントにある通り、たとえばトリガしたイベントの内容を取得するには workflow の yml の中で `${{ github.event.issue.number }}` などを使えば良い。また Actions のスクリプト中では `GITHUB_EVENT_PATH` を用いて `${{ github.event }}` の内容とおなじ json ファイルを取得することができる。たとえば Python なら
+　Actions のスクリプト中では `GITHUB_EVENT_PATH` を用いて上記ドキュメント中の `${{ github.event }}` に相当する内容の json ファイルを取得することができる。たとえば Python なら以下のように。Pull Request にラベルが付いたことをトリガとするものであれば、 `action` には `labeled` が代入される。
 
 ```python
 with open(environ.get('GITHUB_EVENT_PATH')) as f:
@@ -31,14 +33,12 @@ with open(environ.get('GITHUB_EVENT_PATH')) as f:
     action = events['action']
 ```
 
-のように。Pull Request にラベルが付いたことを契機とするものであれば、 `action` には `labeled` が代入される。
 
-　この `events` には API エンドポイントや各種 URL も含まれている。例として Pull Request 契機であれば
+　この `events` には API エンドポイントや各種 URL も含まれている。例として Pull Request に対する何らかのアクションがトリガであれば以下のようなコードでトリガとなった Pull Request の URL や Pull Request のコメントを操作する API エンドポイントを取得できる。
 
 ```python
 url = events['pull_request']['_links']['html']['href']
 api_url = events['pull_request']['_links']['comments']['href']
 ```
 
-で契機となった Pull Request の URL や Pull Request のコメントを操作する API エンドポイントを取得できる。
-
+　今回は github.com の Marketplace で公開することをを目標にしつつ社内の GitHub Enterprise でも使えることを考えていたので、このような工夫が必要だった。Marketplace に公開する場合でもそのような配慮は必要ないという考えもあるだろうが、少しの工夫で多くの人が使えるようになれば、その方が喜ばしいのではないかと思う。
