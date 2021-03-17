@@ -20,7 +20,7 @@ draft: false
 
 ## 共通化させる方法
 
-　おそらくいろいろなやり方があると思う。パッと思いついたものとしては、エンドポイントが api.github.com でない場合は workflows/*.yml の中で inputs として渡すなどが考えられる。action.yml には以下のよう。
+　おそらくいろいろなやり方があると思う。パッと思いついたものとしては、エンドポイントが api.github.com でない場合は workflows/*.yml の中で inputs として渡すなどが考えられる。action.yml の記述は以下のように。
 
 ```yml
 inputs:
