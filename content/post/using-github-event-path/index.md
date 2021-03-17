@@ -15,13 +15,22 @@ draft: false
 
 ## GitHub Enterprise と github.com で異なる API エンドポイント
 
-　例えば GitHub API の https://api.github.com/foo に相当するものが GitHub Enterprise では https://[独自ドメイン]/api/v3/foo となるので、同一の Action を両者間で使いまわそうと思うと多少の工夫が必要だ。個人や社内で使う目的ならエンドポイントを固定してしまうのも良いだろうが、Marketplace に公開した場合などには両方でで使えたほうが嬉しいはずだ。
+　例えば GitHub API の https://api.github.com/foo に相当するものが GitHub Enterprise では https://[独自ドメイン]/api/v3/foo となるので、同一の Action を両者間で使いまわそうと思うと多少の工夫が必要だ。個人や社内で使う目的ならエンドポイントを固定してしまうのも良いだろうが、OSS として考えれば両方で使えたほうが嬉しいはずだ。
 
 
 ## 共通化させる方法
 
-　おそらくいろいろなやり方があると思う。パッと思いついたものとしては、エンドポイントが api.github.com でない場合は workflows/*.yml の中で inputs として渡すなど可能だろう。
-　今回 Issue_timer を作るにあたっては `GITHUB_EVENT_PATH` を用いてワークフローをトリガするイベントを取得し、その中に記載のある API エンドポイントにアクセスする方法を採用した。
+　おそらくいろいろなやり方があると思う。パッと思いついたものとしては、エンドポイントが api.github.com でない場合は workflows/*.yml の中で inputs として渡すなどが考えられる。action.yml には以下のよう。
+
+```yml
+inputs:
+	api_endpoint:
+		description: If you use GitHub Enterprise, specify the endpoint.
+		# GitHub を使う場合には指定する必要がないように
+		default: https://api.github.com
+```
+
+　今回 Issue_timer を作るにあたっては `GITHUB_EVENT_PATH` を用いてワークフローをトリガするイベントを取得し、その中に記載のある API エンドポイントにアクセスする方法を採用した。この方法だと workflows/*.yml でエントリーポイントを指定する必要もない。
 
 [ワークフローをトリガーするイベント - GitHub Docs](https://docs.github.com/ja/actions/reference/events-that-trigger-workflows)
 
