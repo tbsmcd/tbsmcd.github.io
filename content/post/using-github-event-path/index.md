@@ -24,10 +24,10 @@ draft: false
 
 ```yml
 inputs:
-	api_endpoint:
-		description: If you use GitHub Enterprise, specify the endpoint.
-		# GitHub を使う場合には指定する必要がないように
-		default: https://api.github.com
+    api_endpoint:
+        description: If you use GitHub Enterprise, specify the endpoint.
+        # GitHub を使う場合には指定する必要がないように
+        default: https://api.github.com
 ```
 
 　今回 Issue_timer を作るにあたっては `GITHUB_EVENT_PATH` を用いてワークフローをトリガするイベントを取得し、その中に記載のある API エンドポイントにアクセスする方法を採用した。この方法だと workflows/*.yml でエントリーポイントを指定する必要もない。
