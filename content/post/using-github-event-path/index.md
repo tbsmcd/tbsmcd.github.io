@@ -41,4 +41,4 @@ url = events['pull_request']['_links']['html']['href']
 api_url = events['pull_request']['_links']['comments']['href']
 ```
 
-　今回は github.com の Marketplace で公開することをを目標にしつつ社内の GitHub Enterprise でも使えることを考えていたので、このような工夫が必要だった。Marketplace に公開する場合でもそのような配慮は必要ないという考えもあるだろうが、少しの工夫で多くの人が使えるようになれば、その方が喜ばしいのではないかと思う。
+　今回は github.com の Marketplace で公開することをを目標にしつつ社内の GitHub Enterprise でも使えることを考えていたので、このような工夫が必要だった。単に Marketplace に公開する場合にはそのような配慮は必要ないかもしれないが、少しの工夫で多くの人が使えるようになれば、その方が面白いと思う。
