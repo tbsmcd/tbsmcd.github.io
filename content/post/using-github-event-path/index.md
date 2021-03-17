@@ -15,7 +15,7 @@ draft: false
 
 ## GitHub Enterprise と github.com で異なる API エンドポイント
 
-　例えば GitHub API の https://api.github.com/foo に相当するものが GitHub Enterprise では https://[独自ドメイン]/api/v3/foo となるので、同一の Action を両者間で使いまわそうと思うと多少の工夫が必要だ。個人や社内で使う目的ならエンドポイントを固定してしまうのも良いだろうが、Marketplace に公開した場合などには両方でで使えたほうが嬉しいだろう。
+　例えば GitHub API の https://api.github.com/foo に相当するものが GitHub Enterprise では https://[独自ドメイン]/api/v3/foo となるので、同一の Action を両者間で使いまわそうと思うと多少の工夫が必要だ。個人や社内で使う目的ならエンドポイントを固定してしまうのも良いだろうが、Marketplace に公開した場合などには両方でで使えたほうが嬉しいはずだ。
 
 
 ## 共通化させる方法
