@@ -1,3 +1,6 @@
+body {
+    min-height: 100vh;
+}
 .in-article-list {
     padding: 13px;
     background-color: #f0f3f3;
@@ -5,3 +8,4 @@
 .in-article-list-p {
     margin: 0px;
 }
+h1::before{}
