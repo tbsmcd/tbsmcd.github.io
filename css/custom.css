@@ -4,7 +4,7 @@ body {
 header a span:before {
     content: '/'
 }
-h1 span.title:before {
+h1 span.index:before {
     content: '/'
 }
 .in-article-list {
