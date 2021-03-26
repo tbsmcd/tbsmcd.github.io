@@ -1,6 +1,9 @@
 body {
     min-height: 100vh;
 }
+header a span:before {
+    content: '/'
+}
 .in-article-list {
     padding: 13px;
     background-color: #f0f3f3;
