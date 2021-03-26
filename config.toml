@@ -15,7 +15,7 @@ pygmentsUseClasses = true
 pygmentsCodefences = true
 
 [params]
-header = "tbsmcd.net : [<span>index</span>](/) | [Archives](/archives/) | [Tags](/tags/) | [Search](/search/) | [Profile](/profile/)"
+header = "tbsmcd.net [<span>index</span>](/) [<span>archives</span>](/archives/) [<span>tags</span>](/tags/) [<span>search</span>](/search/) [<span>profile</span>](/profile/)"
 footer = "Written by Mochida Tsubasa(@tbsmcd). [Contact](https://docs.google.com/forms/d/e/1FAIpQLScLrngN5Znk15zTy06N9qjO3Mi_ubIrXrX9cfYFid_2-mmbQQ/viewform) [Feed](/index.xml)"
 
 useIcon = true
