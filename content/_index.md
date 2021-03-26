@@ -1,8 +1,8 @@
 ---
-title: Home
+title: Index
 ---
 
-# Home
+# Index
 
 ## Notes
 - ひさびさにブログ記事を書いている
