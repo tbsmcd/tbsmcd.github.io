@@ -2,7 +2,7 @@
 title: Index
 ---
 
-# <span>Index</span>
+# <span>Index</span> {#index}
 
 ## Notes
 - ひさびさにブログ記事を書いている
