@@ -7,6 +7,9 @@ header a span:before {
 h1#index span:before {
     content: '/'
 }
+h1#index span {
+    text-transform: lowercase;
+}
 .in-article-list {
     padding: 13px;
     background-color: #f0f3f3;
