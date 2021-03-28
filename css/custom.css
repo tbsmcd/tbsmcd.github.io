@@ -20,6 +20,11 @@ h1.h1-mono-tags span:before {
     font-size: 0.83em;
     text-transform: lowercase;
 }
+h1.h1-mono-post span:before {
+    content: '/post/ ';
+    font-size: 0.83em;
+    text-transform: lowercase;
+}
 h2.h2-mono span:before {
     content: '/'
 }
