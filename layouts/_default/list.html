@@ -2,7 +2,7 @@
 
 {{ if findRE "^/archives/[0-9]{4}-[0-9]{2}/$" .RelPermalink }}
     <h1 class="h1-mono-archives"><span>{{ .Title }}</span></h1>
-{{ else if findRE "^/tags/*/$" .RelPermalink }}
+{{ else if findRE "^/tags/" .RelPermalink }}
     <h1 class="h1-mono-tags"><span>{{ .Title }}</span></h1>
 {{ else if not .IsHome }}
     <h1 class="h1-mono"><span>{{ .Title }}</span></h1>
