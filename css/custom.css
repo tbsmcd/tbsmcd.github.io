@@ -10,6 +10,12 @@ h1.h1-mono span:before {
 h1.h1-mono span {
     text-transform: lowercase;
 }
+h2.h2-mono span:before {
+    content: '/'
+}
+h2.h2-mono span {
+    text-transform: lowercase;
+}
 .in-article-list {
     padding: 13px;
     background-color: #f0f3f3;
