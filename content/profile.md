@@ -17,6 +17,6 @@ draft: false
 
 ## Projects
 - [Label timer (GitHub Actions)](https://github.com/marketplace/actions/label-timer) 
-    - [Japanese documentation](https://github.com/tbsmcd/label_timer/blob/master/docs/README.ja.md)
+    - [Japanese document](https://github.com/tbsmcd/label_timer/blob/master/docs/README.ja.md)
     - [Blog](/post/label-timer/)
 - [Roundcube select_pagesize plugin](https://github.com/tbsmcd/select_pagesize)
