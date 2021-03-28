@@ -1,6 +1,8 @@
 {{ partial "header.html" . }}
 <main>
-    <h1 class="h1-mono"><span>{{ .Title | markdownify }}</span></h1>
+    {{ if or (eq .Page.RelPermalink "/profile/") (eq .Page.RelPermalink "/search/")}}
+        <h1 class="h1-mono"><span>{{ .Title | markdownify }}</span></h1>
+    {{ end }}
     {{ if (gt .Params.date 0) }}
     <p class="article-date">
         {{ .Date.Format "2006-01-02" }}
