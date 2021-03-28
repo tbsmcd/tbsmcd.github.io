@@ -4,10 +4,10 @@ body {
 header a span:before {
     content: '/'
 }
-h1#index span:before {
+h1.h1-mono span:before {
     content: '/'
 }
-h1#index span {
+h1.h1-mono span {
     text-transform: lowercase;
 }
 .in-article-list {
