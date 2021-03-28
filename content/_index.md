@@ -2,7 +2,7 @@
 title: Index
 ---
 
-# <span>Index</span> {#index}
+# <span>Index</span> {.h1-mono}
 
 ## Notes
 - ひさびさにブログ記事を書いている
