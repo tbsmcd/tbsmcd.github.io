@@ -2,6 +2,8 @@
 <main>
     {{ if or (eq .Page.RelPermalink "/profile/") (eq .Page.RelPermalink "/search/")}}
         <h1 class="h1-mono"><span>{{ .Title | markdownify }}</span></h1>
+    {{ else }}
+        <h1>{{ .Title | markdownify }}</h1>
     {{ end }}
     {{ if (gt .Params.date 0) }}
     <p class="article-date">
