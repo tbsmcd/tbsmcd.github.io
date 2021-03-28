@@ -2,7 +2,7 @@
 <main>
     {{ if or (eq .Page.RelPermalink "/profile/") (eq .Page.RelPermalink "/search/")}}
         <h1 class="h1-mono"><span>{{ .Title | markdownify }}</span></h1>
-    {{ else if eq .Page.RelPermalink "/post/" }}
+    {{ else if findRE "^/post/" .Page.RelPermalink }}
         <h1 class="h1-mono-post"><span>{{ .Title | markdownify }}</span></h1>
     {{ else }}
         <h1>{{ .Title | markdownify }}</h1>
