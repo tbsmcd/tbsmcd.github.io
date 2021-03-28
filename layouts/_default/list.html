@@ -1,20 +1,24 @@
 {{ partial "header.html" . }}
 
 {{if not .IsHome }}
-<h1><span class="h1-mono">{{ .Title | markdownify }}</span></h1>
+<h1><span class="h1-mono">{{ .Title }}</span></h1>
 {{ end }}
 
 {{ .Content }}
 
-<ul>
+<ul class="page-list">
     {{ $pages := .Pages }}
     {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
-    {{ range (where $pages "Section" "!=" "") }}
+    {{ $paginator := .Paginate (where $pages "Section" "!=" "") 20 }}
+    {{ range $paginator.Pages }}
     <li>
-        <span class="date">{{ .Date.Format "2006/01/02" }}</span>
+        <span class="list-date">{{ .Date.Format "2006-01-02" }}</span>
+        <br>
         <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
     </li>
     {{ end }}
 </ul>
+
+{{ partial "pagination.html" . }}
 
 {{ partial "footer.html" . }}
