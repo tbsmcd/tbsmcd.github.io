@@ -8,6 +8,12 @@ code {
 h1.h1-mono {
   font-family: monospace;
 }
+h1.h1-mono-archives {
+    font-family: monospace;
+}
+h1.h1-mono-tags {
+     font-family: monospace;
+ }
 h2.h2-mono {
     font-family: monospace;
 }
