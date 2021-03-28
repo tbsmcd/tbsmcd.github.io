@@ -12,17 +12,17 @@ h1.h1-mono span {
 }
 h1.h1-mono-archives span:before {
     content: '/archives/ ';
-    font-size: 0.83em;
+    font-size: 0.75em;
     text-transform: lowercase;
 }
 h1.h1-mono-tags span:before {
     content: '/tags/ ';
-    font-size: 0.83em;
+    font-size: 0.75em;
     text-transform: lowercase;
 }
 h1.h1-mono-post span:before {
     content: '/post/ ';
-    font-size: 0.83em;
+    font-size: 0.75em;
     text-transform: lowercase;
 }
 h2.h2-mono span:before {
