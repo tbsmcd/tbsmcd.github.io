@@ -22,6 +22,7 @@
 <meta property="og:url" content="https://tbsmcd.net{{ .Permalink }}" />
 <meta property="og:title" content="{{ .Title }} | tbsmcd" />
 <meta property="og:description" content="{{ if .Description }} {{ .Description }} {{ else }} {{ .Title }} {{ end }}" />
+<meta name="description" content="{{ if .Description }} {{ .Description }} {{ else }} {{ .Title }} {{ end }}">
 {{ if .Params.image }}
 {{ $src := .Params.image }}
 {{ $resource := .Page.Resources.GetMatch $src }}
