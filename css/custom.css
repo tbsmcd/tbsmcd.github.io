@@ -38,4 +38,8 @@ h2.h2-mono span {
 .in-article-list-p {
     margin: 0px;
 }
+.chroma .c {
+    color: #006600;
+    font-style: italic;
+}
 h1::before{}
