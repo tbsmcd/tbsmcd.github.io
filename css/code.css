@@ -19,9 +19,9 @@
 /* NameDecorator */ .chroma .nd { color: #9999ff }
 /* NameEntity */ .chroma .ni { color: #999999; font-weight: bold }
 /* NameException */ .chroma .ne { color: #cc0000; font-weight: bold }
-/* NameFunction */ .chroma .nf { color: #cc00ff }
+/* NameFunction */ .chroma .nf { color: #cc00cc }
 /* NameLabel */ .chroma .nl { color: #9999ff }
-/* NameNamespace */ .chroma .nn { color: #00ccff; font-weight: bold }
+/* NameNamespace */ .chroma .nn { color: #0000cc; font-weight: bold }
 /* NameTag */ .chroma .nt { color: #330099; font-weight: bold }
 /* NameVariable */ .chroma .nv { color: #003333 }
 /* LiteralString */ .chroma .s { color: #cc3300 }
@@ -47,11 +47,11 @@
 /* LiteralNumberOct */ .chroma .mo { color: #ff6600 }
 /* Operator */ .chroma .o { color: #555555 }
 /* OperatorWord */ .chroma .ow { color: #000000; font-weight: bold }
-/* Comment */ .chroma .c { color: #0099ff; font-style: italic }
-/* CommentHashbang */ .chroma .ch { color: #0099ff; font-style: italic }
-/* CommentMultiline */ .chroma .cm { color: #0099ff; font-style: italic }
-/* CommentSingle */ .chroma .c1 { color: #0099ff; font-style: italic }
-/* CommentSpecial */ .chroma .cs { color: #0099ff; font-weight: bold; font-style: italic }
+/* Comment */ .chroma .c { color: #006600; font-style: italic }
+/* CommentHashbang */ .chroma .ch { color: #009900; font-style: italic }
+/* CommentMultiline */ .chroma .cm { color: #009900; font-style: italic }
+/* CommentSingle */ .chroma .c1 { color: #009900; font-style: italic }
+/* CommentSpecial */ .chroma .cs { color: #009900; font-weight: bold; font-style: italic }
 /* CommentPreproc */ .chroma .cp { color: #009999 }
 /* CommentPreprocFile */ .chroma .cpf { color: #009999 }
 /* GenericDeleted */ .chroma .gd { background-color: #ffcccc }
