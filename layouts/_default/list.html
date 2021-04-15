@@ -16,9 +16,9 @@
     {{ $paginator := .Paginate (where $pages "Section" "!=" "") 20 }}
     {{ range $paginator.Pages }}
     <li>
-        <span class="list-date">{{ .Date.Format "2006-01-02" }}</span>
-        <br>
         <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
+        <br>
+        <span class="list-date">{{ .Date.Format "2006-01-02 15:04:05" }} +0900 JST</span>
     </li>
     {{ end }}
 </ul>
