@@ -5,18 +5,6 @@ code {
   font-family: "Lucida Console", Monaco, monospace;
   font-size: 85%;
 }
-h1.h1-mono {
-  font-family: monospace;
-}
-h1.h1-mono-archives {
-    font-family: monospace;
-}
-h1.h1-mono-tags {
-     font-family: monospace;
-}
-h1.h1-mono-post {
-    font-family: monospace;
-}
-h2.h2-mono {
+h1 h2 h3 {
     font-family: monospace;
 }
