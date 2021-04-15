@@ -4,10 +4,10 @@ body {
 header a span:before {
     content: '/'
 }
-h2 span:before {
+h2:before {
     content: '## '
 }
-h3 span:before {
+h3:before {
     content: '## '
 }
 h1.h1-mono span:before {
