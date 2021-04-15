@@ -36,12 +36,9 @@ h1.h1-mono-post span:before {
 .in-article-list-p {
     margin: 0px;
 }
-ul {
-    padding-inline-start: 21px;
-}
 li {
     list-style: none;
-    text-indent:-2em;
+    text-indent:-0.5em;
 }
 li:before {
     content: '- ';
