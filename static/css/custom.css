@@ -36,4 +36,9 @@ h1.h1-mono-post span:before {
 .in-article-list-p {
     margin: 0px;
 }
-h1::before{}
+li {
+    list-style: none;
+}
+li:before {
+    content: '- ';
+}
