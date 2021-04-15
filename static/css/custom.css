@@ -4,6 +4,12 @@ body {
 header a span:before {
     content: '/'
 }
+h2 span:before {
+    content: '## '
+}
+h3 span:before {
+    content: '## '
+}
 h1.h1-mono span:before {
     content: '/'
 }
@@ -21,9 +27,7 @@ h1.h1-mono-tags span:before {
     text-transform: lowercase;
 }
 h1.h1-mono-post span:before {
-    content: '/post/ ';
-    font-size: 0.75em;
-    text-transform: lowercase;
+    content: '# ';
 }
 h2.h2-mono span:before {
     content: '/'
