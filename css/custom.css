@@ -8,7 +8,7 @@ h2:before {
     content: '## '
 }
 h3:before {
-    content: '## '
+    content: '### '
 }
 h1.h1-mono span:before {
     content: '/'
