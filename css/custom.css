@@ -38,7 +38,7 @@ h1.h1-mono-post span:before {
 }
 li {
     list-style: none;
-    text-indent:-0.5em;
+    text-indent:-0.75em;
 }
 li:before {
     content: '- ';
