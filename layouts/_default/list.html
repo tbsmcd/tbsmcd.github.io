@@ -13,7 +13,7 @@
 <ul class="page-list">
     {{ $pages := .Pages }}
     {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
-    {{ $paginator := .Paginate (where $pages "Section" "!=" "") 20 }}
+    {{ $paginator := .Paginate (where $pages "Section" "!=" "") 30 }}
     {{ range $paginator.Pages }}
     <li>
         {{ .Date.Format "2006-01-02" }} <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
