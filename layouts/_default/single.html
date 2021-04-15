@@ -9,7 +9,7 @@
     {{ end }}
     {{ if (gt .Params.date 0) }}
     <p class="article-date">
-        {{ .Date.Format "2006-01-02" }}
+        {{ .Date.Format "2006-01-02 15:04:05" }} +0900 JST
     </p>
     {{ end }}
     {{ .Content }}
