@@ -5,6 +5,9 @@ code {
   font-family: "Lucida Console", Monaco, monospace;
   font-size: 85%;
 }
+header {
+    font-family: monospace;
+}
 h1 {
     font-family: monospace;
 }
