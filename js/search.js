@@ -11,9 +11,7 @@ Vue.component('mysearchbtn', {
 Vue.component('mylist', {
 	template:`<ul class="page-list">
     <li v-for="item in list">
-	<span class="list-date">{{item.date}}</span>
-	<br>
-	<a v-bind:href="item.url">{{item.title}}</a></li>
+	{{item.date}} <a v-bind:href="item.url">{{item.title}}</a></li>
 </ul>`,
 	props:['list']
 })
