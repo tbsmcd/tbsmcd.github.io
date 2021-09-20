@@ -14,6 +14,7 @@ draft: false
 {{< img400x src="r.jpg" alt="rear" >}}
   
 2021-08-30 納車  
+7089km  
 
   
 ## 購入したもの 
