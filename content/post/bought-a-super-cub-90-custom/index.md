@@ -1,16 +1,15 @@
 ---
 title: "スーパーカブ90カスタムを買った"
-description: "スーパーカブ90カスタムを買話"
+description: "スーパーカブ90カスタムを買った話"
 image: "f.jpg"
 date: 2021-09-20T23:59:38+09:00
-tags: ["カブ" "HA02 整備日誌"]
+tags: ["カブ", "HA02 整備日誌"]
 series: ["スーパーカブ"]
 archives: ["2021-09"]
 draft: false
 ---
 
 {{< img400x src="f.jpg" alt="front" >}}
-  
   
 {{< img400x src="r.jpg" alt="rear" >}}
   
