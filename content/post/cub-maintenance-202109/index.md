@@ -30,7 +30,9 @@ draft: false
 {{< img400x src="chain02.jpg" alt="チェーン清掃" >}}  
 {{< img400x src="chain03.jpg" alt="チェーン清掃" >}}  
 {{< img400x src="chain04.jpg" alt="チェーン清掃" >}}  
-        
+  
+スタンドが沈むので板を用意したい。  
+          
         
 ## 初回点検
 
