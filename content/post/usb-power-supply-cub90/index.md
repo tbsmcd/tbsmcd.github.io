@@ -10,7 +10,7 @@ draft: false
 ---
 
 
-{{< img400x src="choke.jpg" alt="チョークケーブル出口" >}} 
+{{< img400x src="holder.jpg" alt="完成図" >}} 
 
 ## 取り付けたもの
   
