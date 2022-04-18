@@ -22,7 +22,7 @@ image: "ogp.png"
 
 <br/>
 
-{{< img src="54bd036d.png" alt="300px-Communist-manifesto" >}}
+{{< img src="91d1593a.png" alt="300px-Communist-manifesto" >}}
 
 - test
 
@@ -39,9 +39,9 @@ def hogehoge():
 - aaa
 	- あああ
 
-		testtest
+testtest
 
-			
+	
 ```python
 子要素の code block テスト
 li 以外のインデント（子要素）は無視して親として扱う
