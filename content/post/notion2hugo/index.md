@@ -1,5 +1,5 @@
 ---
-title: "Notion をヘッドレス CMS のように使う"
+title: "Notion をヘッドレス CMS のように使う (with GitHub Actions, hugo)"
 description: "Notion をヘッドレス CMS のように使う。GitHub Actions で hugo 用の Markdown に変換する。"
 date: "2022-04-18T22:21:00+09:00"
 tags: ["GitHub Actions", "hugo", "Notion"]
@@ -26,7 +26,7 @@ image: "ogp.png"
 
 <br/>
 
-{{< img800x src="298c49c3.png" alt="sequence" >}}
+{{< img800x src="e436e968.png" alt="sequence" >}}
 
 <br/>
 
