@@ -27,7 +27,7 @@ image: "ogp.png"
 
 <br/>
 
-{{< img800x src="333060f8.png" alt="sequence" >}}
+{{< img800x src="1119c1e7.png" alt="sequence" >}}
 
 <br/>
 
