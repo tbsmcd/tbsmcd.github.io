@@ -17,7 +17,7 @@ image: "ogp.png"
 
 <br/>
 
-## 実装
+## 実装 みんな大好きピタゴラ装置
 
 <br/>
 
@@ -26,7 +26,7 @@ image: "ogp.png"
 
 <br/>
 
-{{< img800x src="e436e968.png" alt="sequence" >}}
+{{< img800x src="d6a871d7.png" alt="sequence" >}}
 
 <br/>
 
