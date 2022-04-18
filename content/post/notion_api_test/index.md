@@ -22,7 +22,7 @@ image: "ogp.png"
 
 <br/>
 
-{{< img src="21506412.png" alt="300px-Communist-manifesto" >}}
+{{< img src="7df5c3e4.png" alt="300px-Communist-manifesto" >}}
 
 - test
 
