@@ -1,5 +1,5 @@
 ---
-title: "Notion を hugo のバックエンドにするテスト"
+title: "Notion を hugo のバックエンドにするテスト記事"
 description: "要約をここに書く"
 date: "2022-02-18T01:10:00+09:00"
 tags: ["GitHub Actions", "hugo"]
@@ -22,7 +22,7 @@ image: "ogp.png"
 
 <br/>
 
-{{< img src="2905e187.png" alt="300px-Communist-manifesto" >}}
+{{< img src="63a77fcc.png" alt="300px-Communist-manifesto" >}}
 
 <br/>
 
