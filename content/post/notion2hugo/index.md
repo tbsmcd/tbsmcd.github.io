@@ -22,12 +22,11 @@ image: "ogp.png"
 <br/>
 
 - [tbsmcd/notion2hugo](https://github.com/tbsmcd/notion2hugo)
-
 - [tbsmcd/tbsmcd.github.io](https://github.com/tbsmcd/tbsmcd.github.io)
 
 <br/>
 
-{{< img800x src="d9da7e7e.png" alt="sequence" >}}
+{{< img800x src="298c49c3.png" alt="sequence" >}}
 
 <br/>
 
@@ -44,4 +43,3 @@ image: "ogp.png"
 　ある程度は汎用化できそうなので Marketplace に公開したい。ただし hugo では簡単に shortcode を作ることができるので、たぶん皆それぞれのカスタマイズをしているだろうから、簡単ではないと思う。
 
 <br/>
-
