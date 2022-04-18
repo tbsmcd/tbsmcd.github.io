@@ -6,7 +6,7 @@ draft: false
 - 持田 翼/Mochida Tsubasa, tbsmcd
 - From 出雲國松江/Matsue, Izumo
 - Living in 筑前國博多（福岡）/Hakata(Fukuoka), Chikuzen
-- Web engineer, working at GMO Pepabo, Inc.
+- Web engineer, working at [Milabo, Inc.](https://mi-labo.co.jp/)
 
 ## Links
 - [Twitter](https://twitter.com/tbsmcd)
