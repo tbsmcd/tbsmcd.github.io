@@ -6,14 +6,11 @@ draft: false
 - 持田 翼/Mochida Tsubasa, tbsmcd
 - From 出雲國松江/Matsue, Izumo
 - Living in 筑前國博多（福岡）/Hakata(Fukuoka), Chikuzen
-- Web engineer, working at [milabo, Inc.](https://mi-labo.co.jp/)
+- Web engineer, working at [Milabo Co.,Ltd.](https://mi-labo.co.jp/)
 
 ## Links
 - [Twitter](https://twitter.com/tbsmcd)
 - [Github](https://github.com/tbsmcd)
-- [kaggle](https://www.kaggle.com/tbsmcd)
-- [Scrapbox メモ/Various notes](https://scrapbox.io/tbsmcd-memo/)
-- [Scrapbox 読書カード/Reports of reading](https://scrapbox.io/tbsmcd-reading/)
 
 ## Projects
 - [Label timer (GitHub Actions)](https://github.com/marketplace/actions/label-timer) 
