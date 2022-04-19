@@ -68,11 +68,15 @@ WHERE name LIKE '%福岡博多%';
 
 　基本的には公式のドキュメントに全部書いてあるので、 ngram の場合は `my.cnf` などにトークンサイズを書けばよく、mecab の場合はそれに加えて mecab で使用する辞書のパスなどを記す必要がある。
 
-- [https://dev.mysql.com/doc/refman/8.0/ja/fulltext-search-ngram.html](https://dev.mysql.com/doc/refman/8.0/ja/fulltext-search-ngram.html)
-- [https://dev.mysql.com/doc/refman/8.0/ja/fulltext-search-mecab.html](https://dev.mysql.com/doc/refman/8.0/ja/fulltext-search-mecab.html)
-- 筆者の設定 
-	- [https://github.com/tbsmcd/mysql_ngram_mecab_sample/blob/d91975dd0b63989bac442a0a0c5bd4d462b2269d/mysql/my.cnf](https://github.com/tbsmcd/mysql_ngram_mecab_sample/blob/d91975dd0b63989bac442a0a0c5bd4d462b2269d/mysql/my.cnf#L1)
-	- [https://github.com/tbsmcd/mysql_ngram_mecab_sample/blob/d91975dd0b63989bac442a0a0c5bd4d462b2269d/mysql/mecabrc](https://github.com/tbsmcd/mysql_ngram_mecab_sample/blob/d91975dd0b63989bac442a0a0c5bd4d462b2269d/mysql/mecabrc#L1)
+[https://dev.mysql.com/doc/refman/8.0/ja/fulltext-search-ngram.html](https://dev.mysql.com/doc/refman/8.0/ja/fulltext-search-ngram.html)
+
+[https://dev.mysql.com/doc/refman/8.0/ja/fulltext-search-mecab.html](https://dev.mysql.com/doc/refman/8.0/ja/fulltext-search-mecab.html)
+
+<br/>
+
+筆者の設定 [https://github.com/tbsmcd/mysql_ngram_mecab_sample/blob/d91975dd0b63989bac442a0a0c5bd4d462b2269d/mysql/my.cnf](https://github.com/tbsmcd/mysql_ngram_mecab_sample/blob/d91975dd0b63989bac442a0a0c5bd4d462b2269d/mysql/my.cnf#L1)
+
+[https://github.com/tbsmcd/mysql_ngram_mecab_sample/blob/d91975dd0b63989bac442a0a0c5bd4d462b2269d/mysql/mecabrc](https://github.com/tbsmcd/mysql_ngram_mecab_sample/blob/d91975dd0b63989bac442a0a0c5bd4d462b2269d/mysql/mecabrc#L1)
 
 ### インデックスを作成
 
@@ -87,7 +91,7 @@ ALTER TABLE nursery_ngram ADD FULLTEXT INDEX kana_name (name_kana,name) WITH PAR
 
 <br/>
 
-例（ [https://dev.mysql.com/doc/refman/8.0/ja/fulltext-search-ngram.html](https://dev.mysql.com/doc/refman/8.0/ja/fulltext-search-ngram.html) より）
+例: [https://dev.mysql.com/doc/refman/8.0/ja/fulltext-search-ngram.html](https://dev.mysql.com/doc/refman/8.0/ja/fulltext-search-ngram.html) より
 
 
 ```sql
@@ -124,7 +128,7 @@ SELECT * FROM INFORMATION_SCHEMA.INNODB_FT_INDEX_TABLE ORDER BY doc_id LIMIT 30;
 
 <br/>
 
-{{< img800x src="175c1fc6.png" alt="index" >}}
+{{< img800x src="ed4ccc7a.png" alt="index" >}}
 
 <br/>
 
