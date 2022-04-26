@@ -11,11 +11,11 @@ image: "ogp.png"
 
 ## 環境
 
+{{< img800x src="70354072.png" alt="mac_os_version" >}}
+
 <br/>
 
-{{< img800x src="83a3f0a9.png" alt="スクリーンショット_2022-04-27_0.54.55" >}}
-
-上記 OS で zsh を使っている。
+macOS 10.14.6 + zsh
 
 ## brew install でエラーが出たので
 
