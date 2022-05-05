@@ -17,11 +17,17 @@ image: "ogp.jpeg"
 
 [https://goo.gl/maps/LmfKePMxiJwTMWJB8](https://goo.gl/maps/LmfKePMxiJwTMWJB8)
 
-{{< img800x src="c9aa29ba.jpeg" alt="南畑ダムとカブ](73665828.jpeg)
+{{< img800x src="027e9c70.jpeg" alt="南畑ダムとカブ](220d5dde.jpeg)
 
-{{< img800x src="115aaf93.jpeg" alt="南畑ダムから筑紫耶馬溪" >}}
+<br/>
 
-{{< img800x src="e3daa27c.jpeg" alt="ダム](4b2049a4.jpeg)
+{{< img800x src="1e479077.jpg" alt="南畑ダムから筑紫耶馬溪](9d51a79c.jpeg)
+
+<br/>
+
+{{< img800x src="927626fe.jpeg" alt="ダム](fbf50343.jpeg)
+
+<br/>
 
 　豊前国にある耶馬渓（大分県中津市）にちなんで付けられたであろう筑紫耶馬溪。ダムの上からなのでよく分からないが、きっとそういう感じなのだろう。ダムの上は車両通行可能かどうかわからなかったので写真だけ撮った。
 
@@ -31,13 +37,21 @@ image: "ogp.jpeg"
 
 <br/>
 
-{{< img800x src="60a17ed8.jpeg" alt="防衛省の看板](44b354f1.jpeg)
+{{< img800x src="8020c962.jpeg" alt="防衛省の看板](caa0264d.jpeg)
 
-{{< img800x src="dfc48ecf.jpg" alt="防衛省の看板（不法投棄）](e752ce8d.jpg)
+<br/>
 
-{{< img800x src="52abbb5b.jpeg" alt="夜見たら怖そうな看板" >}}
+{{< img800x src="2c1ecafd.jpeg" alt="防衛省の看板（不法投棄）](2e8c739e.jpg)
 
-{{< img800x src="29610ef6.jpeg" alt="警笛鳴らせ" >}}
+<br/>
+
+{{< img800x src="1b68d93f.jpeg" alt="夜見たら怖そうな看板" >}}
+
+<br/>
+
+{{< img800x src="c45104f1.jpeg" alt="警笛鳴らせ" >}}
+
+<br/>
 
 　どうやら途中からは防衛省の土地らしく、自衛隊関係の看板があった。夜見たら怖そうな看板もある。「警笛鳴らせ」がやたら多く、いままでにカブで鳴らしたクラクションの総数を余裕でオーバーしたと思う。
 
@@ -45,13 +59,21 @@ image: "ogp.jpeg"
 
 <br/>
 
-{{< img800x src="95b65436.jpeg" alt="背振山とカブ" >}}
+![背振山とカブ" >}}
+
+<br/>
 
 ![アンテナ" >}}
 
+<br/>
+
 ![自衛隊" >}}
 
+<br/>
+
 ![背振山の案内" >}}
+
+<br/>
 
 山頂広場のとなりが自衛隊施設でアンテナなどが見れる。
 
@@ -64,6 +86,8 @@ image: "ogp.jpeg"
 <br/>
 
 ![山茶花の湯入り口" >}}
+
+<br/>
 
 　山が広がっていて眺めが良い。 JAF 会員割引がある。
 
