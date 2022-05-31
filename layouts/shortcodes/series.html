@@ -3,9 +3,9 @@
 <p class="in-article-list-p">Series: {{ $name }}</p>
 <ul class="page-list">
 {{ range $key, $series := site.Taxonomies.series }}
-    {{ $key | urlize }}
-    {{ $name | urlize }}
-    {{ if eq $key $name }}
+    {{ $key_urlize := $key | urlize }}
+    {{ $name_urlize := $name | urlize }}
+    {{ if eq $key_urlize $name_urlize }}
         {{ range $series.Pages }}
     <li>
         {{ .Date.Format "2006-01-02" }} <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
