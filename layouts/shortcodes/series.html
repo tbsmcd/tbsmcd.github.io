@@ -3,8 +3,8 @@
 <p class="in-article-list-p">Series: {{ $name }}</p>
 <ul class="page-list">
 {{ range $key, $series := site.Taxonomies.series }}
-    {{ $key }}
-    {{ $name }}
+    {{ $key }}{{ . | urlize }}
+    {{ $name }}{{ . | urlize }}
     {{ if eq $key $name }}
         {{ range $series.Pages }}
     <li>
