@@ -11,7 +11,7 @@ image: "ogp.png"
 
 ## 環境
 
-{{< img800x src="70354072.png" alt="mac_os_version" >}}
+![mac_os_version](3feb93da.png)
 
 <br/>
 
