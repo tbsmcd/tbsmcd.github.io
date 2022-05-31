@@ -14,7 +14,7 @@ image: "ogp.png"
 
 ref. [https://gohugo.io/variables/taxonomy/#example-usage-of-sitetaxonomies](https://gohugo.io/variables/taxonomy/#example-usage-of-sitetaxonomies)
 
-　リンク先 `{{ range$ key, $value := $taxonomy }}`**  **における `$key` のこと。
+　リンク先 `{{ range$ key, $value := $taxonomy }}` における `$key` のこと。
 
 ## 何が問題？
 
