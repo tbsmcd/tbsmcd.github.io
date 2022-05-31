@@ -4,6 +4,7 @@
 <ul class="page-list">
 {{ range $key, $series := site.Taxonomies.series }}
     {{ if eq $key $name }}
+        {{ $key }}
         {{ range $series.Pages }}
     <li>
         {{ .Date.Format "2006-01-02" }} <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
