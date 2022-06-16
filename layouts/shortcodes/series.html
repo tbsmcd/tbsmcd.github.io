@@ -2,13 +2,18 @@
 <div class="in-article-list">
 <p class="in-article-list-p">Series: {{ $name }}</p>
 <ul class="page-list">
+{{ $currentPage := . }}
 {{ range $key, $series := site.Taxonomies.series }}
     {{ $key_urlized := $key | urlize }}
     {{ $name_urlized := $name | urlize }}
     {{ if eq $key_urlized $name_urlized }}
         {{ range $series.Pages }}
     <li>
-        {{ .Date.Format "2006-01-02" }} <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
+        {{ if eq .RelPermalink $currentPage.RelPermalink }}
+            {{ .Date.Format "2006-01-02" }} {{ .Title | markdownify }}
+        {{ else }}
+            {{ .Date.Format "2006-01-02" }} <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
+        {{ end }}
     </li>
         {{ end }}
     {{ end }}
