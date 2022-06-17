@@ -7,7 +7,7 @@
     {{ $key_urlized := $key | urlize }}
     {{ $name_urlized := $name | urlize }}
     {{ if eq $key_urlized $name_urlized }}
-        {{ range $series.Pages }}
+        {{ range $series.Pages.Reverse }}
     <li>
         {{ if eq .Permalink $currentUrl }}
             {{ .Date.Format "2006-01-02" }} {{ .Title | markdownify }}
