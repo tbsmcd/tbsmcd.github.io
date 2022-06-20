@@ -11,7 +11,7 @@ image: "ogp.png"
 
 
 {{< series name="スーパーカブにドライブレコーダーを付ける">}}  
-![drive_recorder_mark](f62b48ac.png)
+![drive_recorder_mark](3d0fca89.png)
 
 ## ドラレコで身を守る
 
@@ -67,6 +67,6 @@ image: "ogp.png"
 
 [デイトナ Mio(ミオ) バイク用 ドライブレコーダー 前後2カメラ 200万画素 フルHD 防水 防塵 LED信号 Gセンサー GPS MiVue M760D 17100](https://amzn.to/3HDvAy0)
 
-　上に挙げた条件は全て満たしている上に、Windows/Mac/iOS/Android に対応したアプリがそれぞれある。録画時間は microSD を128GBに交換したら6時間程度撮れるらしいので、一緒に購入した。
+　上に挙げた条件は全て満たしている上に、Windows/Mac/iOS/Android に対応したアプリがそれぞれある。ループ録画に加えてGセンサーも手動スイッチも付いてる。録画時間は microSD を128GBに交換したら6時間程度撮れるらしいので、一緒に購入した。
 
 　もちろんギボシや電工ペンチ等も無いと困るのだが、それは次回の設置編（予定）で。
