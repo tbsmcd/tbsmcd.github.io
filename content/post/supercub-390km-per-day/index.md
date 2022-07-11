@@ -13,9 +13,9 @@ image: "ogp.jpeg"
 
 [ルート（Google マップ）](https://www.google.com/maps/d/u/0/edit?mid=1pdcC7hcIiA5bCjiZ2FL5jUjmu3VeVTQ&usp=sharing)
 
-![before_9818km](b5f853c5.jpeg)
+![before_9818km](d19ec109.jpeg)
 
-![after_10205km](5d21e3f7.jpeg)
+![after_10205km](3bfd405d.jpeg)
 
 　メーター読みで387km。福岡・筑豊・日田・耶馬渓・日出・国東半島一周・小倉・そして福岡。前半は山道、国東半島一周を経て後半は幹線国道がメイン。前半が山道だったので距離は伸びなかったが、それでも東京から名古屋まで行ってお釣りが出るぐらいの距離を走ったことになる。7:00前に自宅を出て、帰宅したのは21時過ぎだった。
 
@@ -27,6 +27,7 @@ image: "ogp.jpeg"
 - できれば夜明けの出発を
 - 熱中症対策を
 - 自宅へのショートカットをプランに入れる
+- Google マップの高速道路除外を信用しない
 
 ### ケツが死ぬからそれなりの装備を
 
@@ -52,44 +53,48 @@ image: "ogp.jpeg"
 
 　予定が狂うことがあるので周回コースにして途中で帰ることが可能にしたら安心できる。今回は不要だったが、無理なスピードを出す必要がなく安心できた。
 
+### Google マップの高速道路除外を信用しない
+
+　除外設定していても無料の中津日田道路を案内してくる。自動車専用道は高速道路なんだよ？
+
 ### 写真
 
 遠賀川源流
 
-![origin_of_onga_river](e57ff65b.jpg)
+![origin_of_onga_river](7e67a67b.jpg)
 
-![origin_of_onga_river2](2eae098d.jpg)
+![origin_of_onga_river2](552fae08.jpg)
 
-![origin_of_onga_river3](d3855c39.jpeg)
+![origin_of_onga_river3](a321ea50.jpeg)
 
 日田・大原八幡
 
-![ohara_hachiman](b985ed9d.jpeg)
+![ohara_hachiman](52064412.jpeg)
 
-![ohara_hachiman2](dda5e527.jpeg)
+![ohara_hachiman2](f8872640.jpeg)
 
-![ohara_hachiman3](d5823015.jpeg)
+![ohara_hachiman3](5cf940f9.jpeg)
 
-![ohara_hachiman4](38a67908.jpeg)
+![ohara_hachiman4](fcb29cff.jpeg)
 
 耶馬渓ダム
 
-![yabakeiko](3ad3f95c.jpeg)
+![yabakeiko](255e6053.jpeg)
 
-![yabakeiko2](4b293c14.jpeg)
+![yabakeiko2](64dba8f4.jpeg)
 
-![yabakeiko3](cc4786eb.jpeg)
+![yabakeiko3](8484ca0f.jpeg)
 
 日出でカレイ
 
-![hiji](99fb6483.jpeg)
+![hiji](cad4d25f.jpeg)
 
 国見の道の駅
 
-![kunimi](f5f2a3a9.jpeg)
+![kunimi](aaa79fff.jpeg)
 
 難読地名・福岡県京都郡苅田町神田町（みやこぐんかんだちょうじんでんちょう）
 
-![kanda_jinden](badcec39.jpeg)
+![kanda_jinden](741b46bf.jpeg)
 
 <br/>
