@@ -6,7 +6,7 @@ title: Index
 
 ## About this blog
 - いつのまにかスーパーカブ90カスタム（HA02）のブログになってた
-- Notion で記事を追加・更新し GitHub Actions　で hugo をビルドし GitHub Pages　から配信している
+- Notion(Create/Edit articles)->GitHub Actions(Build pages with Hugo)->GitHub Pages()
   - [Notion をヘッドレス CMS のように使う (with GitHub Actions, hugo)](https://tbsmcd.net/post/notion2hugo/)
   - [The world’s fastest framework for building websites | Hugo](https://gohugo.io/)
 
