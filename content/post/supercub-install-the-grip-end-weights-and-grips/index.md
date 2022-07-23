@@ -9,6 +9,8 @@ image: "ogp.jpeg"
 ---
 
 
+注意: 対象車輌はスーパーカブ90カスタム（HA02, C90CM5）
+
 ## カブの振動は割とキツい
 
 　[前回](https://tbsmcd.net/post/supercub-390km-per-day/)ツーリングで1日に390km走った結果、スーパーカブの振動は案外手にくることがわかった。カブは小排気量ながら振動が強いほうだとは思っていたが、普段そこまでの距離を乗らないので手のダメージについては想定していなかった。振動対策としては耐震グリップなどもあるが、今回はバーエンドウェイトを使ってみた。
@@ -37,17 +39,17 @@ image: "ogp.jpeg"
 
 ### 工程
 
-![before](319bffa4.jpeg)
+![before](cf98a757.jpeg)
 
-![cut_the_grip](4533d1d8.jpeg)
+![cut_the_grip](ca50c0ef.jpeg)
 
 　グリップをカッターで切る。右側はスロットルコーンが樹脂製なのでなるべく傷つけないように。左側は多分適当にやっても大丈夫。
 
 <br/>
 
-![throttle_cone](9c31f947.jpeg)
+![throttle_cone](5b1cd3ff.jpeg)
 
-![hole_in_the_throttle_cone](209aa42d.jpeg)
+![hole_in_the_throttle_cone](86cb59c1.jpeg)
 
 　スロットルコーンは貫通していないのでリーマーで穴を開けて広げる。画像では汚いが、バーエンドを付けたときに削り残したバリが干渉することもありそうなのでカッターで削っておくと良い。たぶんサンドペーパーも使えるのでは？
 
@@ -55,23 +57,23 @@ image: "ogp.jpeg"
 
 <br/>
 
-![installed_grip](1f0e3de7.jpeg)
+![installed_grip](1b943a94.jpeg)
 
 　脱脂・グリップボンド塗布・グリップ装着。削り残しがまだあるが、このあと削った。
 
 <br/>
 
-![installed_grinp_end](a9b2b3d5.jpeg)
+![installed_grinp_end](62fb2854.jpeg)
 
 　右はキツくやりすぎるとスロットルが回らなかったり戻らなかったりするので、確認しながら。左は……
 
 <br/>
 
-![after_right](b7af797c.jpeg)
+![after_right](19576545.jpeg)
 
-![after_left](d2d12223.jpeg)
+![after_left](d2385989.jpeg)
 
-![after_left_2](18012879.jpeg)
+![after_left_2](b6ad2100.jpeg)
 
 　思ったより渋い。
 
