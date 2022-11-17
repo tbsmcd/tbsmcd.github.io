@@ -26,7 +26,7 @@ const setLight = () => {
 }
 cbDark.addEventListener("change", () => {
     console.log("cliekd");
-    if (this.checked == true) {
+    if (this.checked) {
         console.log("cheked");
         setDark();
         localStorage.setItem("selectedTheme", "dark");
