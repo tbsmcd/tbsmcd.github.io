@@ -1,4 +1,4 @@
-window.addEventListener("load", (event) => {
+document.addEventListener("DOMContentLoaded", (event) => {
     const selectedTheme = localStorage.getItem("selectedTheme");
     if (selectedTheme == "dark") {
         setDark();
@@ -24,9 +24,9 @@ const setLight = () => {
     document.body.classList.remove("dark-theme");
     cbDark.checked = false;
 }
-cbDark.addEventListener("change", () => {
+cbDark.addEventListener("change", (e) => {
     console.log("cliekd");
-    if (this.checked) {
+    if (e.target.checked) {
         console.log("cheked");
         setDark();
         localStorage.setItem("selectedTheme", "dark");
