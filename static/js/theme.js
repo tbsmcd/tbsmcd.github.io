@@ -1,13 +1,3 @@
-const cbDark = document.getElementById("cb-dark-theme");
-const setDark = () => {
-    document.body.classList.add("dark-theme");
-    cbDark.checked = true;
-};
-const setLight = () => {
-    document.body.classList.remove("dark-theme");
-    cbDark.checked = false;
-}
-
 window.addEventListener("load", (event) => {
     const selectedTheme = localStorage.getItem("selectedTheme");
     if (selectedTheme == "dark") {
@@ -22,7 +12,15 @@ window.addEventListener("load", (event) => {
         }
     }
 });
-
+const cbDark = document.getElementById("cb-dark-theme");
+const setDark = () => {
+    document.body.classList.add("dark-theme");
+    cbDark.checked = true;
+};
+const setLight = () => {
+    document.body.classList.remove("dark-theme");
+    cbDark.checked = false;
+}
 cbDark.addEventListener("change", () => {
     if (this.checked == true) {
         setDark();
