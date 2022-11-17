@@ -5,7 +5,8 @@ window.addEventListener("load", (event) => {
     } else if (selectedTheme == "light") {
         setLight();
     } else {
-        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        const pcs = window.matchMedia("(prefers-color-scheme: dark)"); 
+        if (pcs.matches) {
             setDark();
         } else {
             setLight();
