@@ -1,6 +1,14 @@
 body {
     min-height: 100vh;
 }
+.light-theme {
+	color: #ffffff;
+	background: #000000;
+}
+.dark-theme {
+	color: #000000;
+	background: #ffffff;
+}
 header a span:before {
     content: '/'
 }
