@@ -8,7 +8,7 @@ const setLight = () => {
     cbDark.checked = false;
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("DOMContentLoaded", (event) => {
     const selectedTheme = localStorage.getItem("selectedTheme");
     if (selectedTheme == "dark") {
         setDark();
