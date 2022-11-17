@@ -14,10 +14,12 @@ window.addEventListener("load", (event) => {
 });
 const cbDark = document.getElementById("cb-dark-theme");
 const setDark = () => {
+    console.log("DARK");
     document.body.classList.add("dark-theme");
     cbDark.checked = true;
 };
 const setLight = () => {
+    console.log("LIGHT");
     document.body.classList.remove("dark-theme");
     cbDark.checked = false;
 }
