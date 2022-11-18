@@ -4,10 +4,10 @@ body {
 .dark-theme {
 	color: #ffffff;
     opacity: 0.9;
-	background: #102F23;
+	background: #1F2023;
 }
 .dark-theme pre {
-    color: #102F23;
+    color: #1F2023;
 }
 .dark-theme .in-article-list {
     background: #2D2F34;
