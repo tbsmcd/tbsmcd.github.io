@@ -3,7 +3,8 @@ body {
 }
 .dark-theme {
 	color: #ffffff;
-	background: #000000;
+    opacity: 0.9;
+	background: #27292D;
 }
 header a span:before {
     content: '/'
