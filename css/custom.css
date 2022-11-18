@@ -21,6 +21,9 @@ body {
 .dark-theme code {
     background: #2D2F34;
 }
+.dark-theme pre code {
+    background: #F0F3F3;
+}
 .dark-theme .in-article-list-p {
     background: #383B40;
 }
