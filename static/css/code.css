@@ -68,6 +68,7 @@
 /* TextWhitespace */ .chroma .w { color: #bbbbbb }
 
 /* Background */ .dark-theme .chroma { color: #f8f8f2; background-color: #272822 }
+/* Background */ .dark-theme .chroma code { color: #f8f8f2; background-color: #272822 }
 /* Error */ .dark-theme .chroma .err { color: #960050; background-color: #1e0010 }
 /* LineTableTD */ .dark-theme .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
 /* LineTable */ .dark-theme .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; }
