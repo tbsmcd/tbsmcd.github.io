@@ -1,6 +1,7 @@
 body {
     min-height: 100vh;
 }
+/* ref. https://coliss.com/articles/build-websites/operation/design/how-to-design-delightful-dark-themes.html */
 .dark-theme {
 	color: #ffffff;
     opacity: 0.9;
@@ -25,7 +26,7 @@ body {
     background: #F0F3F3;
 }
 .dark-theme .in-article-list-p {
-    background: #383B40;
+    background: #2D2F34;
 }
 header a span:before {
     content: '/'
