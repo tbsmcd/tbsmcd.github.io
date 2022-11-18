@@ -6,6 +6,12 @@ body {
     opacity: 0.9;
 	background: #1F2023;
 }
+.dark-theme a {
+    color: #8AB4F9;
+}
+.dark-theme a:visited {
+    color: #C58AF9;
+}
 .dark-theme pre {
     color: #1F2023;
 }
