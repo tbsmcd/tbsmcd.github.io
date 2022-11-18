@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", (event) => {
     const selectedTheme = localStorage.getItem("selectedTheme");
+    console.log("localStorage");
+    console.log(selectedTheme);
     if (selectedTheme == "dark") {
         setDark();
     } else if (selectedTheme == "light") {
