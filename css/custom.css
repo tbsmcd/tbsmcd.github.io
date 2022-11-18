@@ -4,10 +4,13 @@ body {
 .dark-theme {
 	color: #ffffff;
     opacity: 0.9;
-	background: #27292D;
+	background: #1F2F23;
 }
-.dark-theme pre {
-    color: #27292D;
+.dark-theme .in-article-list {
+    background: #2D2F34;
+}
+.dark-theme .in-article-list-p {
+    background: #383B40;
 }
 header a span:before {
     content: '/'
