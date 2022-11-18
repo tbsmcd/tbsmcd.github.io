@@ -6,6 +6,9 @@ body {
     opacity: 0.9;
 	background: #27292D;
 }
+.dark-theme pre {
+    color: #27292D;
+}
 header a span:before {
     content: '/'
 }
