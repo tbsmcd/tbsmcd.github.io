@@ -18,6 +18,9 @@ body {
 .dark-theme .in-article-list {
     background: #2D2F34;
 }
+.dark-theme code {
+    background: #2D2F34;
+}
 .dark-theme .in-article-list-p {
     background: #383B40;
 }
