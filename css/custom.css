@@ -13,17 +13,11 @@ body {
 .dark-theme a:visited {
     color: #C58AF9;
 }
-.dark-theme pre {
-    color: #1F2023;
-}
 .dark-theme .in-article-list {
     background: #2D2F34;
 }
 .dark-theme code {
     background: #383B40;
-}
-.dark-theme pre code {
-    background: #F0F3F3;
 }
 .dark-theme .in-article-list-p {
     background: #2D2F34;
