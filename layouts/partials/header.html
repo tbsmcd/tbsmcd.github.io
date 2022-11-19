@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    {{ partial "analytics.html" . }}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
+    {{ $code := resources.Get "sass/code.scss" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $code.Permalink }}" />
+    <link rel="stylesheet" href="{{ "/css/fonts.css" | relURL }}" />
+    {{ $custom := resources.Get "sass/custom.scss" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $custom.Permalink }}" />
+    <script src="/js/theme.js" defer></script>
+    {{ partial "head_custom.html" . }}
+  </head>
+
+  <body>
+  
+  {{ with .Site.Params.header }}
+  <header>
+    {{ . | markdownify }}
+  </header>
+  {{ end }}  
