@@ -1,26 +1,27 @@
+$dark_base_color: #2c2c2c;
+$dark_link_color: #BAB4F9;
 body {
     min-height: 100vh;
 }
-/* ref. https://coliss.com/articles/build-websites/operation/design/how-to-design-delightful-dark-themes.html */
 .dark-theme {
 	color: #ffffff;
     opacity: 0.9;
 	background: #1F2023;
-}
-.dark-theme a {
-    color: #8AB4F9;
-}
-.dark-theme a:visited {
-    color: #C58AF9;
-}
-.dark-theme .in-article-list {
-    background: #2D2F34;
-}
-.dark-theme code {
-    background: #383B40;
-}
-.dark-theme .in-article-list-p {
-    background: #2D2F34;
+    a {
+        color: $dark_link_color;
+    }
+    a:visited {
+        color: darken($dark_link_color, 8%);
+    }
+    .in-article-list {
+        background: lighten($dark_base_color, 8%);
+    }
+    code {
+        background: lighten($dark_base_color, 16%);
+    }
+    .in-article-list-p {
+        background: lighten($dark_base_color, 8%);
+    }
 }
 header a span:before {
     content: '/'
