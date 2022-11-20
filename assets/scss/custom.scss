@@ -1,4 +1,4 @@
-$dark_base_color: #2c2c2c;
+$dark_base_color: #232831;
 $dark_link_color: #BAB4F9;
 body {
     min-height: 100vh;
@@ -6,7 +6,7 @@ body {
 .dark-theme {
 	color: #ffffff;
     opacity: 0.9;
-	background: #232831;
+	background: $dark_base_color;
     a {
         color: $dark_link_color;
     }
