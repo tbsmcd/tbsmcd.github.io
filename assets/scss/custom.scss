@@ -25,6 +25,9 @@ body {
     pre {
         background: lighten($dark_base_color, 5%);
     }
+    pre code {
+        background: lighten($dark_base_color, 5%);
+    }
 }
 header a span:before {
     content: '/'
