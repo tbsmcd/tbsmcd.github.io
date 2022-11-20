@@ -11,16 +11,19 @@ body {
         color: $dark_link_color;
     }
     a:visited {
-        color: darken($dark_link_color, 8%);
+        color: darken($dark_link_color, 5%);
     }
     .in-article-list {
-        background: lighten($dark_base_color, 8%);
+        background: lighten($dark_base_color, 5%);
     }
     code {
-        background: lighten($dark_base_color, 16%);
+        background: lighten($dark_base_color, 10%);
     }
     .in-article-list-p {
-        background: lighten($dark_base_color, 8%);
+        background: lighten($dark_base_color, 5%);
+    }
+    pre {
+        background: lighten($dark_base_color, 5%);
     }
 }
 header a span:before {
