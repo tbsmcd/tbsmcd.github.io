@@ -1,5 +1,5 @@
 ---
-title: "blog ダークモード対応 #1 なぜ・どうしたいのか？"
+title: "blog ダークモード対応 1 なぜ・どうしたいのか？何が必要か？"
 description: "blog をダークモードに対応させる。なぜダークモードに対応したいのか？どういう対応をしたいのか？それには何が必要なのか？"
 date: "2022-11-23T23:07:00+09:00"
 tags: ["CSS", "JavaScript"]
@@ -15,11 +15,11 @@ image: "ogp.png"
 
 ## 成果物
 
-![top_page](3db1f335.png)
+![top_page](a71190b6.png)
 
 <br/>
 
-![code](5dbb10de.png)
+![code](ca9a23dd.png)
 
 <br/>
 
