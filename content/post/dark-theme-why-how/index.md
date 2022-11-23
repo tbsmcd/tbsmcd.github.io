@@ -11,15 +11,15 @@ image: "ogp.png"
 
 
 {{< series name="blogダークモード対応">}}  
-{{< series name=”blogダークモード対応">}}
+{{< series name=”blogダークモード対応" >}}
 
 ## 成果物
 
-![top_page](a71190b6.png)
+![top_page](1da9f9fc.png)
 
 <br/>
 
-![code](ca9a23dd.png)
+![code](65a51a4e.png)
 
 <br/>
 
