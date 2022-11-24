@@ -17,18 +17,18 @@ image: "ogp.png"
 
 　ダークモード、ダークテーマ……英語だと black mode, dark mode, dark theme, night mode など様々な呼び方があるようだ（[Light-on-dark color scheme - Wikipedia](https://en.wikipedia.org/wiki/Light-on-dark_color_scheme)）。ここでは
 
-- ダークモード: 暗い背景に明るい文字を表示する **OS の設定**
-- ダークカラースキーム: 暗い背景に明るい文字を表示する色彩設計
+- ダーク**モード**: 暗い背景に明るい文字を表示する **OS の設定**
+- ダーク**カラースキーム**: 暗い背景に明るい文字を表示する**色彩設計**
 
 としたい。
 
 ## 成果物
 
-![top_page](2f0cf86f.png)
+![top_page](96268ed0.png)
 
 <br/>
 
-![code](46c3d5cf.png)
+![code](80b9ffef.png)
 
 <br/>
 
