@@ -11,15 +11,19 @@ image: "ogp.png"
 
 
 {{< series name="blogダークモード対応">}}  
-{{< series name=”blogダークモード対応" >}}
+<br/>
+
+## 用語の整理
+
+　ダークモード、ダークテーマ……英語だと black mode, dark mode, dark theme, night mode など様々な呼び方があるようだ（Light-on-dark color scheme - Wikipedia）
 
 ## 成果物
 
-![top_page](6061de2f.png)
+![top_page](3920c41d.png)
 
 <br/>
 
-![code](3bf814e7.png)
+![code](6614de53.png)
 
 <br/>
 
