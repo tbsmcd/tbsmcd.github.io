@@ -24,11 +24,9 @@ const setLight = () => {
 }
 cbDark.addEventListener("change", (e) => {
     if (e.target.checked) {
-        console.log("cheked");
         setDark();
         localStorage.setItem("selectedTheme", "dark");
     } else {
-        console.log("uncheked");
         setLight();
         localStorage.setItem("selectedTheme", "light");
     }
