@@ -99,7 +99,7 @@ cbDark.addEventListener("change", (e) => {
 ```javascript
 cbDark.addEventListener("change", (e) => {
     if (e.target.checked) {
-        // だーく
+        setDark();
         localStorage.setItem("selectedTheme", "dark");
     } else {
         setLight();
@@ -125,6 +125,15 @@ cbDark.addEventListener("change", (e) => {
 
 
 ```javascript
+const cbDark = document.getElementById("cb-dark-theme");
+const setDark = () => {
+    document.body.classList.add("dark-theme");
+    cbDark.checked = true;
+};
+const setLight = () => {
+    document.body.classList.remove("dark-theme");
+    cbDark.checked = false;
+}
 document.addEventListener("DOMContentLoaded", (event) => {
     const selectedTheme = localStorage.getItem("selectedTheme");
     if (selectedTheme == "dark") {
@@ -140,15 +149,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }
     }
 });
-const cbDark = document.getElementById("cb-dark-theme");
-const setDark = () => {
-    document.body.classList.add("dark-theme");
-    cbDark.checked = true;
-};
-const setLight = () => {
-    document.body.classList.remove("dark-theme");
-    cbDark.checked = false;
-}
 cbDark.addEventListener("change", (e) => {
     if (e.target.checked) {
         setDark();
