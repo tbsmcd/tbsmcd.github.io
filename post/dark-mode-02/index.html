@@ -29,9 +29,9 @@ gtag('js',new Date());gtag('config','UA-158035573-1');</script><meta charset=utf
 <span class=p>}</span><span class=p>)</span><span class=p>;</span>
 
 </code></pre></div><div class=highlight><pre class=chroma><code class=language-css data-lang=css><span class=p>.</span><span class=nc>dark-theme</span> <span class=p>{</span>
-	<span class=k>color</span><span class=p>:</span> <span class=mh>#ffffff</span><span class=p>;</span>
-    <span class=k>opacity</span><span class=p>:</span> <span class=mf>0.9</span><span class=p>;</span>
-	<span class=k>background</span><span class=p>:</span> <span class=err>$</span><span class=n>dark_base_color</span><span class=p>;</span>
+  <span class=k>color</span><span class=p>:</span> <span class=mh>#ffffff</span><span class=p>;</span>
+  <span class=k>opacity</span><span class=p>:</span> <span class=mf>0.9</span><span class=p>;</span>
+  <span class=k>background</span><span class=p>:</span> <span class=err>$</span><span class=n>dark_base_color</span><span class=p>;</span>
 <span class=err>（</span><span class=err>略</span><span class=err>）</span>
 </code></pre></div><p>通常の JavaScript と同じくイベントを捕捉したら良い。ダークカラースキームのときに <code>.dark-theme</code> を追加し、ライトカラースキームのときに削除しているが、 CSS の書き方によってはライトカラースキームのときに <code>.light-theme</code> を追加するようにしても良いだろう。</p><h3 id=heading-2>状態の保持方法</h3><p>　<code>checkbox</code> で設定した状態はページ遷移したら保持できないので <code>localStorage</code> か <code>sessionStorage</code> を使う。単にページ遷移しても保持したい場合は <code>sessionStorage</code> で良く、ブラウザを閉じても保持したい場合は <code>localStorage</code> を使う。</p><div class=highlight><pre class=chroma><code class=language-javascript data-lang=javascript><span class=nx>cbDark</span><span class=p>.</span><span class=nx>addEventListener</span><span class=p>(</span><span class=s2>&#34;change&#34;</span><span class=p>,</span> <span class=p>(</span><span class=nx>e</span><span class=p>)</span> <span class=p>=&gt;</span> <span class=p>{</span>
     <span class=k>if</span> <span class=p>(</span><span class=nx>e</span><span class=p>.</span><span class=nx>target</span><span class=p>.</span><span class=nx>checked</span><span class=p>)</span> <span class=p>{</span>
