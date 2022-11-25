@@ -83,9 +83,9 @@ cbDark.addEventListener("change", (e) => {
 
 ```css
 .dark-theme {
-	color: #ffffff;
-    opacity: 0.9;
-	background: $dark_base_color;
+  color: #ffffff;
+  opacity: 0.9;
+  background: $dark_base_color;
 （略）
 ```
 
