@@ -4,6 +4,8 @@
     <h1 class="h1-mono-archives"><span>{{ .Title }}</span></h1>
 {{ else if findRE "^/tags/" .RelPermalink }}
     <h1 class="h1-mono-tags"><span>{{ .Title }}</span></h1>
+{{ else if findRE "^/series/" .RelPermalink }}
+    <h1 class="h1-mono-series"><span>{{ .Title }}</span></h1>
 {{ else if not .IsHome }}
     <h1 class="h1-mono"><span>{{ .Title }}</span></h1>
 {{ end }}

@@ -54,6 +54,11 @@ h1.h1-mono-tags span:before {
     font-size: 0.75em;
     text-transform: lowercase;
 }
+h1.h1-mono-series span:before {
+    content: '/series/ ';
+    font-size: 0.75em;
+    text-transform: lowercase;
+}
 h1.h1-mono-post span:before {
     content: '# ';
 }
