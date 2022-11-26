@@ -14,11 +14,7 @@
 
 
 <ul class="page-list">
-    {{ if findRE "^/series/" .RelPermalink }}
-        {{ $pages := .Pages.ByDate.Reverse }}
-    {{ else }}
-        {{ $pages := .Pages }}
-    {{ end }}
+    {{ $pages := .Pages }}
     {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
     {{ $paginator := .Paginate (where $pages "Section" "!=" "") 30 }}
     {{ range $paginator.Pages }}
