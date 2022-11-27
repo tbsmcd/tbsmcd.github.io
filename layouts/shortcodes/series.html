@@ -1,7 +1,7 @@
 {{ $name := .Get "name" }}
 {{ $currentUrl := .Page.Permalink }}
 <div class="in-article-list">
-<p class="in-article-list-p">Series: <span class="series-name">{{ $name }}</span>></p>
+<p class="in-article-list-p">Series: <span class="series-name">{{ $name }}</span></p>
 <ol class="num-page-list" reversed>
 {{ range $key, $series := site.Taxonomies.series }}
     {{ $key_urlized := $key | urlize }}
