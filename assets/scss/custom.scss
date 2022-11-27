@@ -69,12 +69,19 @@ h1.h1-mono-post span:before {
 .in-article-list-p {
     margin: 0px;
 }
-li {
-    list-style: none;
-    text-indent:-0.75em;
+ul {
+    li {
+        list-style: none;
+        text-indent:-0.75em;
+    }
+    li:before {
+        content: '- ';
+    }
 }
-li:before {
-    content: '- ';
+ol.num-page-list {
+    li {
+        margin: 4px 0px 4px 0px;
+    }
 }
 .series-name {
     font-weight: bold;

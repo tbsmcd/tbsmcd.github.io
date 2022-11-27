@@ -2,12 +2,12 @@
 {{ $currentUrl := .Page.Permalink }}
 <div class="in-article-list">
 <p class="in-article-list-p series-name">Series: {{ $name }}</p>
-<ul class="page-list">
+<ol class="num-page-list" reversed>
 {{ range $key, $series := site.Taxonomies.series }}
     {{ $key_urlized := $key | urlize }}
     {{ $name_urlized := $name | urlize }}
     {{ if eq $key_urlized $name_urlized }}
-        {{ range $series.Pages.Reverse }}
+        {{ range $series.Pages }}
     <li>
         {{ if eq .Permalink $currentUrl }}
             {{ .Date.Format "2006-01-02" }} {{ .Title | markdownify }}
