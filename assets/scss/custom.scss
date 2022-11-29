@@ -87,3 +87,16 @@ ol.num-page-list {
 .series-name {
     font-weight: bold;
 }
+.article-date-box {
+    display: flex;
+    justify-content: flex-end;
+    .article-date {
+        font-size: 0.96em;
+        margin {
+            top: 0px;
+            bottom: 21px;
+            right: 12px;
+
+        }
+    }
+}

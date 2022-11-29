@@ -8,9 +8,11 @@
         <h1>{{ .Title | markdownify }}</h1>
     {{ end }}
     {{ if (gt .Params.date 0) }}
+    <div class="article-date-box">
     <p class="article-date">
-        {{ .Date.Format "2006-01-02 15:04:05" }} +0900
+        {{ .Date.Format "2006-01-02" }}
     </p>
+    </div>
     {{ end }}
     {{ .Content }}
 </main>
