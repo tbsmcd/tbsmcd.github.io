@@ -28,6 +28,9 @@ body {
     pre code {
         background: lighten($dark_base_color, 5%);
     }
+    .article-date {
+        opacity: 0.8;
+    }
 }
 header a span:before {
     content: '/'
@@ -91,12 +94,9 @@ ol.num-page-list {
     display: flex;
     justify-content: flex-end;
     .article-date {
-        font-size: 0.96em;
-        margin {
-            top: 0px;
-            bottom: 21px;
-            right: 12px;
-
-        }
+        font-size: 1em;
+        margin-top: 0px;
+        margin-bottom: 21px;
+        margin-right: 12px;
     }
 }
