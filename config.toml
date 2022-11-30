@@ -6,6 +6,9 @@ googleAnalytics = "UA-158035573-1"
 enableEmoji = true 
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
+# git commit 情報を取得できる
+enableGitInfo = true
+
 hasCJKLanguage = true
 showFooterCredits = true
 

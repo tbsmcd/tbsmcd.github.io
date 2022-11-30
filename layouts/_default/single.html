@@ -10,7 +10,7 @@
     {{ if (gt .Params.date 0) }}
     <div class="article-date-box">
     <p class="article-date">
-        {{ .Date.Format "2006-01-02" }}
+        Created: {{ .Date.Format "2006-01-02" }}, Updated: {{ .Lastmod.Format "2006-01-02" }}
     </p>
     </div>
     {{ end }}
