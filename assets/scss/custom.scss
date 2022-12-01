@@ -6,14 +6,15 @@ body {
 .wrapper{
     min-height: 100vh; /* ブラウザの高さ */
     position: relative;
-    padding-bottom: 64px; /* footer の高さ */
+    padding-bottom: 84px; /* footer の高さ */
+    box-sizing: border-box;
 }
 footer {
     margin-top: 12px;
     padding-top: 6px;
     border-top-style: solid;
     border-top-width: 1px;
-    height: 64px;
+    height: 84px;
 }
 header a span:before {
     content: '/'
