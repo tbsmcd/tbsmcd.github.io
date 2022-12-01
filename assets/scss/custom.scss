@@ -7,6 +7,7 @@ footer {
     margin-top: 12px;
     padding-top: 6px;
     border-top-style: solid;
+    border-top-width: 1px;
 }
 header a span:before {
     content: '/'
@@ -43,7 +44,8 @@ h3:before {
 }
 .h1-mono,.h1-mono-archives,.h1-mono-post,.h1-mono-series,.h1-mono-tags {
     border-bottom-style: solid;
-    padding-bottom: 6px;
+    border-bottom-width: 1px;
+    padding-bottom: 12px;
 }
 .in-article-list {
     padding: 13px;
