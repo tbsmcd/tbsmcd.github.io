@@ -3,12 +3,17 @@ $dark_link_color: #BAB4F9;
 body {
     min-height: 100vh;
 }
+.wrapper{
+    min-height: 100vh; /* ブラウザの高さ */
+    position: relative;
+    padding-bottom: 64px; /* footer の高さ */
+}
 footer {
     margin-top: 12px;
     padding-top: 6px;
     border-top-style: solid;
     border-top-width: 1px;
-    height: 80px;
+    height: 64px;
 }
 header a span:before {
     content: '/'
