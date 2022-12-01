@@ -19,7 +19,7 @@ pygmentsCodefences = true
 
 [params]
 header = "tbsmcd.net [<span>index</span>](/), [<span>archives</span>](/archives/), [<span>tags</span>](/tags/), [<span>search</span>](/search/), [<span>profile</span>](/profile/) <input type=\"checkbox\" id=\"cb-dark-theme\"> Dark theme"
-footer = "Written by Mochida Tsubasa(@tbsmcd).<br> [Contact](https://docs.google.com/forms/d/e/1FAIpQLScLrngN5Znk15zTy06N9qjO3Mi_ubIrXrX9cfYFid_2-mmbQQ/viewform) <br>[Feed](/index.xml)"
+footer = "Written by Mochida Tsubasa(@tbsmcd).<ul> <li>[Contact](https://docs.google.com/forms/d/e/1FAIpQLScLrngN5Znk15zTy06N9qjO3Mi_ubIrXrX9cfYFid_2-mmbQQ/viewform) </li><li>[Feed](/index.xml)<li>"
 
 useIcon = true
 useTwitterCard = true
