@@ -3,6 +3,11 @@ $dark_link_color: #BAB4F9;
 body {
     min-height: 100vh;
 }
+footer {
+    margin-top: 12px;
+    padding-top: 6px;
+    border-top-style: solid;
+}
 .dark-theme {
 	color: #ffffff;
     opacity: 0.9;
@@ -30,6 +35,9 @@ body {
     }
     .article-date {
         opacity: 0.8;
+    }
+    footer {
+        border-top-color: rgba(255, 255, 255, 0.9);
     }
 }
 header a span:before {
