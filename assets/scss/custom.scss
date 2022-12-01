@@ -6,7 +6,7 @@ body {
 .wrapper{
     min-height: 100vh; /* ブラウザの高さ */
     position: relative;
-    padding-bottom: 84px; /* footer の高さ */
+    padding-bottom: 92px; /* footer の高さ */
     box-sizing: border-box;
 }
 footer {
@@ -14,7 +14,7 @@ footer {
     padding-top: 6px;
     border-top-style: solid;
     border-top-width: 1px;
-    height: 84px;
+    height: 92px;
     position: absolute;
     bottom: 0;
 }
