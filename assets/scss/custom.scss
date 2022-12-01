@@ -2,6 +2,7 @@ $dark_base_color: #232831;
 $dark_link_color: #BAB4F9;
 body {
     min-height: 100vh;
+    padding: 1em 1em 0px 1em !important;
 }
 .wrapper{
     min-height: 100vh; /* ブラウザの高さ */
