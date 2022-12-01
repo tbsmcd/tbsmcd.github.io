@@ -8,38 +8,6 @@ footer {
     padding-top: 6px;
     border-top-style: solid;
 }
-.dark-theme {
-	color: #ffffff;
-    opacity: 0.9;
-	background: $dark_base_color;
-    a {
-        color: $dark_link_color;
-    }
-    a:visited {
-        color: darken($dark_link_color, 5%);
-    }
-    .in-article-list {
-        background: lighten($dark_base_color, 5%);
-    }
-    code {
-        background: lighten($dark_base_color, 10%);
-    }
-    .in-article-list-p {
-        background: lighten($dark_base_color, 5%);
-    }
-    pre {
-        background: lighten($dark_base_color, 5%);
-    }
-    pre code {
-        background: lighten($dark_base_color, 5%);
-    }
-    .article-date {
-        opacity: 0.8;
-    }
-    footer {
-        border-top-color: rgba(255, 255, 255, 0.9);
-    }
-}
 header a span:before {
     content: '/'
 }
@@ -49,29 +17,35 @@ h2:before {
 h3:before {
     content: '### '
 }
-h1.h1-mono span:before {
-    content: '/'
-}
-h1.h1-mono span {
-    text-transform: lowercase;
-}
-h1.h1-mono-archives span:before {
-    content: '/archives/ ';
-    font-size: 0.75em;
-    text-transform: lowercase;
-}
-h1.h1-mono-tags span:before {
-    content: '/tags/ ';
-    font-size: 0.75em;
-    text-transform: lowercase;
-}
-h1.h1-mono-series span:before {
-    content: '/series/ ';
-    font-size: 0.75em;
-    text-transform: lowercase;
-}
-h1.h1-mono-post span:before {
-    content: '# ';
+h1 {
+    .h1-mono span:before {
+        content: '/'
+    }
+    .h1-mono span {
+        text-transform: lowercase;
+    }
+    .h1-mono-archives span:before {
+        content: '/archives/ ';
+        font-size: 0.75em;
+        text-transform: lowercase;
+    }
+    .h1-mono-tags span:before {
+        content: '/tags/ ';
+        font-size: 0.75em;
+        text-transform: lowercase;
+    }
+    .h1-mono-series span:before {
+        content: '/series/ ';
+        font-size: 0.75em;
+        text-transform: lowercase;
+    }
+    .h1-mono-post span:before {
+        content: '# ';
+    }
+    .h1-mono,.h1-mono-archives,.h1-mono-post,.h1-mono-series,.h1-mono-tags {
+        border-bottom-style: solid;
+        padding-bottom: 6px;
+    }
 }
 .in-article-list {
     padding: 13px;
@@ -106,5 +80,42 @@ ol.num-page-list {
         margin-top: 0px;
         margin-bottom: 21px;
         margin-right: 12px;
+    }
+}
+.dark-theme {
+	color: #ffffff;
+    opacity: 0.9;
+	background: $dark_base_color;
+    a {
+        color: $dark_link_color;
+    }
+    a:visited {
+        color: darken($dark_link_color, 5%);
+    }
+    .in-article-list {
+        background: lighten($dark_base_color, 5%);
+    }
+    code {
+        background: lighten($dark_base_color, 10%);
+    }
+    .in-article-list-p {
+        background: lighten($dark_base_color, 5%);
+    }
+    pre {
+        background: lighten($dark_base_color, 5%);
+    }
+    pre code {
+        background: lighten($dark_base_color, 5%);
+    }
+    .article-date {
+        opacity: 0.8;
+    }
+    footer {
+        border-top-color: rgba(255, 255, 255, 0.9);
+    }
+    h1 {
+        .h1-mono,.h1-mono-archives,.h1-mono-post,.h1-mono-series,.h1-mono-tags {
+            border-bottom-color: rgba(255, 255, 255, 0.9);
+        }
     }
 }
