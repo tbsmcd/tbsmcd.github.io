@@ -10,6 +10,7 @@ body {
 }
 .wrapper{
     min-height: 100vh; /* ブラウザの高さ */
+    min-height: -webkit-fill-available;
     position: relative;
     padding-top: 12px;
     padding-bottom: 104px; /* footer + margin の高さ */
