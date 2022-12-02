@@ -1,11 +1,14 @@
 $dark_base_color: #232831;
 $dark_link_color: #BAB4F9;
+html {
+    height: -webkit-fill-available;
+}
 body {
-    min-height: 100vh;
     padding: 0px 1em 0px 1em !important;
 }
 .wrapper{
     min-height: 100vh; /* ブラウザの高さ */
+    min-height: -webkit-fill-available;
     position: relative;
     padding-top: 12px;
     padding-bottom: 104px; /* footer + margin の高さ */
