@@ -2,11 +2,12 @@ $dark_base_color: #232831;
 $dark_link_color: #BAB4F9;
 body {
     min-height: 100vh;
-    padding: 1em 1em 0px 1em !important;
+    padding: 0px 1em 0px 1em !important;
 }
 .wrapper{
     min-height: 100vh; /* ブラウザの高さ */
     position: relative;
+    padding-top: 12px;
     padding-bottom: 104px; /* footer + margin の高さ */
     box-sizing: border-box;
 }
