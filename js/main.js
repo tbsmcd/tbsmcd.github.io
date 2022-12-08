@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", (event) => {
+    followHeight();
     const selectedTheme = localStorage.getItem("selectedTheme");
     if (selectedTheme == "dark") {
         setDark();
@@ -13,6 +14,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }
     }
 });
+window.addEventListener('resize', followHeight);
+
+// ブラウザ高さ対応
+const followHeight = () => {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
+// ダークテーマ
 const cbDark = document.getElementById("cb-dark-theme");
 const setDark = () => {
     document.body.classList.add("dark-theme");
