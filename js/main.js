@@ -14,13 +14,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }
     }
 });
-window.addEventListener('resize', followHeight);
 
 // ブラウザ高さ対応
 const followHeight = () => {
     const vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 }
+window.addEventListener('resize', followHeight);
 
 // ダークテーマ
 const cbDark = document.getElementById("cb-dark-theme");
