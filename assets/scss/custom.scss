@@ -32,6 +32,9 @@ header a span:before {
     display: flex;
     justify-content: space-between;
 }
+input[type="checkbox"]{
+    vertical-align:middle;
+}
 h2:before {
     content: '## '
 }
