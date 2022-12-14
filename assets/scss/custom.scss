@@ -28,6 +28,10 @@ footer {
 header a span:before {
     content: '/'
 }
+.title-container {
+    display: flex;
+    justify-content: space-between;
+}
 h2:before {
     content: '## '
 }
