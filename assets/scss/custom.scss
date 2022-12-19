@@ -38,6 +38,9 @@ header a span:before {
 input[type="checkbox"]{
     vertical-align:middle;
 }
+h2 {
+    margin-top: 2.5em;
+}
 h2:before {
     content: '## '
 }
