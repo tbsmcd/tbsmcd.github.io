@@ -1,3 +1,4 @@
+<div class="pagination">
 {{ $pag := $.Paginator }}
 {{ if gt $pag.TotalPages 1 }}
 {{ with $pag.First }}
@@ -28,3 +29,4 @@
 </span>
 {{ end }}
 {{ end }}
+</div>
