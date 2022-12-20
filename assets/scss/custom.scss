@@ -19,6 +19,12 @@ main {
 }
 .tag-list {
     margin-bottom: 32px;
+    a::after {
+        content: ', ';
+    }
+    a:last-child::after {
+        content: none;
+    }
 }
 footer {
     font-size: 0.75em;
