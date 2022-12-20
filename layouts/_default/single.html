@@ -18,11 +18,11 @@
 </main>
 
 {{ if .Params.tags }}
-<p>
+<div class="tag-list">
     Tags:
     {{ range .Params.tags }}
     <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
     {{ end }}
-</p>
+</div>
 {{ end }}
 {{ partial "footer.html" . }}

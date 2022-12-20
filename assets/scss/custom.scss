@@ -14,6 +14,12 @@ body {
     padding-bottom: 104px; /* footer + margin の高さ */
     box-sizing: border-box;
 }
+main {
+    margin-bottom: 32px;
+}
+.tag-list {
+    margin-bottom: 32px;
+}
 footer {
     font-size: 0.75em;
     margin-top: 12px;
