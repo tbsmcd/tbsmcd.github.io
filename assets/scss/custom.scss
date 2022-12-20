@@ -19,10 +19,10 @@ main {
 }
 .tag-list {
     margin-bottom: 32px;
-    a::after {
+    span::after {
         content: ', ';
     }
-    a:last-child::after {
+    span:last-child::after {
         content: none;
     }
 }
