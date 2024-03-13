@@ -12,7 +12,7 @@ gtag('js',new Date());gtag('config','UA-158035573-1');</script><meta charset=utf
 $Esc::Send &#39;{F12}{Esc}&#39;
 ; mac 風にスクリーンショット
 ^+4::Send &#39;{PrintScreen}&#39;
-</code></pre></div><ul><li>Vim を使う際に Esc を押したあと IME が有効だと邪魔くさいので無効化<ul><li>``</li><li>IME 側で F12 に無効化を割り当てている必要がある</li><li>mac の Karabiner だと標準で選べる設定だからどうしても欲しい</li></ul></li><li>mac のスクリーンショットのショートカットが染み付いているのでこれで上書き</li></ul><h3 id=heading-3>アプリケーションの状態変更関数</h3><p>　このあとの設定で使用する共通の関数。</p><ul><li>そのアプリケーション・ウインドウが存在してたら<ul><li>ウインドウが Active なら<ul><li>一番下に移動</li><li>他のアプリのウインドウを Active に</li></ul></li><li>ウインドウが Active でなければ<ul><li>先頭に</li><li>Active に</li></ul></li></ul></li><li>アプリケーション・ウインドウが存在してなかったら<ul><li>コマンドを実行してアプリを起動</li></ul></li></ul><div class=highlight><pre class=chroma><code class=language-plain data-lang=plain>/*
+</code></pre></div><ul><li>Vim を使う際に Esc を押したあと IME が有効だと邪魔くさいので無効化<ul><li><code>Esc</code> → <code>：ｗ</code> 「うわ全角？？？？」</li><li>IME 側で F12 に無効化を割り当てている必要がある</li><li>mac の Karabiner だと標準で選べる設定だからどうしても欲しい</li></ul></li><li>mac のスクリーンショットのショートカットが染み付いているのでこれで上書き</li></ul><h3 id=heading-3>アプリケーションの状態変更関数</h3><p>　このあとの設定で使用する共通の関数。</p><ul><li>そのアプリケーション・ウインドウが存在してたら<ul><li>ウインドウが Active なら<ul><li>一番下に移動</li><li>他のアプリのウインドウを Active に</li></ul></li><li>ウインドウが Active でなければ<ul><li>先頭に</li><li>Active に</li></ul></li></ul></li><li>アプリケーション・ウインドウが存在してなかったら<ul><li>コマンドを実行してアプリを起動</li></ul></li></ul><div class=highlight><pre class=chroma><code class=language-plain data-lang=plain>/*
 title: Window Titles https://ahkscript.github.io/ja/docs/v2/misc/WinTitle.htm
 cmd: アプリを起動するためのコマンド
 */
@@ -66,7 +66,7 @@ Ctrl + 0 VSCode
 	switch_app_status(&#34;ahk_exe Code.exe&#34;, &#34;Code&#34;)
 }
 
-</code></pre></div><h3 id=gui>ランチャ機能（GUI）</h3><ol><li><p>Shift 2連打でランチャを起動</p></li><li><p>Tab で選択</p></li><li><p>Enter で決定</p></li><li><p>起動</p></li></ol><ul><li>Esc でランチャを閉じる</li></ul><br><p>自分のよく使うアプリだけを選べるランチャが欲しいのでついでに作った。これが50行程度で作れるのは最高だと思う。</p><br><p><img src=81189ac1.png alt=image001></p><div class=highlight><pre class=chroma><code class=language-plain data-lang=plain>/*
+</code></pre></div><h3 id=gui>ランチャ機能（GUI）</h3><ol><li><p>Shift 2連打でランチャを起動</p></li><li><p>Tab で選択</p></li><li><p>Enter で決定</p></li><li><p>起動</p></li></ol><ul><li>Esc でランチャを閉じる</li></ul><br><p>自分のよく使うアプリだけを選べるランチャが欲しいのでついでに作った。これが50行程度で作れるのは最高だと思う。</p><br><p><img src=d8a65d8c.png alt=image001></p><div class=highlight><pre class=chroma><code class=language-plain data-lang=plain>/*
 ===================================
 GUI
 アプリをトグルでアクティブ/インアクティブ
