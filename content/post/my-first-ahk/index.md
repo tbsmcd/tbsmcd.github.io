@@ -148,7 +148,7 @@ Ctrl + 0 VSCode
 
 <br/>
 
-![image001](d8a65d8c.png)
+![image001](9e17a139.png)
 
 
 ```plain text
@@ -189,7 +189,7 @@ Shift::
             return
         }
         MyGui := Gui(, "Select an app")
-         MyGui.SetFont("s14")
+        MyGui.SetFont("s14")
         MyGui.Add("Button", "W250", "Outlook").OnEvent("click", a_outlook)
         MyGui.Add("Button", "W250", "Teams").OnEvent("click", a_teams)
         MyGui.Add("Button", "W250", "Edge").OnEvent("click", a_edge)
