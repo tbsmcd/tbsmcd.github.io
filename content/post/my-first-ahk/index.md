@@ -21,10 +21,7 @@ image: "ogp.png"
 
 ## AutoHotkey (AHK)とは？
 
-　こちらを参照のこと
-
-- [https://ja.wikipedia.org/wiki/AutoHotkey](https://ja.wikipedia.org/wiki/AutoHotkey)
-- `*.ahk` ファイルをスタートアップフォルダに入れておくことで Windows 起動時に設定を有効化できる
+　[こちら](https://ja.wikipedia.org/wiki/AutoHotkey)を参照のこと。`*.ahk` ファイルのショートカットをスタートアップフォルダに入れておくことで Windows 起動時に設定を有効化できる。
 
 ## 設定したこと
 
@@ -130,7 +127,7 @@ Ctrl + 0 VSCode
 
 ```
 
-### GUI でランチャ機能
+### ランチャ機能（GUI）
 
 1. Shift 2連打でランチャを起動
 
@@ -148,7 +145,7 @@ Ctrl + 0 VSCode
 
 <br/>
 
-![image001](2984cf16.png)
+![image001](65e3c858.png)
 
 
 ```plain text
