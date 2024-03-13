@@ -66,7 +66,7 @@ Ctrl + 0 VSCode
 	switch_app_status(&#34;ahk_exe Code.exe&#34;, &#34;Code&#34;)
 }
 
-</code></pre></div><h3 id=gui>ランチャ機能（GUI）</h3><ol><li><p>Shift 2連打でランチャを起動</p></li><li><p>Tab で選択</p></li><li><p>Enter で決定</p></li><li><p>起動</p></li></ol><ul><li>Esc でランチャを閉じる</li></ul><br><p>自分のよく使うアプリだけを選べるランチャが欲しいのでついでに作った。これが50行程度で作れるのは最高だと思う。</p><br><p><img src=d8a65d8c.png alt=image001></p><div class=highlight><pre class=chroma><code class=language-plain data-lang=plain>/*
+</code></pre></div><h3 id=gui>ランチャ機能（GUI）</h3><ol><li><p>Shift 2連打でランチャを起動</p></li><li><p>Tab で選択</p></li><li><p>Enter で決定</p></li><li><p>起動</p></li></ol><ul><li>Esc でランチャを閉じる</li></ul><br><p>自分のよく使うアプリだけを選べるランチャが欲しいのでついでに作った。これが50行程度で作れるのは最高だと思う。</p><br><p><img src=9e17a139.png alt=image001></p><div class=highlight><pre class=chroma><code class=language-plain data-lang=plain>/*
 ===================================
 GUI
 アプリをトグルでアクティブ/インアクティブ
@@ -103,7 +103,7 @@ Shift::
             return
         }
         MyGui := Gui(, &#34;Select an app&#34;)
-         MyGui.SetFont(&#34;s14&#34;)
+        MyGui.SetFont(&#34;s14&#34;)
         MyGui.Add(&#34;Button&#34;, &#34;W250&#34;, &#34;Outlook&#34;).OnEvent(&#34;click&#34;, a_outlook)
         MyGui.Add(&#34;Button&#34;, &#34;W250&#34;, &#34;Teams&#34;).OnEvent(&#34;click&#34;, a_teams)
         MyGui.Add(&#34;Button&#34;, &#34;W250&#34;, &#34;Edge&#34;).OnEvent(&#34;click&#34;, a_edge)
