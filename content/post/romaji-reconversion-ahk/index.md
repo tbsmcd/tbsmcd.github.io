@@ -1,5 +1,5 @@
 ---
-title: "AHK V2.0系でローマ字再変換"
+title: "AHK(AutoHotkey) V2.0系でローマ字再変換"
 description: "IME オフのときにローマ字入力したのを AutoHotkey V2.0 系で再変換する"
 date: "2024-03-14T23:29:00+09:00"
 tags: ["AutoHotkey", "Windows"]
