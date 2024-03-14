@@ -13,7 +13,7 @@ image: "ogp.png"
 
 ## IME オフになってるのにタイピングしたとき
 
-　ダルい。基本的にディスプレイを見ていても何文字かは止まらずに打ってしまい、IME を有効にしたあとに再度打つ羽目に。こういう時のための AutoHotkey setei先人は残してくれている。
+　ダルい。基本的にディスプレイを見ていても何文字かは止まらずに打ってしまい、IME を有効にしたあとに再度打つ羽目に。こういう時のための AutoHotkey の設定を先人は残してくれている。
 
 - [https://yuruaki.blog.fc2.com/blog-entry-41.html](https://yuruaki.blog.fc2.com/blog-entry-41.html)
 
