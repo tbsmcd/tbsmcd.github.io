@@ -9,11 +9,11 @@ image: "ogp.png"
 ---
 
 
-　[前回](https://tbsmcd.net/post/my-first-ahk/)の続き。
+[前回](https://tbsmcd.net/post/my-first-ahk/)の続き。
 
 ## IME オフになってるのにタイピングしたとき
 
-　ダルい。基本的にディスプレイを見ていても、何文字かは止まらずに打ってしまい、IME を有効にしたあとに再度打つ羽目に。こういう時のための設定を AutoHotkey の先人は残してくれている。
+　ダルい。基本的にディスプレイを見ていても何文字かは止まらずに打ってしまい、IME を有効にしたあとに再度打つ羽目に。こういう時のための AutoHotkey setei先人は残してくれている。
 
 - [https://yuruaki.blog.fc2.com/blog-entry-41.html](https://yuruaki.blog.fc2.com/blog-entry-41.html)
 
