@@ -152,7 +152,7 @@ Ctrl + 0 VSCode
 
 <br/>
 
-![image001](67620a82.png)
+![image001](84f4f566.png)
 
 
 ```plain text
@@ -162,7 +162,7 @@ GUI
 アプリをトグルでアクティブ/インアクティブ
 アプリが起動していない場合は起動
 起動コマンドが指定されていない場合は
-アプリ未起動時にメッセージボックスが表示される
+アプリ未起動時は button が disabled になる
 ===================================
 */
 a_outlook(*) {
@@ -184,6 +184,40 @@ a_code(*) {
 exit_gui(*) {
     If WinExist("Select an app") {
 		WinClose
+    }
+}
+
+
+/*
+Shift 2連打で GUI を起動
+Interval <= 400ms
+*/
+Shift::
+{
+    if (A_ThisHotkey == A_PriorHotkey && A_TimeSincePriorHotkey <= 400) {
+        If WinExist("Select an app") {
+            WinActivate
+            return
+        }
+        MyGui := Gui(, "Select an app")
+        MyGui.SetFont("s14")
+        apps := [
+            Map("app_name", "Outlook", "func", a_outlook, "win_title", "ahk_exe outlook.exe"),
+            Map("app_name", "Teams", "func", a_teams, "win_title", "ahk_exe ms-teams.exe"),
+            Map("app_name", "Edge", "func", a_edge, "win_title", "ahk_exe msedge.exe"),
+            Map("app_name", "VSCode", "func", a_code, "win_title", "ahk_exe Code.exe")
+        ]
+        for (v in apps) {
+            opt_disabled := ""
+            name_disabled := ""
+            if not WinExist(v["win_title"]) {
+                opt_disabled := "disabled "
+                name_disabled := " (not started)"
+            }
+            MyGui.Add("Button", opt_disabled "W250", v["app_name"] name_disabled).OnEvent("click", v["func"])
+        }
+        MyGui.OnEvent("Escape", exit_gui)
+        MyGui.show()
     }
 }
 ```
