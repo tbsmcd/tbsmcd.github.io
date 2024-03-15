@@ -152,7 +152,7 @@ Ctrl + 0 VSCode
 
 <br/>
 
-![image001](84f4f566.png)
+![image001](947a2749.png)
 
 
 ```plain text
@@ -189,10 +189,10 @@ exit_gui(*) {
 
 
 /*
-Shift 2連打で GUI を起動
+Alt 2連打で GUI を起動
 Interval <= 400ms
 */
-Shift::
+Alt::
 {
     if (A_ThisHotkey == A_PriorHotkey && A_TimeSincePriorHotkey <= 400) {
         If WinExist("Select an app") {
