@@ -70,13 +70,13 @@ Ctrl + 0 VSCode
 {
 	switch_app_status(&#34;ahk_exe Code.exe&#34;, &#34;Code&#34;)
 }
-</code></pre></div><h3 id=gui>ランチャ機能（GUI）</h3><ol><li><p>Shift 2連打でランチャを起動</p></li><li><p>Tab で選択</p></li><li><p>Enter で決定</p></li><li><p>起動</p></li></ol><ul><li>Esc でランチャを閉じる</li></ul><br><p>自分のよく使うアプリだけを選べるランチャが欲しいのでついでに作った。これが50行程度で作れるのは最高だと思う。</p><br><p><img src=67620a82.png alt=image001></p><div class=highlight><pre class=chroma><code class=language-plain data-lang=plain>/*
+</code></pre></div><h3 id=gui>ランチャ機能（GUI）</h3><ol><li><p>Shift 2連打でランチャを起動</p></li><li><p>Tab で選択</p></li><li><p>Enter で決定</p></li><li><p>起動</p></li></ol><ul><li>Esc でランチャを閉じる</li></ul><br><p>自分のよく使うアプリだけを選べるランチャが欲しいのでついでに作った。これが50行程度で作れるのは最高だと思う。</p><br><p><img src=84f4f566.png alt=image001></p><div class=highlight><pre class=chroma><code class=language-plain data-lang=plain>/*
 ===================================
 GUI
 アプリをトグルでアクティブ/インアクティブ
 アプリが起動していない場合は起動
 起動コマンドが指定されていない場合は
-アプリ未起動時にメッセージボックスが表示される
+アプリ未起動時は button が disabled になる
 ===================================
 */
 a_outlook(*) {
@@ -98,6 +98,40 @@ a_code(*) {
 exit_gui(*) {
     If WinExist(&#34;Select an app&#34;) {
 		WinClose
+    }
+}
+
+
+/*
+Shift 2連打で GUI を起動
+Interval &lt;= 400ms
+*/
+Shift::
+{
+    if (A_ThisHotkey == A_PriorHotkey &amp;&amp; A_TimeSincePriorHotkey &lt;= 400) {
+        If WinExist(&#34;Select an app&#34;) {
+            WinActivate
+            return
+        }
+        MyGui := Gui(, &#34;Select an app&#34;)
+        MyGui.SetFont(&#34;s14&#34;)
+        apps := [
+            Map(&#34;app_name&#34;, &#34;Outlook&#34;, &#34;func&#34;, a_outlook, &#34;win_title&#34;, &#34;ahk_exe outlook.exe&#34;),
+            Map(&#34;app_name&#34;, &#34;Teams&#34;, &#34;func&#34;, a_teams, &#34;win_title&#34;, &#34;ahk_exe ms-teams.exe&#34;),
+            Map(&#34;app_name&#34;, &#34;Edge&#34;, &#34;func&#34;, a_edge, &#34;win_title&#34;, &#34;ahk_exe msedge.exe&#34;),
+            Map(&#34;app_name&#34;, &#34;VSCode&#34;, &#34;func&#34;, a_code, &#34;win_title&#34;, &#34;ahk_exe Code.exe&#34;)
+        ]
+        for (v in apps) {
+            opt_disabled := &#34;&#34;
+            name_disabled := &#34;&#34;
+            if not WinExist(v[&#34;win_title&#34;]) {
+                opt_disabled := &#34;disabled &#34;
+                name_disabled := &#34; (not started)&#34;
+            }
+            MyGui.Add(&#34;Button&#34;, opt_disabled &#34;W250&#34;, v[&#34;app_name&#34;] name_disabled).OnEvent(&#34;click&#34;, v[&#34;func&#34;])
+        }
+        MyGui.OnEvent(&#34;Escape&#34;, exit_gui)
+        MyGui.show()
     }
 }
 </code></pre></div><h2 id=heading-4>感想</h2><p>　Windows でも案外自由な設定ができるし、 WSL2 で Linux 生活も送れるし、いい具合に生活できそう。</p><br></main><div class=tag-list>Tags:
