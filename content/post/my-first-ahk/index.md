@@ -45,7 +45,7 @@ $Esc::Send '{F12}{Esc}'
 ```
 
 - Vim を使う際に Esc を押したあと IME が有効だと邪魔くさいので無効化
-	- `Esc` → `：ｗ` 「うわ全角？？？？」
+	- `Esc` → `：ｗ`「うわ全角？？？？」
 	- IME 側で F12 に無効化を割り当てている必要がある
 	- mac の Karabiner だと標準で選べる設定だからどうしても欲しい
 - mac のスクリーンショットのショートカットが染み付いているのでこれで上書き
@@ -71,7 +71,7 @@ title: Window Titles https://ahkscript.github.io/ja/docs/v2/misc/WinTitle.htm
 cmd: アプリを起動するためのコマンド
 */
 
-switch_app_status(title, cmd) {
+switch_app_status(title, cmd:="") {
 	if WinExist(title) {
 		if WinActive() {
 			WinMoveBottom
@@ -83,7 +83,12 @@ switch_app_status(title, cmd) {
 			WinActivate
 		}
 	} else {
-		Run cmd
+        cmd := String(cmd)
+        if (cmd != "") {
+		    Run cmd
+        } else {
+            MsgBox "このアプリケーションは起動していません"
+        }
 	}
 }
 ```
@@ -127,7 +132,6 @@ Ctrl + 0 VSCode
 {
 	switch_app_status("ahk_exe Code.exe", "Code")
 }
-
 ```
 
 ### ランチャ機能（GUI）
@@ -148,7 +152,7 @@ Ctrl + 0 VSCode
 
 <br/>
 
-![image001](9e17a139.png)
+![image001](67620a82.png)
 
 
 ```plain text
@@ -157,45 +161,29 @@ Ctrl + 0 VSCode
 GUI
 アプリをトグルでアクティブ/インアクティブ
 アプリが起動していない場合は起動
+起動コマンドが指定されていない場合は
+アプリ未起動時にメッセージボックスが表示される
 ===================================
 */
 a_outlook(*) {
-    switch_app_status("ahk_exe outlook.exe", "start outlook.exe")
+    switch_app_status("ahk_exe outlook.exe")
+    WinClose("Select an app")
 }
 a_teams(*) {
-    switch_app_status("ahk_exe ms-teams.exe", "start ms-teams.exe")
+    switch_app_status("ahk_exe ms-teams.exe")
+    WinClose("Select an app")
 }
 a_edge(*) {
-    switch_app_status("ahk_exe msedge.exe", "start msedge.exe")
+    switch_app_status("ahk_exe msedge.exe")
+    WinClose("Select an app")
 }
 a_code(*) {
     switch_app_status("ahk_exe Code.exe", "code")
+    WinClose("Select an app")
 }
 exit_gui(*) {
     If WinExist("Select an app") {
 		WinClose
-    }
-}
-
-/*
-Shift 2連打で GUI を起動
-Interval <= 400ms
-*/
-Shift::
-{
-    if (A_ThisHotkey == A_PriorHotkey && A_TimeSincePriorHotkey <= 400) {
-        If WinExist("Select an app") {
-            WinActivate
-            return
-        }
-        MyGui := Gui(, "Select an app")
-        MyGui.SetFont("s14")
-        MyGui.Add("Button", "W250", "Outlook").OnEvent("click", a_outlook)
-        MyGui.Add("Button", "W250", "Teams").OnEvent("click", a_teams)
-        MyGui.Add("Button", "W250", "Edge").OnEvent("click", a_edge)
-        MyGui.Add("Button", "W250", "VSCode").OnEvent("click", a_code)
-        MyGui.OnEvent("Escape", exit_gui)
-        MyGui.show()
     }
 }
 ```
@@ -203,3 +191,5 @@ Shift::
 ## 感想
 
 　Windows でも案外自由な設定ができるし、 WSL2 で Linux 生活も送れるし、いい具合に生活できそう。
+
+<br/>
