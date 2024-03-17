@@ -3,19 +3,21 @@ title: "AHK(AutoHotkey) V2.0系でローマ字再変換"
 description: "IME オフのときにローマ字入力したのを AutoHotkey V2.0 系で再変換する"
 date: "2024-03-14T23:29:00+09:00"
 tags: ["AutoHotkey", "Windows"]
-series: []
+series: ["AutoHotkey"]
 archives: "2024-03"
 image: "ogp.png"
 ---
 
 
+
+{{< series name="AutoHotkey">}}  
 [前回](https://tbsmcd.net/post/my-first-ahk/)の続き。
 
 <br/>
 
 これをやる↓
 
-![ek_](1c0c86c2.gif)
+![ek_](97762740.gif)
 
 <br/>
 
