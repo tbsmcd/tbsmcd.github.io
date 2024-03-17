@@ -1,139 +1,139 @@
 <!doctype html><html lang=ja><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-158035573-1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','UA-158035573-1');</script><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Windows 初心者がやってみた AutoHotkey 設定. ショートカット/ホットキー/キーリマップ/GUI など | tbsmcd.net</title><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/scss/code.min.daf683076712a8fd05c112ad6575fb841b4d15640f4c87e71541744189b69260.css><link rel=stylesheet href=/css/fonts.css><link rel=stylesheet href=/scss/custom.min.dcf256d5a0f85d18db523a5742d3f1412ce692686a316cdd6de48b9b0214c4dd.css><script src=/js/main.js defer></script><link rel=apple-touch-icon sizes=57x57 href=/apple-icon-57x57.png><link rel=apple-touch-icon sizes=60x60 href=/apple-icon-60x60.png><link rel=apple-touch-icon sizes=72x72 href=/apple-icon-72x72.png><link rel=apple-touch-icon sizes=76x76 href=/apple-icon-76x76.png><link rel=apple-touch-icon sizes=114x114 href=/apple-icon-114x114.png><link rel=apple-touch-icon sizes=120x120 href=/apple-icon-120x120.png><link rel=apple-touch-icon sizes=144x144 href=/apple-icon-144x144.png><link rel=apple-touch-icon sizes=152x152 href=/apple-icon-152x152.png><link rel=apple-touch-icon sizes=180x180 href=/apple-icon-180x180.png><link rel=icon type=image/png sizes=192x192 href=/android-icon-192x192.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=96x96 href=/favicon-96x96.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/manifest.json><meta name=msapplication-TileColor content="#ffffff"><meta name=msapplication-TileImage content="/ms-icon-144x144.png"><meta name=theme-color content="#ffffff"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content="@tbsmcd"><meta name=twitter:creator content="@tbsmcd"><meta property="og:url" content="https://tbsmcd.net/post/my-first-ahk/"><meta property="og:title" content="Windows 初心者がやってみた AutoHotkey 設定. ショートカット/ホットキー/キーリマップ/GUI など | tbsmcd"><meta property="og:description" content="Windows 初心者がやってみた AutoHotkey 設定. ショートカット/ホットキー/キーリマップ/GUI など。ランチャーの GUI も作れて嬉しい。"><meta name=description content="Windows 初心者がやってみた AutoHotkey 設定. ショートカット/ホットキー/キーリマップ/GUI など。ランチャーの GUI も作れて嬉しい。"><meta property="og:image" content="https://tbsmcd.net/post/my-first-ahk/ogp.png"></head><body><div class=wrapper><header><div class=title-container><div class="title-item site-title">tbsmcd.net</div><div class=title-item><input type=checkbox id=cb-dark-theme> Dark mode</div></div><div><a href=/><span>index</span></a>, <a href=/archives/><span>archives</span></a>, <a href=/tags/><span>tags</span></a>, <a href=/search/><span>search</span></a>, <a href=/profile/><span>profile</span></a></div></header><main><h1 class=h1-mono-post><span>Windows 初心者がやってみた AutoHotkey 設定. ショートカット/ホットキー/キーリマップ/GUI など</span></h1><div class=article-date-box><p class=article-date>Created: 2024-03-13</p></div><div class=in-article-list><p class=in-article-list-p>Series: <span class=series-name>AutoHotkey</span></p><ol class=num-page-list reversed><li>2024-03-17 <a href=/post/google-from-any-app-using-ahk/>AHK(AutoHotkey) V2.0系で「どのアプリからでもコピペしてググる」</a></li><li>2024-03-14 <a href=/post/romaji-reconversion-ahk/>AHK(AutoHotkey) V2.0系でローマ字再変換</a></li><li>2024-03-13 Windows 初心者がやってみた AutoHotkey 設定. ショートカット/ホットキー/キーリマップ/GUI など</li></ol></div><h2 id=heading>導入の経緯</h2><p>　今月<a href=https://www.avanade.com/ja-jp/about-avanade>アバナード</a>に入社した。リンク先に「アクセンチュアとマイクロソフトのジョイントベンチャーとして誕生した」とあるように、マイクロソフトのテクノロジーに強い会社であるアバナードでの標準的な PC の OS は Windows だ。もちろん自分に支給されたマシンも Windows 11 Enterprise 搭載機。メモリは32GB載ってて本体も軽いし最高なんだけど、問題は自分が Windows に慣れていないこと。いまどきの Windows は WSL2 で本物の Linux を使えるのでその点で問題はないのだが、ホストマシンの操作はひとまず自分の使いやすいようにしておきたい。そこで軽くググった結果 AutoHotkey が良いらしいと分かったので導入してみることにした。</p><p>　</p><p>今回導入したのは v2.0 系なのでこちらのドキュメントを参考にされたい。</p><ul><li><a href=https://ahkscript.github.io/ja/docs/v2/>https://ahkscript.github.io/ja/docs/v2/</a></li></ul><h2 id=autohotkey-ahk>AutoHotkey (AHK)とは？</h2><p>　<a href=https://ja.wikipedia.org/wiki/AutoHotkey>こちら</a>を参照のこと。<code>*.ahk</code> ファイルのショートカットをスタートアップフォルダに入れておくことで Windows 起動時に設定を有効化できる。</p><h2 id=heading-1>設定したこと</h2><h3 id=heading-2>ショートカット</h3><div class=highlight><pre class=chroma><code class=language-plain data-lang=plain>/*
-===================================
-ショートカット
-===================================
-*/
-/*
- Esc で IMEオフ + Esc 送出
- Google IME の設定で F12 に「IME無効化」を割り当てている
- $ は Esc の無限ループ防止のため
-*/
-$Esc::Send &#39;{F12}{Esc}&#39;
-; mac 風にスクリーンショット
-^+4::Send &#39;{PrintScreen}&#39;
-</code></pre></div><ul><li>Vim を使う際に Esc を押したあと IME が有効だと邪魔くさいので無効化<ul><li><code>Esc</code> → <code>：ｗ</code>「うわ全角？？？？」</li><li>IME 側で F12 に無効化を割り当てている必要がある</li><li>mac の Karabiner だと標準で選べる設定だからどうしても欲しい</li></ul></li><li>mac のスクリーンショットのショートカットが染み付いているのでこれで上書き</li></ul><h3 id=heading-3>アプリケーションの状態変更関数</h3><p>　このあとの設定で使用する共通の関数。</p><ul><li>そのアプリケーション・ウインドウが存在してたら<ul><li>ウインドウが Active なら<ul><li>一番下に移動</li><li>他のアプリのウインドウを Active に</li></ul></li><li>ウインドウが Active でなければ<ul><li>先頭に</li><li>Active に</li></ul></li></ul></li><li>アプリケーション・ウインドウが存在してなかったら<ul><li>コマンドを実行してアプリを起動</li></ul></li></ul><div class=highlight><pre class=chroma><code class=language-plain data-lang=plain>/*
-title: Window Titles https://ahkscript.github.io/ja/docs/v2/misc/WinTitle.htm
-cmd: アプリを起動するためのコマンド
-*/
+gtag('js',new Date());gtag('config','UA-158035573-1');</script><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Windows 初心者がやってみた AutoHotkey 設定. ショートカット/ホットキー/キーリマップ/GUI など | tbsmcd.net</title><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/scss/code.min.daf683076712a8fd05c112ad6575fb841b4d15640f4c87e71541744189b69260.css><link rel=stylesheet href=/css/fonts.css><link rel=stylesheet href=/scss/custom.min.dcf256d5a0f85d18db523a5742d3f1412ce692686a316cdd6de48b9b0214c4dd.css><script src=/js/main.js defer></script><link rel=apple-touch-icon sizes=57x57 href=/apple-icon-57x57.png><link rel=apple-touch-icon sizes=60x60 href=/apple-icon-60x60.png><link rel=apple-touch-icon sizes=72x72 href=/apple-icon-72x72.png><link rel=apple-touch-icon sizes=76x76 href=/apple-icon-76x76.png><link rel=apple-touch-icon sizes=114x114 href=/apple-icon-114x114.png><link rel=apple-touch-icon sizes=120x120 href=/apple-icon-120x120.png><link rel=apple-touch-icon sizes=144x144 href=/apple-icon-144x144.png><link rel=apple-touch-icon sizes=152x152 href=/apple-icon-152x152.png><link rel=apple-touch-icon sizes=180x180 href=/apple-icon-180x180.png><link rel=icon type=image/png sizes=192x192 href=/android-icon-192x192.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=96x96 href=/favicon-96x96.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/manifest.json><meta name=msapplication-TileColor content="#ffffff"><meta name=msapplication-TileImage content="/ms-icon-144x144.png"><meta name=theme-color content="#ffffff"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content="@tbsmcd"><meta name=twitter:creator content="@tbsmcd"><meta property="og:url" content="https://tbsmcd.net/post/my-first-ahk/"><meta property="og:title" content="Windows 初心者がやってみた AutoHotkey 設定. ショートカット/ホットキー/キーリマップ/GUI など | tbsmcd"><meta property="og:description" content="Windows 初心者がやってみた AutoHotkey 設定. ショートカット/ホットキー/キーリマップ/GUI など。ランチャーの GUI も作れて嬉しい。"><meta name=description content="Windows 初心者がやってみた AutoHotkey 設定. ショートカット/ホットキー/キーリマップ/GUI など。ランチャーの GUI も作れて嬉しい。"><meta property="og:image" content="https://tbsmcd.net/post/my-first-ahk/ogp.png"></head><body><div class=wrapper><header><div class=title-container><div class="title-item site-title">tbsmcd.net</div><div class=title-item><input type=checkbox id=cb-dark-theme> Dark mode</div></div><div><a href=/><span>index</span></a>, <a href=/archives/><span>archives</span></a>, <a href=/tags/><span>tags</span></a>, <a href=/search/><span>search</span></a>, <a href=/profile/><span>profile</span></a></div></header><main><h1 class=h1-mono-post><span>Windows 初心者がやってみた AutoHotkey 設定. ショートカット/ホットキー/キーリマップ/GUI など</span></h1><div class=article-date-box><p class=article-date>Created: 2024-03-13</p></div><div class=in-article-list><p class=in-article-list-p>Series: <span class=series-name>AutoHotkey</span></p><ol class=num-page-list reversed><li>2024-03-17 <a href=/post/google-from-any-app-using-ahk/>AHK(AutoHotkey) V2.0系で「どのアプリからでもコピペしてググる」</a></li><li>2024-03-14 <a href=/post/romaji-reconversion-ahk/>AHK(AutoHotkey) V2.0系でローマ字再変換</a></li><li>2024-03-13 Windows 初心者がやってみた AutoHotkey 設定. ショートカット/ホットキー/キーリマップ/GUI など</li></ol></div><h2 id=heading>導入の経緯</h2><p>　今月<a href=https://www.avanade.com/ja-jp/about-avanade>アバナード</a>に入社した。リンク先に「アクセンチュアとマイクロソフトのジョイントベンチャーとして誕生した」とあるように、マイクロソフトのテクノロジーに強い会社であるアバナードでの標準的な PC の OS は Windows だ。もちろん自分に支給されたマシンも Windows 11 Enterprise 搭載機。メモリは32GB載ってて本体も軽いし最高なんだけど、問題は自分が Windows に慣れていないこと。いまどきの Windows は WSL2 で本物の Linux を使えるのでその点で問題はないのだが、ホストマシンの操作はひとまず自分の使いやすいようにしておきたい。そこで軽くググった結果 AutoHotkey が良いらしいと分かったので導入してみることにした。</p><p>　</p><p>今回導入したのは v2.0 系なのでこちらのドキュメントを参考にされたい。</p><ul><li><a href=https://ahkscript.github.io/ja/docs/v2/>https://ahkscript.github.io/ja/docs/v2/</a></li></ul><h2 id=autohotkey-ahk>AutoHotkey (AHK)とは？</h2><p>　<a href=https://ja.wikipedia.org/wiki/AutoHotkey>こちら</a>を参照のこと。<code>*.ahk</code> ファイルのショートカットをスタートアップフォルダに入れておくことで Windows 起動時に設定を有効化できる。</p><h2 id=heading-1>設定したこと</h2><h3 id=heading-2>ショートカット</h3><div class=highlight><pre class=chroma><code class=language-javascript data-lang=javascript><span class=cm>/*
+</span><span class=cm>===================================
+</span><span class=cm>ショートカット
+</span><span class=cm>===================================
+</span><span class=cm>*/</span>
+<span class=cm>/*
+</span><span class=cm> Esc で IMEオフ + Esc 送出
+</span><span class=cm> Google IME の設定で F12 に「IME無効化」を割り当てている
+</span><span class=cm> $ は Esc の無限ループ防止のため
+</span><span class=cm>*/</span>
+<span class=nx>$Esc</span><span class=o>:</span><span class=o>:</span><span class=nx>Send</span> <span class=s1>&#39;{F12}{Esc}&#39;</span>
+<span class=p>;</span> <span class=nx>mac</span> <span class=nx>風にスクリーンショット</span>
+<span class=o>^</span><span class=o>+</span><span class=mi>4</span><span class=o>:</span><span class=o>:</span><span class=nx>Send</span> <span class=s1>&#39;{PrintScreen}&#39;</span>
+</code></pre></div><ul><li>Vim を使う際に Esc を押したあと IME が有効だと邪魔くさいので無効化<ul><li><code>Esc</code> → <code>：ｗ</code>「うわ全角？？？？」</li><li>IME 側で F12 に無効化を割り当てている必要がある</li><li>mac の Karabiner だと標準で選べる設定だからどうしても欲しい</li></ul></li><li>mac のスクリーンショットのショートカットが染み付いているのでこれで上書き</li></ul><h3 id=heading-3>アプリケーションの状態変更関数</h3><p>　このあとの設定で使用する共通の関数。</p><ul><li>そのアプリケーション・ウインドウが存在してたら<ul><li>ウインドウが Active なら<ul><li>一番下に移動</li><li>他のアプリのウインドウを Active に</li></ul></li><li>ウインドウが Active でなければ<ul><li>先頭に</li><li>Active に</li></ul></li></ul></li><li>アプリケーション・ウインドウが存在してなかったら<ul><li>コマンドを実行してアプリを起動</li></ul></li></ul><div class=highlight><pre class=chroma><code class=language-javascript data-lang=javascript><span class=cm>/*
+</span><span class=cm>title: Window Titles https://ahkscript.github.io/ja/docs/v2/misc/WinTitle.htm
+</span><span class=cm>cmd: アプリを起動するためのコマンド
+</span><span class=cm>*/</span>
 
-switch_app_status(title, cmd:=&#34;&#34;) {
-	if WinExist(title) {
-		if WinActive() {
-			WinMoveBottom
-			if WinExist( , , title) {
-				WinActivate ; `title` 以外の見つかったウインドウがアクティブになる
-			}
-		} else {
-			WinMoveTop
-			WinActivate
-		}
-	} else {
-        cmd := String(cmd)
-        if (cmd != &#34;&#34;) {
-		    Run cmd
-        } else {
-            MsgBox &#34;このアプリケーションは起動していません&#34;
-        }
-	}
-}
-</code></pre></div><h3 id=-toggle>ホットキーでアプリを表示/非表示を toggle</h3><p>　mac でいうところの iTerm2 のホットキー機能</p><div class=highlight><pre class=chroma><code class=language-plain data-lang=plain>/*
-===================================
-ホットキー
-アプリをトグルでアクティブ/インアクティブ
-アプリが起動していない場合は起動
-===================================
-*/
+<span class=nx>switch_app_status</span><span class=p>(</span><span class=nx>title</span><span class=p>,</span> <span class=nx>cmd</span><span class=o>:</span><span class=o>=</span><span class=s2>&#34;&#34;</span><span class=p>)</span> <span class=p>{</span>
+	<span class=k>if</span> <span class=nx>WinExist</span><span class=p>(</span><span class=nx>title</span><span class=p>)</span> <span class=p>{</span>
+		<span class=k>if</span> <span class=nx>WinActive</span><span class=p>(</span><span class=p>)</span> <span class=p>{</span>
+			<span class=nx>WinMoveBottom</span>
+			<span class=k>if</span> <span class=nx>WinExist</span><span class=p>(</span> <span class=p>,</span> <span class=p>,</span> <span class=nx>title</span><span class=p>)</span> <span class=p>{</span>
+				<span class=nx>WinActivate</span> <span class=p>;</span> <span class=sb>`</span><span class=sb>title</span><span class=sb>`</span> <span class=nx>以外の見つかったウインドウがアクティブになる</span>
+			<span class=p>}</span>
+		<span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
+			<span class=nx>WinMoveTop</span>
+			<span class=nx>WinActivate</span>
+		<span class=p>}</span>
+	<span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
+        <span class=nx>cmd</span> <span class=o>:</span><span class=o>=</span> <span class=nb>String</span><span class=p>(</span><span class=nx>cmd</span><span class=p>)</span>
+        <span class=k>if</span> <span class=p>(</span><span class=nx>cmd</span> <span class=o>!=</span> <span class=s2>&#34;&#34;</span><span class=p>)</span> <span class=p>{</span>
+		    <span class=nx>Run</span> <span class=nx>cmd</span>
+        <span class=p>}</span> <span class=k>else</span> <span class=p>{</span>
+            <span class=nx>MsgBox</span> <span class=s2>&#34;このアプリケーションは起動していません&#34;</span>
+        <span class=p>}</span>
+	<span class=p>}</span>
+<span class=p>}</span>
+</code></pre></div><h3 id=-toggle>ホットキーでアプリを表示/非表示を toggle</h3><p>　mac でいうところの iTerm2 のホットキー機能</p><div class=highlight><pre class=chroma><code class=language-javascript data-lang=javascript><span class=cm>/*
+</span><span class=cm>===================================
+</span><span class=cm>ホットキー
+</span><span class=cm>アプリをトグルでアクティブ/インアクティブ
+</span><span class=cm>アプリが起動していない場合は起動
+</span><span class=cm>===================================
+</span><span class=cm>*/</span>
 
-/*
-Ctrl + Enter Windows Terminal
-*/
-^Enter::
-{
-	switch_app_status(&#34;ahk_exe WindowsTerminal.exe&#34;, &#34;wt -p Ubuntu&#34;)
-}
-
-
-/*
-Ctrl + \ エクスプローラー
-*/
-^\::
-{
-	switch_app_status(&#34;ahk_class CabinetWClass&#34;, &#34;explorer&#34;)
-}
+<span class=cm>/*
+</span><span class=cm>Ctrl + Enter Windows Terminal
+</span><span class=cm>*/</span>
+<span class=o>^</span><span class=nx>Enter</span><span class=o>:</span><span class=o>:</span>
+<span class=p>{</span>
+	<span class=nx>switch_app_status</span><span class=p>(</span><span class=s2>&#34;ahk_exe WindowsTerminal.exe&#34;</span><span class=p>,</span> <span class=s2>&#34;wt -p Ubuntu&#34;</span><span class=p>)</span>
+<span class=p>}</span>
 
 
-/*
-Ctrl + 0 VSCode
-*/
-^0::
-{
-	switch_app_status(&#34;ahk_exe Code.exe&#34;, &#34;Code&#34;)
-}
-</code></pre></div><h3 id=gui>ランチャ機能（GUI）</h3><ol><li><p>Shift 2連打でランチャを起動</p></li><li><p>Tab で選択</p></li><li><p>Enter で決定</p></li><li><p>起動</p></li></ol><ul><li>Esc でランチャを閉じる</li></ul><br><p>自分のよく使うアプリだけを選べるランチャが欲しいのでついでに作った。これが50行程度で作れるのは最高だと思う。</p><br><p><img src=baab1888.png alt=image001></p><div class=highlight><pre class=chroma><code class=language-plain data-lang=plain>/*
-===================================
-GUI
-アプリをトグルでアクティブ/インアクティブ
-アプリが起動していない場合は起動
-起動コマンドが指定されていない場合は
-アプリ未起動時は button が disabled になる
-===================================
-*/
-a_outlook(*) {
-    switch_app_status(&#34;ahk_exe outlook.exe&#34;)
-    WinClose(&#34;Select an app&#34;)
-}
-a_teams(*) {
-    switch_app_status(&#34;ahk_exe ms-teams.exe&#34;)
-    WinClose(&#34;Select an app&#34;)
-}
-a_edge(*) {
-    switch_app_status(&#34;ahk_exe msedge.exe&#34;)
-    WinClose(&#34;Select an app&#34;)
-}
-a_code(*) {
-    switch_app_status(&#34;ahk_exe Code.exe&#34;, &#34;code&#34;)
-    WinClose(&#34;Select an app&#34;)
-}
-exit_gui(*) {
-    If WinExist(&#34;Select an app&#34;) {
-		WinClose
-    }
-}
+<span class=cm>/*
+</span><span class=cm>Ctrl + \ エクスプローラー
+</span><span class=cm>*/</span>
+<span class=o>^</span><span class=err>\</span><span class=o>:</span><span class=o>:</span>
+<span class=p>{</span>
+	<span class=nx>switch_app_status</span><span class=p>(</span><span class=s2>&#34;ahk_class CabinetWClass&#34;</span><span class=p>,</span> <span class=s2>&#34;explorer&#34;</span><span class=p>)</span>
+<span class=p>}</span>
 
 
-/*
-Alt 2連打で GUI を起動
-Interval &lt;= 400ms
-*/
-Alt::
-{
-    if (A_ThisHotkey == A_PriorHotkey &amp;&amp; A_TimeSincePriorHotkey &lt;= 400) {
-        If WinExist(&#34;Select an app&#34;) {
-            WinActivate
-            return
-        }
-        MyGui := Gui(, &#34;Select an app&#34;)
-        MyGui.SetFont(&#34;s14&#34;)
-        apps := [
-            Map(&#34;app_name&#34;, &#34;Outlook&#34;, &#34;func&#34;, a_outlook, &#34;win_title&#34;, &#34;ahk_exe outlook.exe&#34;),
-            Map(&#34;app_name&#34;, &#34;Teams&#34;, &#34;func&#34;, a_teams, &#34;win_title&#34;, &#34;ahk_exe ms-teams.exe&#34;),
-            Map(&#34;app_name&#34;, &#34;Edge&#34;, &#34;func&#34;, a_edge, &#34;win_title&#34;, &#34;ahk_exe msedge.exe&#34;),
-            Map(&#34;app_name&#34;, &#34;VSCode&#34;, &#34;func&#34;, a_code, &#34;win_title&#34;, &#34;ahk_exe Code.exe&#34;)
-        ]
-        for (v in apps) {
-            opt_disabled := &#34;&#34;
-            name_disabled := &#34;&#34;
-            if not WinExist(v[&#34;win_title&#34;]) {
-                opt_disabled := &#34;disabled &#34;
-                name_disabled := &#34; (not started)&#34;
-            }
-            MyGui.Add(&#34;Button&#34;, opt_disabled &#34;W250&#34;, v[&#34;app_name&#34;] name_disabled).OnEvent(&#34;click&#34;, v[&#34;func&#34;])
-        }
-        MyGui.OnEvent(&#34;Escape&#34;, exit_gui)
-        MyGui.show()
-    }
-}
+<span class=cm>/*
+</span><span class=cm>Ctrl + 0 VSCode
+</span><span class=cm>*/</span>
+<span class=o>^</span><span class=mi>0</span><span class=o>:</span><span class=o>:</span>
+<span class=p>{</span>
+	<span class=nx>switch_app_status</span><span class=p>(</span><span class=s2>&#34;ahk_exe Code.exe&#34;</span><span class=p>,</span> <span class=s2>&#34;Code&#34;</span><span class=p>)</span>
+<span class=p>}</span>
+</code></pre></div><h3 id=gui>ランチャ機能（GUI）</h3><ol><li><p>Shift 2連打でランチャを起動</p></li><li><p>Tab で選択</p></li><li><p>Enter で決定</p></li><li><p>起動</p></li></ol><ul><li>Esc でランチャを閉じる</li></ul><br><p>自分のよく使うアプリだけを選べるランチャが欲しいのでついでに作った。これが50行程度で作れるのは最高だと思う。</p><br><p><img src=65da7a6c.png alt=image001></p><div class=highlight><pre class=chroma><code class=language-javascript data-lang=javascript><span class=cm>/*
+</span><span class=cm>===================================
+</span><span class=cm>GUI
+</span><span class=cm>アプリをトグルでアクティブ/インアクティブ
+</span><span class=cm>アプリが起動していない場合は起動
+</span><span class=cm>起動コマンドが指定されていない場合は
+</span><span class=cm>アプリ未起動時は button が disabled になる
+</span><span class=cm>===================================
+</span><span class=cm>*/</span>
+<span class=nx>a_outlook</span><span class=p>(</span><span class=o>*</span><span class=p>)</span> <span class=p>{</span>
+    <span class=nx>switch_app_status</span><span class=p>(</span><span class=s2>&#34;ahk_exe outlook.exe&#34;</span><span class=p>)</span>
+    <span class=nx>WinClose</span><span class=p>(</span><span class=s2>&#34;Select an app&#34;</span><span class=p>)</span>
+<span class=p>}</span>
+<span class=nx>a_teams</span><span class=p>(</span><span class=o>*</span><span class=p>)</span> <span class=p>{</span>
+    <span class=nx>switch_app_status</span><span class=p>(</span><span class=s2>&#34;ahk_exe ms-teams.exe&#34;</span><span class=p>)</span>
+    <span class=nx>WinClose</span><span class=p>(</span><span class=s2>&#34;Select an app&#34;</span><span class=p>)</span>
+<span class=p>}</span>
+<span class=nx>a_edge</span><span class=p>(</span><span class=o>*</span><span class=p>)</span> <span class=p>{</span>
+    <span class=nx>switch_app_status</span><span class=p>(</span><span class=s2>&#34;ahk_exe msedge.exe&#34;</span><span class=p>)</span>
+    <span class=nx>WinClose</span><span class=p>(</span><span class=s2>&#34;Select an app&#34;</span><span class=p>)</span>
+<span class=p>}</span>
+<span class=nx>a_code</span><span class=p>(</span><span class=o>*</span><span class=p>)</span> <span class=p>{</span>
+    <span class=nx>switch_app_status</span><span class=p>(</span><span class=s2>&#34;ahk_exe Code.exe&#34;</span><span class=p>,</span> <span class=s2>&#34;code&#34;</span><span class=p>)</span>
+    <span class=nx>WinClose</span><span class=p>(</span><span class=s2>&#34;Select an app&#34;</span><span class=p>)</span>
+<span class=p>}</span>
+<span class=nx>exit_gui</span><span class=p>(</span><span class=o>*</span><span class=p>)</span> <span class=p>{</span>
+    <span class=nx>If</span> <span class=nx>WinExist</span><span class=p>(</span><span class=s2>&#34;Select an app&#34;</span><span class=p>)</span> <span class=p>{</span>
+		<span class=nx>WinClose</span>
+    <span class=p>}</span>
+<span class=p>}</span>
+
+
+<span class=cm>/*
+</span><span class=cm>Alt 2連打で GUI を起動
+</span><span class=cm>Interval &lt;= 400ms
+</span><span class=cm>*/</span>
+<span class=nx>Alt</span><span class=o>:</span><span class=o>:</span>
+<span class=p>{</span>
+    <span class=k>if</span> <span class=p>(</span><span class=nx>A_ThisHotkey</span> <span class=o>==</span> <span class=nx>A_PriorHotkey</span> <span class=o>&amp;&amp;</span> <span class=nx>A_TimeSincePriorHotkey</span> <span class=o>&lt;=</span> <span class=mi>400</span><span class=p>)</span> <span class=p>{</span>
+        <span class=nx>If</span> <span class=nx>WinExist</span><span class=p>(</span><span class=s2>&#34;Select an app&#34;</span><span class=p>)</span> <span class=p>{</span>
+            <span class=nx>WinActivate</span>
+            <span class=k>return</span>
+        <span class=p>}</span>
+        <span class=nx>MyGui</span> <span class=o>:</span><span class=o>=</span> <span class=nx>Gui</span><span class=p>(</span><span class=p>,</span> <span class=s2>&#34;Select an app&#34;</span><span class=p>)</span>
+        <span class=nx>MyGui</span><span class=p>.</span><span class=nx>SetFont</span><span class=p>(</span><span class=s2>&#34;s14&#34;</span><span class=p>)</span>
+        <span class=nx>apps</span> <span class=o>:</span><span class=o>=</span> <span class=p>[</span>
+            <span class=nx>Map</span><span class=p>(</span><span class=s2>&#34;app_name&#34;</span><span class=p>,</span> <span class=s2>&#34;Outlook&#34;</span><span class=p>,</span> <span class=s2>&#34;func&#34;</span><span class=p>,</span> <span class=nx>a_outlook</span><span class=p>,</span> <span class=s2>&#34;win_title&#34;</span><span class=p>,</span> <span class=s2>&#34;ahk_exe outlook.exe&#34;</span><span class=p>)</span><span class=p>,</span>
+            <span class=nx>Map</span><span class=p>(</span><span class=s2>&#34;app_name&#34;</span><span class=p>,</span> <span class=s2>&#34;Teams&#34;</span><span class=p>,</span> <span class=s2>&#34;func&#34;</span><span class=p>,</span> <span class=nx>a_teams</span><span class=p>,</span> <span class=s2>&#34;win_title&#34;</span><span class=p>,</span> <span class=s2>&#34;ahk_exe ms-teams.exe&#34;</span><span class=p>)</span><span class=p>,</span>
+            <span class=nx>Map</span><span class=p>(</span><span class=s2>&#34;app_name&#34;</span><span class=p>,</span> <span class=s2>&#34;Edge&#34;</span><span class=p>,</span> <span class=s2>&#34;func&#34;</span><span class=p>,</span> <span class=nx>a_edge</span><span class=p>,</span> <span class=s2>&#34;win_title&#34;</span><span class=p>,</span> <span class=s2>&#34;ahk_exe msedge.exe&#34;</span><span class=p>)</span><span class=p>,</span>
+            <span class=nx>Map</span><span class=p>(</span><span class=s2>&#34;app_name&#34;</span><span class=p>,</span> <span class=s2>&#34;VSCode&#34;</span><span class=p>,</span> <span class=s2>&#34;func&#34;</span><span class=p>,</span> <span class=nx>a_code</span><span class=p>,</span> <span class=s2>&#34;win_title&#34;</span><span class=p>,</span> <span class=s2>&#34;ahk_exe Code.exe&#34;</span><span class=p>)</span>
+        <span class=p>]</span>
+        <span class=k>for</span> <span class=p>(</span><span class=nx>v</span> <span class=k>in</span> <span class=nx>apps</span><span class=p>)</span> <span class=p>{</span>
+            <span class=nx>opt_disabled</span> <span class=o>:</span><span class=o>=</span> <span class=s2>&#34;&#34;</span>
+            <span class=nx>name_disabled</span> <span class=o>:</span><span class=o>=</span> <span class=s2>&#34;&#34;</span>
+            <span class=k>if</span> <span class=nx>not</span> <span class=nx>WinExist</span><span class=p>(</span><span class=nx>v</span><span class=p>[</span><span class=s2>&#34;win_title&#34;</span><span class=p>]</span><span class=p>)</span> <span class=p>{</span>
+                <span class=nx>opt_disabled</span> <span class=o>:</span><span class=o>=</span> <span class=s2>&#34;disabled &#34;</span>
+                <span class=nx>name_disabled</span> <span class=o>:</span><span class=o>=</span> <span class=s2>&#34; (not started)&#34;</span>
+            <span class=p>}</span>
+            <span class=nx>MyGui</span><span class=p>.</span><span class=nx>Add</span><span class=p>(</span><span class=s2>&#34;Button&#34;</span><span class=p>,</span> <span class=nx>opt_disabled</span> <span class=s2>&#34;W250&#34;</span><span class=p>,</span> <span class=nx>v</span><span class=p>[</span><span class=s2>&#34;app_name&#34;</span><span class=p>]</span> <span class=nx>name_disabled</span><span class=p>)</span><span class=p>.</span><span class=nx>OnEvent</span><span class=p>(</span><span class=s2>&#34;click&#34;</span><span class=p>,</span> <span class=nx>v</span><span class=p>[</span><span class=s2>&#34;func&#34;</span><span class=p>]</span><span class=p>)</span>
+        <span class=p>}</span>
+        <span class=nx>MyGui</span><span class=p>.</span><span class=nx>OnEvent</span><span class=p>(</span><span class=s2>&#34;Escape&#34;</span><span class=p>,</span> <span class=nx>exit_gui</span><span class=p>)</span>
+        <span class=nx>MyGui</span><span class=p>.</span><span class=nx>show</span><span class=p>(</span><span class=p>)</span>
+    <span class=p>}</span>
+<span class=p>}</span>
 </code></pre></div><h2 id=heading-4>感想</h2><p>　Windows でも案外自由な設定ができるし、 WSL2 で Linux 生活も送れるし、いい具合に生活できそう。</p><br></main><div class=tag-list>Tags:
 <span><a href=/tags/windows>Windows</a></span>
 <span><a href=/tags/autohotkey>AutoHotkey</a></span></div><footer>Mochida Tsubasa (@tbsmcd)<br><a href=https://docs.google.com/forms/d/e/1FAIpQLScLrngN5Znk15zTy06N9qjO3Mi_ubIrXrX9cfYFid_2-mmbQQ/viewform>Contact</a>, <a href=/index.xml>Feed</a></footer></div></body></html>
