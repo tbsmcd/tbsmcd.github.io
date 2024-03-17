@@ -30,7 +30,7 @@ image: "ogp.png"
 ### ショートカット
 
 
-```plain text
+```javascript
 /*
 ===================================
 ショートカット
@@ -67,7 +67,7 @@ $Esc::Send '{F12}{Esc}'
 	- コマンドを実行してアプリを起動
 
 
-```plain text
+```javascript
 /*
 title: Window Titles https://ahkscript.github.io/ja/docs/v2/misc/WinTitle.htm
 cmd: アプリを起動するためのコマンド
@@ -100,7 +100,7 @@ switch_app_status(title, cmd:="") {
 　mac でいうところの iTerm2 のホットキー機能
 
 
-```plain text
+```javascript
 /*
 ===================================
 ホットキー
@@ -154,10 +154,10 @@ Ctrl + 0 VSCode
 
 <br/>
 
-![image001](baab1888.png)
+![image001](65da7a6c.png)
 
 
-```plain text
+```javascript
 /*
 ===================================
 GUI
