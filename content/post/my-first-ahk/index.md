@@ -3,12 +3,14 @@ title: "Windows 初心者がやってみた AutoHotkey 設定. ショートカ�
 description: "Windows 初心者がやってみた AutoHotkey 設定. ショートカット/ホットキー/キーリマップ/GUI など。ランチャーの GUI も作れて嬉しい。"
 date: "2024-03-13T22:22:00+09:00"
 tags: ["Windows", "AutoHotkey"]
-series: []
+series: ["AutoHotkey"]
 archives: "2024-03"
 image: "ogp.png"
 ---
 
 
+
+{{< series name="AutoHotkey">}}  
 ## 導入の経緯
 
 　今月[アバナード](https://www.avanade.com/ja-jp/about-avanade)に入社した。リンク先に「アクセンチュアとマイクロソフトのジョイントベンチャーとして誕生した」とあるように、マイクロソフトのテクノロジーに強い会社であるアバナードでの標準的な PC の OS は Windows だ。もちろん自分に支給されたマシンも Windows 11 Enterprise 搭載機。メモリは32GB載ってて本体も軽いし最高なんだけど、問題は自分が Windows に慣れていないこと。いまどきの Windows は WSL2 で本物の Linux を使えるのでその点で問題はないのだが、ホストマシンの操作はひとまず自分の使いやすいようにしておきたい。そこで軽くググった結果 AutoHotkey が良いらしいと分かったので導入してみることにした。
@@ -152,7 +154,7 @@ Ctrl + 0 VSCode
 
 <br/>
 
-![image001](947a2749.png)
+![image001](baab1888.png)
 
 
 ```plain text
