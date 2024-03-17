@@ -82,7 +82,7 @@ h6 {
 ul.page-list li {
   margin: 4px 0px 4px 0px;
 }
-ol.li.p {
+ol li p {
   display: inline;
 }
 .article-date {
