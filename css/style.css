@@ -82,6 +82,9 @@ h6 {
 ul.page-list li {
   margin: 4px 0px 4px 0px;
 }
+ol.li.p {
+  display: inline;
+}
 .article-date {
   font-size: 0.83em;
   margin-top: 0px;
