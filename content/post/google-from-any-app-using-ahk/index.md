@@ -51,12 +51,13 @@ image: "ogp.png"
 
 というシンプルなことを行えば良い。
 
-（クリップボードの内容を維持するような処理は必要）
+（クリップボードの内容を前後で維持する処理は必要）
 
 ## 実装
 
 
 ```javascript
+/*
 ===================================
 どのアプリからもググる or URLを開く
 右 Shift + g で発火
@@ -69,7 +70,7 @@ image: "ogp.png"
 */
 
 RShift & g::{
-    clip_data := ClipboardAll()
+    clip_data := ClipboardAll(); クリップボードの中身を退避
     A_Clipboard := ""
     Send "^c"
     ClipWait 1
@@ -80,7 +81,7 @@ RShift & g::{
                 WinActivate
             } else {
                 MsgBox "Edge が起動していません"
-                A_Clipboard := clip_data
+                A_Clipboard := clip_data; クリップボードを復元
                 return
             }
         }
@@ -88,10 +89,12 @@ RShift & g::{
         Send copied
         Send "{Enter}"
     }
-    A_Clipboard := clip_data
+    A_Clipboard := clip_data; クリップボードを復元
 }
 
 ```
+
+クリップボード関係の処理は別にいらないという人もいるかもしれない。
 
 ブラウザ上でもそれ以外でも、同一のショートカットで同一の結果が得られるのでとても快適になった。
 
@@ -101,6 +104,7 @@ Chrome しか使わない人であればたぶん下のようにしたらよい�
 
 
 ```javascript
+/*
 ===================================
 どのアプリからもググる or URLを開く
 右 Shift + g で発火
