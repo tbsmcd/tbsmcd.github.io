@@ -1,5 +1,5 @@
 ---
-title: "AI-900 に合格し"
+title: "AI-900 に合格した"
 description: "MS AI-900 に受かった。成績と対策、そして総括。"
 date: "2024-03-28T16:10:00+09:00"
 tags: ["資格試験"]
@@ -13,7 +13,7 @@ image: "ogp.png"
 
 　AI-900: Microsoft Azure AI の基礎の学習（Microsoft Certified: Azure AI Fundamentals）をさっき受けてきた。1000点満点のうち942点だった。合格ラインが700点なので割と余裕。時間も20分ぐらい残して終了した。得点の内訳は以下の通り。
 
-![Untitled](75945c64.png)
+![Untitled](e912391a.png)
 
 ## 対策
 
