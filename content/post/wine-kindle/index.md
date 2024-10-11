@@ -56,7 +56,7 @@ sudo apt install --install-recommends winehq-staging
 wine --version
 ```
 
-wine-9.19 (Staging)
+`wine-9.19 (Staging)`
 
 <br/>
 
@@ -113,7 +113,7 @@ WINEPREFIX=~/.wine_kindle wine KindleForPC-installer-1.40.65535.exe
 
 <br/>
 
-![Screenshot_20241010_224255](ad9ec2a7.png)
+![Screenshot_20241010_224255](ff1eb7db.png)
 
 <br/>
 
@@ -129,13 +129,13 @@ Kubuntu 用設定で Ubuntu は別だと思うが、適当なディレクトリ�
 
 <br/>
 
-![2024-10-11_22-46](d20bd4fd.png)
+![2024-10-11_22-46](76f5c597.png)
 
 <br/>
 
 Program には
 
-WINEPREFIX=~/.wine_kindle wine ~/.wine_kindle/drive_c/Program\ Files\ \(x86\)/Amazon/Kindle/Kindle.exe
+`WINEPREFIX=~/.wine_kindle wine ~/.wine_kindle/drive_c/Program\ Files\ \(x86\)/Amazon/Kindle/Kindle.exe`
 
 と入れている。
 
@@ -143,7 +143,7 @@ WINEPREFIX=~/.wine_kindle wine ~/.wine_kindle/drive_c/Program\ Files\ \(x86\)/Am
 
 これをタスクバーとかに固定してしまえばクリックで起動するし、適切な名前で Link を作成すれば任意のランチャから起動できるだろう。｜
 
-![2024-10-11_22-51](3160fada.png)
+![2024-10-11_22-51](8d6b8187.png)
 
 <br/>
 
