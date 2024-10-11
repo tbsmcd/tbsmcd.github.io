@@ -17,7 +17,7 @@ image: "ogp.jpeg"
 
 ## WineHQ をインストール
 
-Linux 上で Windows App を動かしたいことがあるから。
+Linux 上で Windows App を動かしたいことがあるよね……
 
 [公式ページ](https://gitlab.winehq.org/wine/wine/-/wikis/Debian-Ubuntu)参照
 
@@ -94,7 +94,7 @@ sudo wget -O /opt/wine-staging/share/wine/gecko/wine-gecko-2.47.4-x86_64.msi htt
 sudo wget -O /opt/wine-staging/share/wine/gecko/wine-gecko-2.47.4-x86.msi https://dl.winehq.org/wine/wine-gecko/2.47.4/wine-gecko-2.47.4-x86.msi
 ```
 
-<br/>
+wine-stable, develop をインストールしていたら wine-stageing の部分を、またそれぞれのヴァージョンが違う場合はそこも置換を。ダウンロードするバージョン・URLは各自調べること。
 
 ## Kindle 1.4.x をインストール
 
@@ -111,7 +111,7 @@ WINEPREFIX=~/.wine_kindle wine KindleForPC-installer-1.40.65535.exe
 
 でインストール・実行される。
 
-![Screenshot_20241010_224255](6904df71.png)
+![Screenshot_20241010_224255](2192eb00.png)
 
 <br/>
 
@@ -127,7 +127,7 @@ Kubuntu 用設定で Ubuntu は別だと思うが、適当なディレクトリ�
 
 <br/>
 
-![2024-10-11_22-46](a5ca2574.png)
+![2024-10-11_22-46](a68b0861.png)
 
 <br/>
 
@@ -141,7 +141,7 @@ Program には
 
 これをタスクバーとかに固定してしまえばクリックで起動するし、適切な名前で Link を作成すれば任意のランチャから起動できるだろう。｜
 
-![2024-10-11_22-51](c702bf11.png)
+![2024-10-11_22-51](8e8c419f.png)
 
 <br/>
 
