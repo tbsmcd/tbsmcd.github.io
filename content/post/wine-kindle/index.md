@@ -1,5 +1,5 @@
 ---
-title: "Kubuntu 24.04 LTE + WineHQ + Kindle for PC"
+title: "Kubuntu 24.04 LTS + WineHQ + Kindle for PC"
 description: "Kubuntu 24.04 （Ubuntu 24.04） で WineHQ + Kindle for PC をインストールする手順 "
 date: "2024-10-11T21:58:00+09:00"
 tags: ["Linux", "Wine"]
@@ -113,7 +113,7 @@ WINEPREFIX=~/.wine_kindle wine KindleForPC-installer-1.40.65535.exe
 
 <br/>
 
-![Screenshot_20241010_224255](85460ff8.png)
+![Screenshot_20241010_224255](2953a964.png)
 
 <br/>
 
@@ -129,7 +129,7 @@ Kubuntu 用設定で Ubuntu は別だと思うが、適当なディレクトリ�
 
 <br/>
 
-![2024-10-11_22-46](89447926.png)
+![2024-10-11_22-46](7a40e541.png)
 
 <br/>
 
@@ -143,7 +143,7 @@ Program には
 
 これをタスクバーとかに固定してしまえばクリックで起動するし、適切な名前で Link を作成すれば任意のランチャから起動できるだろう。｜
 
-![2024-10-11_22-51](5889e3de.png)
+![2024-10-11_22-51](39f8a10f.png)
 
 <br/>
 
