@@ -40,7 +40,7 @@ sudo npm install -g @playwright/mcp
 
 質問から回答までの流れを図示してみた。
 
-![sq](a6d34ff9.png)
+![sq](271dedd8.png)
 
 ## 自作した MCP サーバ 
 
@@ -93,3 +93,5 @@ sudo npm install -g @playwright/mcp
 {{< youtube 4mQFmrsQTP0 >}}
 
 滋賀県草津市の2025年度予算から教育費を取得するまでを2倍速で。
+
+これぐらい簡単に AI エージェントを作成できるのは MCP あってこそだと思う。
