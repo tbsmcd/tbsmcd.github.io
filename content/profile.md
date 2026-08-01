@@ -5,8 +5,8 @@ draft: false
 ## About me
 - 持田 翼/Mochida Tsubasa, tbsmcd
 - From 出雲國松江/Matsue, Izumo
-- Living in 筑前國博多（福岡）/Hakata(Fukuoka), Chikuzen
-- Web engineer, working at [Milabo Co.,Ltd.](https://mi-labo.co.jp/)
+- Living in 近江國草津（滋賀県）/Kusatsu, Oumi
+- Web engineer, AI Engineer
 
 ## Links
 - [Twitter](https://twitter.com/tbsmcd)
